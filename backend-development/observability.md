@@ -9,7 +9,7 @@
 - Latency: Time to service a request.
 - Traffic: Requests per second.
 - Error: Error rate of requests.
-- Saturation: Fullness of a service (How are you scaling over time?)
+- Saturation: Fullness of a service (ex. how full is the disk, how much memory is used)
 
 ## Logging
 - Immutable, timestamped record of discrete events that happened over time.
