@@ -126,6 +126,46 @@ func defer_statement() {
 	defer fmt.Println("")
 }
 
+// 9. Pointers
+func pointers() {
+	var pointer *int
+
+	i := 42
+	pointer = &i
+
+	fmt.Printf("%p points to %d\n", pointer, *pointer)
+}
+
+// 10. Structs
+type Point struct {
+	X int
+	Y int
+}
+
+func structs() {
+	point := Point{1, 2}
+	fmt.Print(point)
+	fmt.Printf(": %d %d", point.X, point.Y)
+
+	// 10-1. Pointers have syntactic sugar for field access.
+	point = Point{X: 1}
+	pointer := &point
+	fmt.Printf(" = %d %d", pointer.X, pointer.Y)
+}
+
+// 11. Arrays
+func arrays() {
+	var array [2]string
+	array[0] = "Hello"
+	array[1] = "World"
+	fmt.Println(array[0], array[1])
+
+	// 11-1. Slices are references to arrays that share data with arrays.
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+	var slice []int = primes[1:4]
+	fmt.Println(slice)
+}
+
 func main() {
 	a, b := swap("world", "Hello")
 	fmt.Println(a, b)
@@ -137,4 +177,6 @@ func main() {
 	for_loop(100)
 	switch_statement()
 	defer_statement()
+	pointers()
+	arrays()
 }
