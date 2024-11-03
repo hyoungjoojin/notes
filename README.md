@@ -6,3 +6,4 @@
 - [Distributed Systems](./distributed-systems/README.md)
 - [Operating Systems](./operating-systems/README.md)
 - [Programming Languages](./programming-languages/README.md)
+- [General Advice](./general-advice/README.md)
