@@ -3,6 +3,7 @@ languageCode = 'en-us'
 theme = 'typo'
 
 [params]
+home = "/notes"
 colorPalette = 'base16-eighties'
 hideHeader = true
 showFooter = false
