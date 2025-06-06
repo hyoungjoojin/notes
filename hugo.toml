@@ -1,0 +1,16 @@
+baseURL = 'https://hyoungjoojin.github.io/notes'
+languageCode = 'en-us'
+theme = 'typo'
+
+[params]
+colorPalette = 'base16-eighties'
+hideHeader = true
+showFooter = false
+
+[markup]
+[markup.highlight]
+style = 'solarized-dark'
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
