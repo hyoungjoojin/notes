@@ -1,0 +1,26 @@
+baseURL = 'https://hyoungjoojin.github.io/notes'
+languageCode = 'en-us'
+theme = 'typo'
+
+[params]
+home = "/notes"
+colorPalette = 'base16-default'
+hideHeader = true
+showFooter = false
+
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "home"
+
+[[params.social]]
+name = "github"
+url = "https://www.github.com/hyoungjoojin"
+
+[markup]
+[markup.highlight]
+style = 'solarized-dark'
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
