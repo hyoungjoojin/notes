@@ -1,0 +1,11 @@
++++
+title = "jwe"
++++
+
+# JWE (JSON Web Encryption)
+
+JWE is a specification for encrypting JSON data.
+
+## References
+
+- Jones, M. and J. Hildebrand, "JSON Web Encryption (JWE)", RFC 7516, DOI 10.17487/RFC7516, May 2015, <https://www.rfc-editor.org/info/rfc7516>.
