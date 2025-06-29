@@ -10,4 +10,5 @@ This document is based on Spring Framework version 6.2.8.
 
 ## Features
 
+- [Aspect-Oriented Programming](./aop)
 - [Data Access](./data-access)

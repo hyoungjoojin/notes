@@ -6,6 +6,7 @@ title = "development-tools"
 
 ## Programming Languages
 
+- [Java](./programming-languages/java)
 - [Kotlin](./programming-languages/kotlin)
 
 ## Frameworks
@@ -14,6 +15,6 @@ title = "development-tools"
 
 ## Object-Relational Mapping (ORM) Tools
 
-## Java ORM Tools
+### Java ORM Tools
 
-- [JPA](./orms/jpa): An API specification for object-relational mapping for Java applications.
+- [JPA](./orms/jpa): An API specification for object-relational mapping in Java applications.
