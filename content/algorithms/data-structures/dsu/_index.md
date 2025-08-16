@@ -5,7 +5,7 @@ math = true
 
 # Disjoint Set Union
 
-A disjoint set union is a data structure that can be used for efficient union find operations on disjoint sets.
+A disjoint set union is a data structure that can be used for efficient union-find operations on disjoint sets.
 
 ## Union Find
 
@@ -17,7 +17,9 @@ The operations of union find are as below.
 - $\text{union}(x, y)$: Merge the sets $X$ and $Y$, where $x\in X$ and $y\in Y$.
 - $\text{find}(x)$: Find the set $X$ where $x\in X$.
 
-## [Implementation](./src/a.cpp)
+## Implementation
+
+> [C++ Implementation](./src/a.cpp)
 
 Disjoint set unions represent sets as trees, where each set is represented by a tree.
 The root of the tree is the representative element of the set.
