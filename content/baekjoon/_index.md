@@ -6,6 +6,12 @@ title = "baekjoon"
 
 ## Problems
 
+### Gold 5
+
+|   Problem ID    |    Title    |
+| :-------------: | :---------: |
+| [1717](./17/17) | 집합의 표현 |
+
 ### Silver 1
 
 |   Problem ID    |  Title  |
