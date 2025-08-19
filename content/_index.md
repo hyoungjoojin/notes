@@ -2,7 +2,11 @@
 
 - [Algorithms](./algorithms)
 - [Computer Networking](./computer-networking)
+- [Database Systems](./database-systems)
 - [Development Tools](./development-tools)
+- [Programming Languages](./programming-languages)
 - [Security](./security)
-- [Software Design](./software-design)
 - [Software Engineering](./software-engineering)
+- [Web Development](./web-development)
+
+- [References](./references)
