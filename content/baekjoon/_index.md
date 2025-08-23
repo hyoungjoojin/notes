@@ -6,6 +6,12 @@ title = "baekjoon"
 
 ## Problems
 
+### Gold 4
+
+|   Problem ID    |    Title    |
+| :-------------: | :---------: |
+| [1707](./17/07) | 이분 그래프 |
+
 ### Gold 5
 
 |     Problem ID     |        Title        |
