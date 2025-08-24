@@ -8,6 +8,10 @@ title = "algorithms"
 
 - [Disjoint Set Union](./data-structures/dsu)
 
+## Graph Algorithms
+
+- [Dijkstra's Algorithm](./graph/dijkstra)
+
 ## Mathematical Algorithms
 
 ### Number Theory
