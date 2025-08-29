@@ -6,6 +6,12 @@ title = "baekjoon"
 
 ## Problems
 
+### Gold 3
+
+|     Problem ID     |     Title      |
+| :----------------: | :------------: |
+| [11049](./11/04/9) | 행렬 곱셈 순서 |
+
 ### Gold 4
 
 |   Problem ID    |    Title    |
