@@ -1,0 +1,21 @@
++++
+title = "1753"
+tags = ["shortest path", "dijkstra's algorithm"]
+math = true
++++
+
+# 최단경로
+
+> Level: Gold 4 \
+> Tags: Dijkstra's Algorithm
+
+## Problem
+
+Given a directed weighted graph $G$, find the shortest path to all vertices starting from
+a vertex $s$.
+
+## Solution
+
+### Dijkstra's Algorithm
+
+> Implementation: [C++](./src/a.cpp) (100ms, 9112KB) \
