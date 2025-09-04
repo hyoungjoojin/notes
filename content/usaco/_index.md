@@ -6,6 +6,12 @@ title = "usaco"
 
 ## Problems
 
+### Silver
+
+|  Problem ID   |     Title      |
+| :-----------: | :------------: |
+| [572](./57/2) | Breed Counting |
+
 ### Bronze
 
 |  Problem ID   |    Title    |
