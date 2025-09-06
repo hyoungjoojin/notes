@@ -12,6 +12,7 @@ title = "usaco"
 | :-----------: | :----------------------------: |
 | [572](./57/2) |         Breed Counting         |
 | [595](./59/5) | Subsequences Summing To Sevens |
+| [691](./69/1) |     Hoof, Paper, Scissors      |
 
 ### Bronze
 
