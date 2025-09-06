@@ -4,6 +4,8 @@ title = "ps"
 
 # PS
 
+- [Ideas](./ideas)
+
 ## Problem Sets
 
 - [Baekjoon Online Judge](./baekjoon)
@@ -11,5 +13,3 @@ title = "ps"
 - [CSES](./cses)
 - [LeetCode](./leetcode)
 - [USACO](./usaco)
-
-- [Notable Problems](./notable-problems)
