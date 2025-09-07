@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
 public:
   bool isAnagram(string s, string t) {
-    std::array<int, 'z' - 'a' + 1> freq = {0};
+    array<int, 'z' - 'a' + 1> freq = {0};
 
     for (char ch : s) {
       freq[ch - 'a']++;
