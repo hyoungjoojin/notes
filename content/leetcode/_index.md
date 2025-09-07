@@ -6,6 +6,12 @@ title = "leetcode"
 
 ## Problems
 
+### Medium
+
+| Problem ID |     Title      |
+| :--------: | :------------: |
+| [49](./49) | Group Anagrams |
+
 ### Easy
 
 |  Problem ID   |       Title        |
