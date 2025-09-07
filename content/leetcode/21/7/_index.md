@@ -1,0 +1,21 @@
++++
+title = "217"
+tags = ["array"]
+math = true
++++
+
+# Contains Duplicate
+
+> Level: Easy \
+> Tags: Array
+
+## Problem
+
+Given an array $A$, find whether or not the array contains duplicates.
+
+## Solution
+
+### Sorting
+
+> Implementation: [C++](./src/a.cpp) (15ms, 71MB) \
+> Time: $O(n\log n)$, Space: $O(1)$
