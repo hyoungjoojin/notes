@@ -8,9 +8,10 @@ title = "leetcode"
 
 ### Medium
 
-| Problem ID |     Title      |
-| :--------: | :------------: |
-| [49](./49) | Group Anagrams |
+|  Problem ID   |               Title                |
+| :-----------: | :--------------------------------: |
+|  [49](./49)   |           Group Anagrams           |
+| [167](./16/7) | Two Sum II - Input Array Is Sorted |
 
 ### Easy
 
