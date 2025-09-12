@@ -4,9 +4,7 @@ title = "ps"
 
 # PS
 
-- [Ideas](./ideas)
-- [Mistakes](./mistakes)
-- [My Problem Set](./mine)
+- [Algorithms](./algorithms)
 
 ## Problem Sets
 
