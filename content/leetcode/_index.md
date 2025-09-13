@@ -22,3 +22,4 @@ title = "leetcode"
 | [242](./24/2) |   Valid Anagram    |
 |   [1](./1)    |      Two Sum       |
 | [125](./12/5) |  Valid Palindrome  |
+|  [70](./70)   |  Climbing Stairs   |

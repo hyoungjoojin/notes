@@ -99,3 +99,38 @@ To remove duplicates, we can iterate each pointer for duplicate elements.
 - Leetcode 15
 
 </details>
+
+## Dynamic Programming
+
+### Problems
+
+<details>
+<summary>
+Count the number of ways to make $n$ by iteratively adding 1 or 2.
+</summary>
+
+```c++
+int fib(int n) {
+  if (n < 3) {
+    return n;
+  }
+
+  int a = 1, b = 2, result;
+  for (int i = 3; i <= n; i++) {
+    result = a + b;
+    a = b;
+    b = result;
+  }
+
+  return result;
+}
+```
+
+Let the number of ways to make $n$ be $f(n)$. Then, since $n$ can be made by $(n - 1) + 1$ or
+$(n-2) + 2$, $f(n) = f(n-1) + f(n-2)$.
+
+#### Related Problems
+
+- Leetcode 70
+
+</details>
