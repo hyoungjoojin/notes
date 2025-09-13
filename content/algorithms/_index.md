@@ -44,3 +44,58 @@ where the first index is $i$ can never be the solution. The same logic applies w
 - Leetcode 167
 
 </details>
+
+<details>
+<summary>
+Given a sorted array $A$ and a target $x$, find all distinct triplets $(i, j, k)$ such that
+$A[i] + A[j] + A[k] = x$.
+</summary>
+
+```c++
+vector<array<int, 3>> threeSum(vector<int> &numbers, int target) {
+  vector<array<int, 3>> result;
+
+  for (int i = 0; i < numbers.size() - 2; i++) {
+    if (numbers[i] > target) {
+      break;
+    }
+
+    if (i > 0 && numbers[i] == numbers[i - 1]) {
+      continue;
+    }
+
+    for (int li = i + 1, ri = numbers.size() - 1; li < ri;) {
+      int sum = numbers[i] + numbers[li] + numbers[ri];
+
+      if (sum == target) {
+        result.push_back({i, li, ri});
+
+        li++;
+        ri--;
+
+        while (li < ri && nums[li] == nums[li - 1]) {
+          li++;
+        }
+      } else if (sum < target) {
+        li++;
+      } else if (sum > target) {
+        ri--;
+      }
+    }
+  }
+
+  return result;
+}
+```
+
+Using two pointers, we can find two integers that sum up to a target number in linear time.
+Computing the three sum problem works by reducing the complete search space of $O(n^3)$ to
+$O(n^2)$ by fixing one point and using two pointers to find the other two points.
+
+To remove duplicates, we can iterate each pointer for duplicate elements.
+
+#### Related Problems
+
+- Leetcode 15
+
+</details>
