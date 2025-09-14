@@ -100,6 +100,42 @@ To remove duplicates, we can iterate each pointer for duplicate elements.
 
 </details>
 
+<details>
+<summary>
+Given an array $A$, find the value of $\max{((j - i)\min{(A[i],A[j])})}$.
+</summary>
+
+```c++
+int maximum(vector<int> &numbers) {
+  int result = 0;
+
+  for (int li = 0, ri = numbers.size() - 1; li < ri;) {
+    if (numbers[li] < numbers[ri]) {
+      result = max(result, (ri - li) * numbers[li]);
+      li++;
+    } else {
+      result = max(result, (ri - li) * numbers[ri]);
+      ri--;
+    }
+  }
+
+  return result;
+}
+```
+
+The brute force method to compute this would be to go through all $n^2$ cases.
+Let $A[i]\lt A[j]$ and $k$ be an integer in range $(i,j)$.
+Then since $(k - i) \min{(A[i], A[k])}\lt (j - i)\min{(A[i], A[j])}$, we can
+skip through the cases $(i, k)$ if $A[i]\lt A[j]$. The same logic applies to
+the opposite case, hence the algorithm moves the pointer from the smaller side one step
+on each iteration making an $O(n)$ time complexity.
+
+#### Related Problems
+
+- Leetcode 11
+
+</details>
+
 ## Dynamic Programming
 
 ### Problems
