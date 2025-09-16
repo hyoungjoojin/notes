@@ -6,6 +6,12 @@ title = "leetcode"
 
 ## Problems
 
+### Hard
+
+| Problem ID |        Title        |
+| :--------: | :-----------------: |
+| [42](./42) | Trapping Rain Water |
+
 ### Medium
 
 |  Problem ID   |               Title                |
