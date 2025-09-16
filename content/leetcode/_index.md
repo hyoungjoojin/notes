@@ -18,6 +18,7 @@ title = "leetcode"
 
 |  Problem ID   |       Title        |
 | :-----------: | :----------------: |
+| [704](./70/4) |   Binary Search    |
 | [217](./21/7) | Contains Duplicate |
 | [242](./24/2) |   Valid Anagram    |
 |   [1](./1)    |      Two Sum       |
