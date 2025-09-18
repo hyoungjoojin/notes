@@ -173,6 +173,51 @@ on each iteration making an $O(n)$ time complexity.
 
 </details>
 
+## Binary Search
+
+Binary search is a search algorithm that reduces the search space logarithmically by
+skipping through half of the search space in each iteration.
+
+<details>
+<summary>
+Given an array $A$ and an integer $h$, find the minimum value of $k$ where
+$\sum_{i}{\lceil \frac{A[i]}{k} \rceil}\leq h$ holds.
+</summary>
+
+```c++
+int minValueOfK(vector<int> &a, int h) {
+  int result = numeric_limits<int>::max();
+
+  for (int low = 0, high = *max_element(a.begin(), a.end()); low <= high;) {
+    int mid = (low + high) / 2;
+
+    int count = 0;
+    for (int x : a) {
+      count += ((x / mid) + (x % mid == 0 ? 0 : 1));
+    }
+
+    if (count > h) {
+      low = mid + 1;
+    } else {
+      result = min(result, mid);
+      high = mid - 1;
+    }
+  }
+
+  return result;
+}
+```
+
+We apply binary search on the value $k$ since the search space of $k$ will be bounded by the
+maximum value of $A$ and the cost of computing $\sum_{i}{\lceil \frac{A[i]}{k} \rceil}$ is
+not that big.
+
+#### Related Problems
+
+- Leetcode 875
+
+</details>
+
 ## Dynamic Programming
 
 ### Problems

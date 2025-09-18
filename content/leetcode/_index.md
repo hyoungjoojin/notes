@@ -16,6 +16,7 @@ title = "leetcode"
 
 |  Problem ID   |               Title                |
 | :-----------: | :--------------------------------: |
+| [875](./87/5) |        Koko Eating Bananas         |
 |  [49](./49)   |           Group Anagrams           |
 | [167](./16/7) | Two Sum II - Input Array Is Sorted |
 |  [15](./15)   |                3Sum                |
