@@ -14,14 +14,15 @@ title = "leetcode"
 
 ### Medium
 
-|  Problem ID   |               Title                |
-| :-----------: | :--------------------------------: |
-| [875](./87/5) |        Koko Eating Bananas         |
-|  [49](./49)   |           Group Anagrams           |
-| [167](./16/7) | Two Sum II - Input Array Is Sorted |
-|  [15](./15)   |                3Sum                |
-|  [11](./11)   |     Container With Most Water      |
-|  [74](./74)   |         Search a 2D Matrix         |
+|  Problem ID   |                Title                 |
+| :-----------: | :----------------------------------: |
+| [153](./15/3) | Find Minimum in Rotated Sorted Array |
+| [875](./87/5) |         Koko Eating Bananas          |
+|  [49](./49)   |            Group Anagrams            |
+| [167](./16/7) |  Two Sum II - Input Array Is Sorted  |
+|  [15](./15)   |                 3Sum                 |
+|  [11](./11)   |      Container With Most Water       |
+|  [74](./74)   |          Search a 2D Matrix          |
 
 ### Easy
 
