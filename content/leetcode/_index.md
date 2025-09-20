@@ -17,6 +17,7 @@ title = "leetcode"
 |  Problem ID   |                Title                 |
 | :-----------: | :----------------------------------: |
 | [153](./15/3) | Find Minimum in Rotated Sorted Array |
+|  [33](./33)   |    Search in Rotated Sorted Array    |
 | [875](./87/5) |         Koko Eating Bananas          |
 |  [49](./49)   |            Group Anagrams            |
 | [167](./16/7) |  Two Sum II - Input Array Is Sorted  |
