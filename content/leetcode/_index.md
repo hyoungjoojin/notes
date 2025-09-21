@@ -29,6 +29,7 @@ title = "leetcode"
 
 |  Problem ID   |       Title        |
 | :-----------: | :----------------: |
+| [226](./22/6) | Invert Binary Tree |
 | [704](./70/4) |   Binary Search    |
 | [217](./21/7) | Contains Duplicate |
 | [242](./24/2) |   Valid Anagram    |
