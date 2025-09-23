@@ -1,13 +1,11 @@
 +++
 title = "1935"
-tags = ["stack"]
 math = true
 +++
 
 # 후위 표기식2
 
 > Level: Silver 3 \
-> Tags: Stack
 
 ## Problem
 

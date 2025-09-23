@@ -1,13 +1,11 @@
 +++
 title = "11"
-tags = ["two pointers"]
 math = true
 +++
 
 # Container With Most Water
 
 > Level: Medium \
-> Tags: Two Pointers
 
 ## Problem
 

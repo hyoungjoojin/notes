@@ -1,13 +1,11 @@
 +++
 title = "49"
-tags = ["hash table"]
 math = true
 +++
 
 # Group Anagrams
 
 > Level: Medium \
-> Tags: Hash Table
 
 ## Problem
 

@@ -1,13 +1,11 @@
 +++
 title = "1753"
-tags = ["shortest path", "dijkstra's algorithm"]
 math = true
 +++
 
 # 최단경로
 
 > Level: Gold 4 \
-> Tags: Dijkstra's Algorithm
 
 ## Problem
 

@@ -1,13 +1,11 @@
 +++
 title = "15649"
-tags = ["backtracking"]
 math = true
 +++
 
 # N과 M (1)
 
 > Level: Silver 3 \
-> Tags: Backtracking
 
 ## Problem
 

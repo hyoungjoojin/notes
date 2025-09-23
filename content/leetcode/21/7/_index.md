@@ -1,13 +1,11 @@
 +++
 title = "217"
-tags = ["array"]
 math = true
 +++
 
 # Contains Duplicate
 
 > Level: Easy \
-> Tags: Array
 
 ## Problem
 

@@ -1,13 +1,11 @@
 +++
 title = "1"
-tags = ["array"]
 math = true
 +++
 
 # Two Sum
 
 > Level: Easy \
-> Tags: Array
 
 ## Problem
 

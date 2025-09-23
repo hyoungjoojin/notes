@@ -1,13 +1,11 @@
 +++
 title = "153"
-tags = ["binary search"]
 math = true
 +++
 
 # Find Minimum in Rotated Sorted Array
 
 > Level: Medium \
-> Tags: Binary Search
 
 ## Problem
 

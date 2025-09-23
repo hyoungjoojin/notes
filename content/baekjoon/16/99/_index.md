@@ -1,13 +1,11 @@
 +++
 title = "1699"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 제곱수의 합
 
 > Level: Silver 2 \
-> Tags: Dynamic Programming
 
 ## Problem
 

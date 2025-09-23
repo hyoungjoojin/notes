@@ -1,13 +1,11 @@
 +++
 title = "10866"
-tags = ["deque"]
 math = true
 +++
 
 # 덱
 
 > Level: Silver 4 \
-> Tags: Deque
 
 ## Problem
 

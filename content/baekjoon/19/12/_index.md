@@ -1,13 +1,11 @@
 +++
 title = "1912"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 연속합
 
 > Level: Silver 2 \
-> Tags: Dynamic Programming
 
 ## Problem
 

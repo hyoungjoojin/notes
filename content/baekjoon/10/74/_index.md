@@ -1,13 +1,11 @@
 +++
 title = "1074"
-tags = ["recursion"]
 math = true
 +++
 
 # Z
 
 > Level: Gold 5 \
-> Tags: Recursion
 
 ## Problem
 

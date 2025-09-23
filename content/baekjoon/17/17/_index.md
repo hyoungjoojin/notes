@@ -1,13 +1,11 @@
 +++
 title = "1149"
-tags = ["disjoint set union"]
 math = true
 +++
 
 # 집합의 표현
 
 > Level: Gold 5 \
-> Tags: Disjoint Set Union
 
 ## Problem
 

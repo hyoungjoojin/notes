@@ -1,13 +1,11 @@
 +++
 title = "704"
-tags = ["binary search"]
 math = true
 +++
 
 # Binary Search
 
 > Level: Easy \
-> Tags: Binary Search
 
 ## Problem
 

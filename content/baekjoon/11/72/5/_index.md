@@ -1,13 +1,11 @@
 +++
 title = "11725"
-tags = ["graph traversal"]
 math = true
 +++
 
 # 트리의 부모 찾기
 
 > Level: Silver 2 \
-> Tags: Graph Traversal
 
 ## Problem
 

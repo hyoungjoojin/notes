@@ -1,13 +1,11 @@
 +++
 title = "5648"
-tags = ["sorting"]
 math = true
 +++
 
 # 역원소 정렬
 
 > Level: Silver 5 \
-> Tags: Sorting
 
 ## Problem
 

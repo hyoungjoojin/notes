@@ -1,13 +1,11 @@
 +++
 title = "1149"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # RGB거리
 
 > Level: Silver 1 \
-> Tags: Dynamic Programming
 
 ## Problem
 

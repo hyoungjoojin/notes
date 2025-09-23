@@ -1,12 +1,10 @@
 +++
 title = "1661"
-tags = ["prefix sum"]
 math = true
 +++
 
 # Subarray Sums II
 
-> Tags: Prefix Sum
 
 ## Problem
 

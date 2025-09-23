@@ -1,13 +1,11 @@
 +++
 title = "11729"
-tags = ["recursion"]
 math = true
 +++
 
 # 하노이 탑 이동 순서
 
 > Level: Gold 5 \
-> Tags: Recursion
 
 ## Problem
 

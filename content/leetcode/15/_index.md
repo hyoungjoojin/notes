@@ -1,13 +1,11 @@
 +++
 title = "15"
-tags = ["two pointers"]
 math = true
 +++
 
 # 3Sum
 
 > Level: Medium \
-> Tags: Two Pointers
 
 ## Problem
 

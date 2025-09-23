@@ -1,13 +1,11 @@
 +++
 title = "1864"
-tags = ["math"]
 math = true
 +++
 
 # 문어 숫자
 
 > Level: Bronze 2 \
-> Tags: Math
 
 ## Problem
 

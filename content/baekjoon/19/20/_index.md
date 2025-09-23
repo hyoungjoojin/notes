@@ -1,13 +1,11 @@
 +++
 title = "1920"
-tags = ["binary search"]
 math = true
 +++
 
 # 수 찾기
 
 > Level: Silver 4 \
-> Tags: Binary Search
 
 ## Problem
 

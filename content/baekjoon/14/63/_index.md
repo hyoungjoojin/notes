@@ -1,13 +1,11 @@
 +++
 title = "1463"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 1로 만들기
 
 > Level: Silver 3 \
-> Tags: Dynamic Programming
 
 ## Problem
 

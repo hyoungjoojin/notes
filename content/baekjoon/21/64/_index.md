@@ -1,13 +1,11 @@
 +++
 title = "2164"
-tags = ["queue"]
 math = true
 +++
 
 # 카드2
 
 > Level: Silver 4 \
-> Tags: Queue
 
 ## Problem
 

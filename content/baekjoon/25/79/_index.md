@@ -1,13 +1,11 @@
 +++
 title = "2579"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 계단 오르기
 
 > Level: Silver 3 \
-> Tags: Dynamic Programming
 
 ## Problem
 

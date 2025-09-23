@@ -1,13 +1,11 @@
 +++
 title = "595"
-tags = ["prefix sum"]
 math = true
 +++
 
 # Subsequences Summing To Sevens
 
 > Level: Silver \
-> Tags: Prefix Sum
 
 ## Problem
 

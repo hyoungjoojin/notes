@@ -1,13 +1,11 @@
 +++
 title = "11652"
-tags = ["sorting"]
 math = true
 +++
 
 # 카드
 
 > Level: Silver 4 \
-> Tags: Sorting
 
 ## Problem
 

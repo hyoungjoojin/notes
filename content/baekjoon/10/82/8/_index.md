@@ -1,13 +1,11 @@
 +++
 title = "10828"
-tags = ["stack"]
 math = true
 +++
 
 # 스택
 
 > Level: Silver 4 \
-> Tags: Stack
 
 ## Problem
 

@@ -1,13 +1,11 @@
 +++
 title = "125"
-tags = ["two pointers"]
 math = true
 +++
 
 # Valid Palindrome
 
 > Level: Easy \
-> Tags: Two Pointers
 
 ## Problem
 

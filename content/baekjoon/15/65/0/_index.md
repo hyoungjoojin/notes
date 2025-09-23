@@ -1,13 +1,11 @@
 +++
 title = "15650"
-tags = ["backtracking"]
 math = true
 +++
 
 # RGB거리
 
 > Level: Silver 3 \
-> Tags: Backtracking
 
 ## Problem
 

@@ -1,13 +1,11 @@
 +++
 title = "1629"
-tags = ["math", "binary exponentiation"]
 math = true
 +++
 
 # 곱셈
 
 > Level: Silver 1 \
-> Tags: Binary Exponentiation
 
 ## Problem
 

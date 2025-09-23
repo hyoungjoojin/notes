@@ -1,13 +1,11 @@
 +++
 title = "7785"
-tags = ["hashing"]
 math = true
 +++
 
 # 회사에 있는 사람
 
 > Level: Silver 5 \
-> Tags: Hashing
 
 ## Problem
 

@@ -1,13 +1,11 @@
 +++
 title = "11049"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 행렬 곱셈 순서
 
 > Level: Gold 3 \
-> Tags: Dynamic Programming
 
 ## Problem
 

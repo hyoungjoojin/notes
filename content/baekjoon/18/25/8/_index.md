@@ -1,13 +1,11 @@
 +++
 title = "18258"
-tags = ["queue"]
 math = true
 +++
 
 # 큐 2
 
 > Level: Silver 4 \
-> Tags: Queue
 
 ## Problem
 

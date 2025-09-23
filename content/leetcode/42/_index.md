@@ -1,13 +1,11 @@
 +++
 title = "42"
-tags = ["two pointers"]
 math = true
 +++
 
 # Trapping Rain Water
 
 > Level: Hard \
-> Tags: Two Pointers
 
 ## Problem
 

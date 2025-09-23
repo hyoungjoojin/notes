@@ -1,13 +1,11 @@
 +++
 title = "33"
-tags = ["binary search"]
 math = true
 +++
 
 # Search in Rotated Sorted Array
 
 > Level: Medium \
-> Tags: Binary Search
 
 ## Problem
 

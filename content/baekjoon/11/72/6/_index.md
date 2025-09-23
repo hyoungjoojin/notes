@@ -1,13 +1,11 @@
 +++
 title = "11726"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 2×n 타일링
 
 > Level: Silver 3 \
-> Tags: Dynamic Programming
 
 ## Problem
 

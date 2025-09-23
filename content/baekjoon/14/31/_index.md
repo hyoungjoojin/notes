@@ -1,13 +1,11 @@
 +++
 title = "1431"
-tags = ["sorting"]
 math = true
 +++
 
 # 시리얼 번호
 
 > Level: Silver 3 \
-> Tags: Sorting
 
 ## Problem
 

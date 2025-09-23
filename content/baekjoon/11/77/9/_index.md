@@ -1,13 +1,11 @@
 +++
 title = "11779"
-tags = ["dijkstra's algorithm"]
 math = true
 +++
 
 # 최소비용 구하기 2
 
 > Level: Gold 3 \
-> Tags: Dijkstra's Algorithm
 
 ## Problem
 

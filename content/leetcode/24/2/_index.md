@@ -1,13 +1,11 @@
 +++
 title = "242"
-tags = ["arrays"]
 math = true
 +++
 
 # Valid Anagram
 
 > Level: Easy \
-> Tags: Arrays
 
 ## Problem
 

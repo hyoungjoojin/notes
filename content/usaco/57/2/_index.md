@@ -1,13 +1,11 @@
 +++
 title = "572"
-tags = ["prefix sum"]
 math = true
 +++
 
 # Breed Counting
 
 > Level: Silver \
-> Tags: Prefix Sum
 
 ## Problem
 

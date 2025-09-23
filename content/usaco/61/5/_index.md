@@ -1,13 +1,11 @@
 +++
 title = "615"
-tags = ["brute force"]
 math = true
 +++
 
 # Milk Pails
 
 > Level: Bronze \
-> Tags: Brute Force
 
 ## Problem
 

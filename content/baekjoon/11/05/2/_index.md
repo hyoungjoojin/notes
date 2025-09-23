@@ -1,13 +1,11 @@
 +++
 title = "11052"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 카드 구매하기
 
 > Level: Silver 1 \
-> Tags: Dynamic Programming
 
 ## Problem
 

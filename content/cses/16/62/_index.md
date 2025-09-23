@@ -1,12 +1,10 @@
 +++
 title = "1662"
-tags = ["prefix sum"]
 math = true
 +++
 
 # Subarray Divisibility
 
-> Tags: Prefix Sum
 
 ## Problem
 

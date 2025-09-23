@@ -1,13 +1,11 @@
 +++
 title = "11057"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 오르막 수
 
 > Level: Silver 1 \
-> Tags: Dynamic Programming
 
 ## Problem
 

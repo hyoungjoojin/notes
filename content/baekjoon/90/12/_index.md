@@ -1,13 +1,11 @@
 +++
 title = "9012"
-tags = ["stack"]
 math = true
 +++
 
 # 괄호
 
 > Level: Silver 4 \
-> Tags: Stack
 
 ## Problem
 

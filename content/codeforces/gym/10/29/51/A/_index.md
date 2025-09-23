@@ -1,13 +1,11 @@
 +++
 title = "gym-102951a"
-tags = ["brute force"]
 math = true
 +++
 
 # Maximum Distance
 
 > Level: A \
-> Tags: Brute Force
 
 ## Problem
 

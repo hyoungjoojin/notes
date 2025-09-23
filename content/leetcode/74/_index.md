@@ -1,13 +1,11 @@
 +++
 title = "74"
-tags = ["binary search"]
 math = true
 +++
 
 # Search a 2D Matrix
 
 > Level: Medium \
-> Tags: Binary Search
 
 ## Problem
 

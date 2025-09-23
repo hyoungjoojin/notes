@@ -1,13 +1,11 @@
 +++
 title = "875"
-tags = ["binary search"]
 math = true
 +++
 
 # Koko Eating Bananas
 
 > Level: Medium \
-> Tags: Binary Search
 
 ## Problem
 

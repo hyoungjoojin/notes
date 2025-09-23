@@ -1,13 +1,11 @@
 +++
 title = "15688"
-tags = ["sorting"]
 math = true
 +++
 
 # 수 정렬하기 5
 
 > Level: Silver 5 \
-> Tags: Sorting
 
 ## Problem
 

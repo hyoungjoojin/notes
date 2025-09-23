@@ -1,13 +1,11 @@
 +++
 title = "11047"
-tags = ["greedy algorithm"]
 math = true
 +++
 
 # 동전 0
 
 > Level: Silver 4 \
-> Tags: Greedy Algorithm
 
 ## Problem
 

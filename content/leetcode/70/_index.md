@@ -1,13 +1,11 @@
 +++
 title = "70"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # Climbing Stairs
 
 > Level: Easy \
-> Tags: Dynamic Programming
 
 ## Problem
 

@@ -1,13 +1,11 @@
 +++
 title = "167"
-tags = ["two pointers"]
 math = true
 +++
 
 # Two Sum II - Input Array Is Sorted
 
 > Level: Medium \
-> Tags: Two Pointers
 
 ## Problem
 

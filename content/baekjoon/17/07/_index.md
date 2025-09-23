@@ -1,13 +1,11 @@
 +++
 title = "1707"
-tags = ["graph traversal"]
 math = true
 +++
 
 # 이분 그래프
 
 > Level: Gold 4 \
-> Tags: Graph Traversal
 
 ## Problem
 

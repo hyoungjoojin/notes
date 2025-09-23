@@ -1,13 +1,11 @@
 +++
 title = "1926"
-tags = ["graph traversal"]
 math = true
 +++
 
 # 그림
 
 > Level: Silver 1 \
-> Tags: Graph Traversal
 
 ## Problem
 

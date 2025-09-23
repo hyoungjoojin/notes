@@ -24,6 +24,10 @@ url = "https://www.github.com/hyoungjoojin"
 [markup.highlight]
 style = 'solarized-dark'
 
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
 [caches]
 [caches.images]
 dir = ':cacheDir/images'

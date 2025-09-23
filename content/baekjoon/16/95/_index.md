@@ -1,13 +1,11 @@
 +++
 title = "1695"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 팰린드롬 만들기
 
 > Level: Gold 3 \
-> Tags: Dynamic Programming
 
 ## Problem
 

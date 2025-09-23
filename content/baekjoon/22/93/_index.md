@@ -1,13 +1,11 @@
 +++
 title = "2293"
-tags = ["dynamic programming"]
 math = true
 +++
 
 # 동전 1
 
 > Level: Gold 4 \
-> Tags: Dynamic Programming
 
 ## Problem
 

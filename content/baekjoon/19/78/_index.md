@@ -1,13 +1,11 @@
 +++
 title = "1978"
-tags = ["math", "number theory", "primes"]
 math = true
 +++
 
 # 소수 찾기
 
 > Level: Bronze 2 \
-> Tags: Math
 
 ## Problem
 

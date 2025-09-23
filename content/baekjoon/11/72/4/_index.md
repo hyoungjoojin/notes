@@ -1,13 +1,11 @@
 +++
 title = "11724"
-tags = ["graph traversal"]
 math = true
 +++
 
 # 연결 요소의 개수
 
 > Level: Silver 2 \
-> Tags: Graph Traversal
 
 ## Problem
 
