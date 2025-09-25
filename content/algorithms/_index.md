@@ -5,6 +5,8 @@ math = "true"
 
 # Algorithms
 
+- [Trees](./trees)
+
 ## Stack
 
 <details>
