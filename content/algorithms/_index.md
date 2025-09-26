@@ -5,6 +5,7 @@ math = "true"
 
 # Algorithms
 
+- [Two Pointers](./two-pointers)
 - [Trees](./trees)
 
 ## Stack
