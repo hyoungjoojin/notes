@@ -5,6 +5,7 @@ math = "true"
 
 # Algorithms
 
+- [Brute Force](./brute-force)
 - [Two Pointers](./two-pointers)
 - [Trees](./trees)
 
