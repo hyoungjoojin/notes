@@ -6,8 +6,6 @@ title = "atcoder"
 
 ## Problems
 
-### A
-
-|     Problem ID      |          Title          |
-| :-----------------: | :---------------------: |
-| [Frog 1](./dp/dp_a) | Educational DP - Frog 1 |
+|          Problem ID          |    Title     |
+| :--------------------------: | :----------: |
+| [Power Socket](./abc/13/9/b) | Power Socket |
