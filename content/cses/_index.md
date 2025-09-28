@@ -13,5 +13,6 @@ title = "cses"
 | [1069](./10/69) |      Repetitions      |
 | [1094](./10/94) |   Increasing Array    |
 | [1070](./10/70) |     Permutations      |
+| [1621](./16/21) |   Distinct Numbers    |
 | [1661](./16/61) |   Subarray Sums II    |
 | [1662](./16/62) | Subarray Divisibility |
