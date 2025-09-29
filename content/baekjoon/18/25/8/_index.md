@@ -5,7 +5,7 @@ math = true
 
 # 큐 2
 
-> Level: Silver 4 \
+> Level: Silver 4
 
 ## Problem
 

@@ -6,6 +6,7 @@ math = "true"
 # Algorithms
 
 - [Brute Force](./brute-force)
+- [Queue](./queue)
 - [Two Pointers](./two-pointers)
 - [Trees](./trees)
 
