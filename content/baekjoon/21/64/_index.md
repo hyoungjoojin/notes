@@ -5,7 +5,7 @@ math = true
 
 # 카드2
 
-> Level: Silver 4 \
+> Level: Silver 4
 
 ## Problem
 
