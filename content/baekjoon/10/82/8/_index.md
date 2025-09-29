@@ -5,7 +5,7 @@ math = true
 
 # 스택
 
-> Level: Silver 4 \
+> Level: Silver 4
 
 ## Problem
 
