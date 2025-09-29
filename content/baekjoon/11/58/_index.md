@@ -5,7 +5,7 @@ math = true
 
 # 요세푸스 문제
 
-> Level: Silver 4 \
+> Level: Silver 4
 
 ## Problem
 
