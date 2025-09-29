@@ -11,38 +11,6 @@ math = "true"
 - [Two Pointers](./two-pointers)
 - [Trees](./trees)
 
-## Stack
-
-<details>
-<summary>
-Given a string $s$ where $s[i]\in\{ (, ) \}$, find if the parentheses of $s$ are valid.
-</summary>
-
-```c++
-bool isValid(string &s) {
-  stack<int> parens;
-  for (char ch : s) {
-    if (ch == '(') {
-      parens.push(1);
-    } else if (ch == ')') {
-      if (parens.empty()) {
-        return false;
-      }
-
-      parens.pop();
-    }
-  }
-
-  return parens.empty();
-}
-```
-
-#### Related Problems
-
-- Baekjoon 1158
-
-</details>
-
 ## Two Pointers
 
 The goal of the two pointers algorithm is to reduce the search space by skipping cases that
