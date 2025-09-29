@@ -31,3 +31,14 @@ a valid expression.
 - Baekjoon 9012: $s[i]\in\lbrace (, ) \rbrace$.
 
 </details>
+
+<details>
+<summary>
+Given a string $s$ composed of parentheses ('()', '[]', '{}') and a function $f$, compute $f(s)$.
+</summary>
+
+### Related Problems
+
+- Baekjoon 10799: $f(x)$ is constructed by a given set of rules.
+
+</details>
