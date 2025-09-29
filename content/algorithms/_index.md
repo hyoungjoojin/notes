@@ -8,6 +8,7 @@ math = "true"
 - [Brute Force](./brute-force)
 - [Stack](./stack)
 - [Queue](./queue)
+- [Deque](./deque)
 - [Two Pointers](./two-pointers)
 - [Trees](./trees)
 
