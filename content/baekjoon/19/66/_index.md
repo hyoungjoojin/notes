@@ -5,7 +5,7 @@ math = true
 
 # 프린터 큐
 
-> Level: Silver 3 \
+> Level: Silver 3
 
 ## Problem
 
@@ -18,3 +18,5 @@ Given an index $i$, find the order in which $A_i$ is removed from $A$.
 ### Queue
 
 > Implementation: [C++](./src/a.cpp) (0ms, 2024KB)
+
+Maintain separate buckets for each priority value, and empty each buck from the highest priority to the lowest.
