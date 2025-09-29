@@ -5,7 +5,7 @@ math = true
 
 # 후위 표기식2
 
-> Level: Silver 3 \
+> Level: Silver 3
 
 ## Problem
 

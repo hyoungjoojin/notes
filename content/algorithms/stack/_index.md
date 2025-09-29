@@ -5,6 +5,19 @@ math = true
 
 # Stack
 
+## Postfix Expressions
+
+<details>
+<summary>
+Given a postfix expression, compute the expression.
+</summary>
+
+### Related Problems
+
+- Baekjoon 1935: The postfix expression is represented with variables that are separately given (ex. `ABC*+DE/-`).
+
+</details>
+
 ## Parentheses Problems
 
 <details>
