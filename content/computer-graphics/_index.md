@@ -59,7 +59,7 @@ be computed.
 - Tiled Triangle Traversal: We can use a tiled approach, where if a certain area of pixels do not
   cover a triangle at all or if the area is entirely covered by a triangle we can early return
   and don't compute the individual pixel values within the tile.
-- Hierarchial Strategy: We can recursively use the tiled triangle traversal approach.
+- Hierarchical Strategy: We can recursively use the tiled triangle traversal approach.
 
 ## Ray Tracing
 
