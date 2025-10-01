@@ -52,10 +52,6 @@ are susceptible to sequential flooding. Sequential flooding is when a sequential
 every page only once and never again, therefore polluting the buffer pool with unnecessary pages.
 For OLAP workloads, MRU (most recently used) is often the best policy to use.
 
-- LRU (Least Recently Used): Maintain a timestamp for each page for when the page was last accessed,
-  and evict the page with the oldest timestamp.
-- Clock: Maintain a reference bit for each frame, if the frame is accessed set the reference bit one. A clock hand sweeps through the frames, if the reference bit is one that frame is evicted, else the reference bit is set to zero.
-
 To prevent the sequential flooding problem, the least-frequently used algorithm was proposed.
 However, least-frequently used had problems such as high accessed pages never being flushed and
 higher overhead for getting the least frequently used item.
