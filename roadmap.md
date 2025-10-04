@@ -13,3 +13,43 @@
 - [ ] LRU-K Buffer Replacement Policy
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
+
+## Software Engineering
+
+### Software Design
+
+#### Design Patterns
+
+- [ ] Strangler Pattern
+
+#### Design Principles
+
+- [ ] Domain-driven Design
+
+#### Software Architectures
+
+- [ ] Microservices Architecture
+
+### Software Deployment
+
+- [ ] Greenfield/Brownfield Deployment
+
+## Development Tools
+
+### Cloud Tools
+
+### Containerization Tools
+
+- [ ] Docker
+
+### CI/CD Tools
+
+- [ ] Jenkins
+
+### Orchestration Tools
+
+- [ ] Kubernetes
+
+### Observability Tools
+
+- [ ] Prometheus
