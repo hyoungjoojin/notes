@@ -6,6 +6,6 @@ title = "software-engineering"
 
 ## Software Design
 
-### Software Design Principles
+### Software Design Approaches
 
 - [Domain-Driven Design (DDD)](./ddd)

@@ -13,3 +13,25 @@
 - [ ] LRU-K Buffer Replacement Policy
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
+
+## Distributed Systems
+
+## Software Engineering
+
+### Software Development Process
+
+#### Software Development Approaches
+
+- [ ] Waterfall Model
+- [ ] Agile Software Development
+
+### Software Design
+
+#### Software Design Patterns
+
+#### Software Design Approaches
+
+- [x] Domain-driven Design (#4)
+- [ ] CQRS
+- [ ] Hexagonal Architecture
+- [ ] Event-driven Architecture
