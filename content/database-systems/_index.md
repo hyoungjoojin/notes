@@ -6,7 +6,10 @@ title = "database-systems"
 
 ## Database System Components
 
+### Storage Manager
+
 - [Buffer Manager](./buffer-manager)
+- [Database Storage](./database-storage)
 
 ## Database Tools
 

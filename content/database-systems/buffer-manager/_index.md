@@ -89,3 +89,17 @@ data that they have to schedule I/O requests.
 The operating system maintains a page cache on its own, but since the database system is managing
 its own buffer pool, this isn't necessary. We can use direct I/O (`O_DIRECT`) to bypass the OS
 page cache.
+
+### Buffer Pool Optimizations
+
+The following are options for optimizing buffer pools.
+
+- Multiple Buffer Pools
+  - Maintain multiple buffer pools for each different database, table, or page type.
+  - We can use object IDs or hashes of the record ID to determine which buffer pool to use.
+- Buffer Prefetching
+  - The database system can use its knowledge on the queries and prefetch data.
+  - Prefetching can be done for sequential scans or index scans.
+- Scan Sharing (Synchronized Scans)
+  - When a query is already scanning through the pages that another query needs, the the
+    second query can attach its cursor to the existing query's curso.
