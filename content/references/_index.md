@@ -9,3 +9,6 @@ title = "references"
 ## Papers
 
 ## Lectures
+
+- Carnegie Mellon University 15-445/645 Intro to Database Systems (Fall 2025)
+- Carnegie Mellon University 15-462/662 Computer Graphics (Fall, 2020)
