@@ -13,3 +13,13 @@
 - [ ] LRU-K Buffer Replacement Policy
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
+
+## Development Tools
+
+### Spring
+
+#### Spring Core
+
+- [ ] Spring Circular Dependencies
+
+#### Spring Security
