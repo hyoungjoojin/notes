@@ -1,5 +1,13 @@
 # Roadmap
 
+## Algorithms
+
+### Data Structures
+
+- [ ] B-Tree
+- [ ] Trie
+- [ ] Skip Lists
+
 ## Database Systems
 
 ### Buffer Manager
@@ -13,3 +21,12 @@
 - [ ] LRU-K Buffer Replacement Policy
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
+
+### Database Storage
+
+- [ ] Index-organized Storage
+- [ ] Log-structured Storage
+
+### Databases
+
+- [ ] SingleStore
