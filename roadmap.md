@@ -14,6 +14,11 @@
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
 
+### Databases
+
+- [ ] Microsoft SQL Server
+  - [ ] Memory-optimized Tables
+
 ## Security
 
 ### Cryptography
@@ -24,6 +29,8 @@
 
 ### Java
 
+- [ ] Java Reflection API
+
 #### JVM
 
 - [ ] JVM Class Loader
@@ -31,7 +38,20 @@
 
 ## Development Tools
 
-### Spring
+### ORM Tools
+
+#### JPA & Hibernate
+
+- [ ] JPA GeneratedValue
+  - [ ] `@GeneratedValue` can't be used with non-primary keys
+- [ ] JPA Inheritance Mapping
+- [ ] JPA Fetch Strategies
+- [ ] JPA Proxy Objects
+- [ ] JPA Transactional Write-Behind
+- [ ] JPA Cache
+- [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
+
+### Spring Framework
 
 #### Spring Core
 
