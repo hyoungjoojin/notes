@@ -19,11 +19,22 @@
 - [ ] Microsoft SQL Server
   - [ ] Memory-optimized Tables
 
+## Security
+
+### Cryptography
+
+- [ ] Post-quantum Cryptography
+
 ## Programming Languages
 
 ### Java
 
 - [ ] Java Reflection API
+
+#### JVM
+
+- [ ] JVM Class Loader
+  - [ ] Why do class not found exceptions occur at runtime?
 
 ## Development Tools
 
@@ -39,3 +50,11 @@
 - [ ] JPA Transactional Write-Behind
 - [ ] JPA Cache
 - [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
+
+### Spring Framework
+
+#### Spring Core
+
+- [ ] Spring Circular Dependencies
+
+#### Spring Security

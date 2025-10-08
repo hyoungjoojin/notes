@@ -4,5 +4,10 @@ title = "development-tools"
 
 # Development Tools
 
-- [JPA](./jpa)
+## Application Frameworks
+
 - [Spring](./spring)
+
+## ORM Tools
+
+- [JPA](./jpa)
