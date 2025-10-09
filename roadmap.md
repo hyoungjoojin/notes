@@ -14,6 +14,17 @@
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
 
+### Databases
+
+- [ ] Microsoft SQL Server
+  - [ ] Memory-optimized Tables
+
+## Security
+
+### Cryptography
+
+- [ ] Post-quantum Cryptography
+
 ## Distributed Systems
 
 ## Software Engineering
@@ -35,3 +46,37 @@
 - [ ] CQRS
 - [ ] Hexagonal Architecture
 - [ ] Event-driven Architecture
+
+## Programming Languages
+
+### Java
+
+- [ ] Java Reflection API
+
+#### JVM
+
+- [ ] JVM Class Loader
+  - [ ] Why do class not found exceptions occur at runtime?
+
+## Development Tools
+
+### ORM Tools
+
+#### JPA & Hibernate
+
+- [ ] JPA GeneratedValue
+  - [ ] `@GeneratedValue` can't be used with non-primary keys
+- [ ] JPA Inheritance Mapping
+- [ ] JPA Fetch Strategies
+- [ ] JPA Proxy Objects
+- [ ] JPA Transactional Write-Behind
+- [ ] JPA Cache
+- [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
+
+### Spring Framework
+
+#### Spring Core
+
+- [ ] Spring Circular Dependencies
+
+#### Spring Security
