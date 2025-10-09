@@ -25,6 +25,28 @@
 
 - [ ] Post-quantum Cryptography
 
+## Distributed Systems
+
+## Software Engineering
+
+### Software Development Process
+
+#### Software Development Approaches
+
+- [ ] Waterfall Model
+- [ ] Agile Software Development
+
+### Software Design
+
+#### Software Design Patterns
+
+#### Software Design Approaches
+
+- [x] Domain-driven Design (#4)
+- [ ] CQRS
+- [ ] Hexagonal Architecture
+- [ ] Event-driven Architecture
+
 ## Programming Languages
 
 ### Java
