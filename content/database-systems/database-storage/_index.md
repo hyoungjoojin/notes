@@ -27,15 +27,15 @@ Tuple-oriented storage has the following disadvantages.
 - Unnecessary Disk I/O: In order to update a single tuple, the entire block has to be read into memory.
 - Random Disk I/O: Since the ordering of tuples are not guaranteed, a sequential scan could fetch
   a separate block for every tuple in the worst case.
-- Append-only Systems: Systems like HDFS, Google Colossus, or some objects stores only allow appends
-  and does not provide semantices for in-place updates. Tuple-oriented storage makes it hard to work
+- Append-only Systems: Systems like HDFS, Google Colossus, or some object-stores only allow appends
+  and does not provide semantics for in-place updates. Tuple-oriented storage makes it hard to work
   with these systems since we would have to delete the entire block and rewrite the block to update
   one single tuple.
 
 ### Log-structured Storage
 
 Log-structured storage maintains two data structures, an in-memory MemTable and a set of persistent
-SSTables. Log-structured storage provides an API consisting of only put and deletes. In order to get
+SSTables. Log-structured storage provides an API consisting of only puts and deletes. In order to get
 a record, we search through the MemTable and SSTables to find the most recent operation performed
 on that record.
 

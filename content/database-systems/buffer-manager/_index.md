@@ -65,14 +65,6 @@ However, least-frequently used had problems such as high accessed pages never be
 higher overhead for getting the least frequently used item.
 The LRU-K algorithm, MySQL's buffer replacement algorithm, and ARC algorithm addresses this.
 
-Besides using a better eviction algorithm, the following methods provide a more efficient
-buffer replacement strategy.
-
-- Localization: Each query is given their own part of the buffer pool in which the
-  local buffer pool is managed on a per-query basis.
-- Priority Hints: The database programmer can provide hints for how important a page is.
-  For example, pages like the root of a B-tree should rarely be evicted.
-
 ### Flushing Dirty Pages
 
 Dirty pages can be flushed periodically in a page cleaning stage.
@@ -94,12 +86,15 @@ page cache.
 
 The following are options for optimizing buffer pools.
 
-- Multiple Buffer Pools
+- Multiple Buffer Pools (Localization)
   - Maintain multiple buffer pools for each different database, table, or page type.
   - We can use object IDs or hashes of the record ID to determine which buffer pool to use.
 - Buffer Prefetching
   - The database system can use its knowledge on the queries and prefetch data.
   - Prefetching can be done for sequential scans or index scans.
 - Scan Sharing (Synchronized Scans)
-  - When a query is already scanning through the pages that another query needs, the the
-    second query can attach its cursor to the existing query's curso.
+  - When a query is already scanning through the pages that another query needs, the second
+    query can attach its cursor to the existing query's cursor.
+- Priority Hints
+  - The database programmer can provide hints for how important a page is. For example, pages like
+    the root of a B-tree should rarely be evicted.
