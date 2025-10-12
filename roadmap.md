@@ -14,10 +14,18 @@
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
 
+### Database Replication
+
+- [ ] Database Replication Lag
+
 ### Databases
 
 - [ ] Microsoft SQL Server
   - [ ] Memory-optimized Tables
+- [ ] MySQL
+  - [ ] Consistent Nonlocking Reads
+  - [ ] Locking Reads
+  - [ ] Transaction Isolation Levels
 
 ## Security
 
@@ -72,6 +80,7 @@
 - [ ] JPA Transactional Write-Behind
 - [ ] JPA Cache
 - [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
+- [ ] JPA `@ElementCollection`, `@CollectionTable`
 
 ### Spring Framework
 
