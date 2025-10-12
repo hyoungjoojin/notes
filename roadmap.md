@@ -54,6 +54,8 @@
 - [ ] CQRS
 - [ ] Hexagonal Architecture
 - [ ] Event-driven Architecture
+- [ ] Reactive Programming
+- [ ] Functional Programming
 
 ## Programming Languages
 
@@ -68,6 +70,10 @@
 
 ## Development Tools
 
+### Java Tools
+
+- [ ] Vavr
+
 ### ORM Tools
 
 #### JPA & Hibernate
@@ -81,11 +87,22 @@
 - [ ] JPA Cache
 - [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
 - [ ] JPA `@ElementCollection`, `@CollectionTable`
+- [ ] Auto-commits
+
+### APM Tools
+
+- [ ] Pinpoint
 
 ### Spring Framework
 
 #### Spring Core
 
 - [ ] Spring Circular Dependencies
+
+#### Spring Data JPA
+
+- [ ] Locking
+- [ ] Stored Procedures
+- [ ] Domain Events
 
 #### Spring Security

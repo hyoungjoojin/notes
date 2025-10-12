@@ -15,9 +15,7 @@ between threads.
 
 ### Auto Commit
 
-Spring defaults to using auto commits in database connections.
-This can hurt performance since the method will hold on to transaction connections even when
-its not needed. Auto commits can be turned off by configuration.
+Auto commits can be turned off by configuration.
 
 ```yaml
 spring.datasource.hikari.auto-commit: false

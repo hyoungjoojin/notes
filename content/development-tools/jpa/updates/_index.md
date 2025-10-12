@@ -14,5 +14,5 @@ have been changed.
 
 When persisting an entity, Hibernate checks if the entity is new or not, and calls persist if
 it is and calls merge if it isn't. This overhead can be reduced if we use the `@Version` annotation
-to pervent this (if version is null, then the entity is new) or to explictly state if the entity
+to prevent this (if version is null, then the entity is new) or to explicitly state if the entity
 is new by implementing the `Persistable` interface.

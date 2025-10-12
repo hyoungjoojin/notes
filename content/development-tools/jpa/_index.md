@@ -14,6 +14,10 @@ The Java Persistence API (JPA) is a specification for object-relational mapping 
 - [Updating Entities](./updates)
 - [Transaction](./transaction)
 
+# Things to include !
+
+Table (uniqueConstraints = @UniqueConstraint)
+
 ## Tools
 
 - FlexyPool: Open-source tool for monitoring information on connection pools
