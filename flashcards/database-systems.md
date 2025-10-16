@@ -25,3 +25,36 @@ When using page eviction policies like LRU, which evicts the oldest remaining pa
 the performance degrades due to sequential flooding. Sequential flooding is where a long
 sequential scan results in every page being read causing a page eviction due to the least
 recently accessed page being evicted.
+
+--
+
+> 6
+
+What are some strategies for optimizing buffer pools?
+
+--
+
+- Buffer Pool Localization
+- Buffer Prefetching
+- Scan Sharing (Synchronized Scans)
+
+--
+
+> 6
+
+What are the disadvantages of tuple-oriented storage and how does log-structured storage fix this?
+
+What are the disadvantages of log-structured storage?
+
+--
+
+Tuple-oriented storage can lead to fragmented data within a page and can cause unnecessary disk I/O
+since accessing a single tuple means the entire page has to be fetched. Also, for systems where
+only appends are available, tuple-oriented storage becomes very difficult to implement efficiently.
+
+Log-structured storage maintains a fast in-memory tree-based MemTable and a set of key-value pairs
+sorted in order called the SSTables. Log-structured storage is very fast for write-heavy workloads
+since writes can be done directly to the MemTable. This structure however causes high write
+amplification and slow reads.
+
+--
