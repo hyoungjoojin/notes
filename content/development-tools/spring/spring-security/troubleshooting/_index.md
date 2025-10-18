@@ -6,13 +6,13 @@ title = "troubleshooting"
 
 <details>
 <summary>
-Class not found for Bouncy Castle Argon2Parameters.
+Class `org.bouncycastle.crypto.params.Argon2Parameters` not found.
 </summary>
 
 ### Problem
 
-When calling the method `Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8()`, I got the following
-exception.
+Following exception occurred when calling the method
+`Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8()`.
 
 ```
 java.lang.ClassNotFoundException: org.bouncycastle.crypto.params.Argon2Parameters$Builder
