@@ -6,7 +6,7 @@ title = "graphql"
 
 ## GraphQL Fragments
 
-GraphQL fragements are used for creating reusable units in repetitive queries.
+GraphQL fragments are used for creating reusable units in repetitive queries.
 
 ```graphql
 query {
@@ -23,7 +23,7 @@ fragment CharacterFields on Character {
 }
 ```
 
-Inline fragements are used for querying on interfaces or union types.
+Inline fragments are used for querying on interfaces or union types.
 
 ```graphql
 query {
