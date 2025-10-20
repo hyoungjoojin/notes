@@ -12,3 +12,5 @@ The following are other specialized entity field annotations.
 - `@Transient`
 - `@Temporal`
 - `@Enumerated`
+
+## Enum Fields

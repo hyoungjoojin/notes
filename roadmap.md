@@ -1,5 +1,19 @@
 # Roadmap
 
+## Algorithms
+
+### Data Structures
+
+- [ ] B-Tree
+- [ ] Trie
+- [ ] Skip Lists
+
+## Computer Hardware
+
+### Solid-State Drives
+
+- [ ] Write Amplification
+
 ## Database Systems
 
 ### Buffer Manager
@@ -7,6 +21,7 @@
 - [x] Buffer Pools (#1)
   - [ ] How do distributed database systems work with buffer pools, especially dirty pages?
   - [ ] Buffer pool page tables can be made durable, but is it worth the implementation cost?
+- [ ] Database Scan Sharing
 
 #### Buffer Replacement Policy
 
@@ -18,14 +33,41 @@
 
 - [ ] Database Replication Lag
 
+### Database Storage
+
+- [ ] Index-organized Storage
+- [ ] Log-structured Storage
+- [ ] Column Stores
+- [ ] N-ary Storage Model
+- [ ] Decomposition Storage Model
+- [ ] Hybrid Storage Model
+- [ ] Heap Files
+
 ### Databases
 
+- [ ] SingleStore
+- [ ] YugabyteDB
 - [ ] Microsoft SQL Server
   - [ ] Memory-optimized Tables
 - [ ] MySQL
   - [ ] Consistent Nonlocking Reads
   - [ ] Locking Reads
   - [ ] Transaction Isolation Levels
+
+### Other Concepts
+
+- [ ] Database Partitioning
+- [ ] Database Sharding
+
+#### PostgreSQL
+
+- [ ] PostgreSQL Dynamic Shared Memory
+
+## Operating Systems
+
+### Memory Management
+
+- [ ] TCMalloc
 
 ## Security
 
@@ -88,6 +130,7 @@
 - [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
 - [ ] JPA `@ElementCollection`, `@CollectionTable`
 - [ ] Auto-commits
+- [ ] Unique constraints
 
 ### APM Tools
 
