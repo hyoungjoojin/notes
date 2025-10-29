@@ -29,6 +29,10 @@
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
 
+### Database Replication
+
+- [ ] Database Replication Lag
+
 ### Database Storage
 
 - [ ] Index-organized Storage
@@ -45,6 +49,10 @@
 - [ ] YugabyteDB
 - [ ] Microsoft SQL Server
   - [ ] Memory-optimized Tables
+- [ ] MySQL
+  - [ ] Consistent Nonlocking Reads
+  - [ ] Locking Reads
+  - [ ] Transaction Isolation Levels
 
 ### Other Concepts
 
@@ -88,6 +96,8 @@
 - [ ] CQRS
 - [ ] Hexagonal Architecture
 - [ ] Event-driven Architecture
+- [ ] Reactive Programming
+- [ ] Functional Programming
 
 ## Programming Languages
 
@@ -102,6 +112,10 @@
 
 ## Development Tools
 
+### Java Tools
+
+- [ ] Vavr
+
 ### ORM Tools
 
 #### JPA & Hibernate
@@ -111,14 +125,45 @@
 - [ ] JPA Inheritance Mapping
 - [ ] JPA Fetch Strategies
 - [ ] JPA Proxy Objects
+- [ ] JPA Entity Graph
+- [ ] JPA Transactions
+- [ ] JPA Bulk Updates & Deletes
+- [ ] JPA Optimistic/Pessimistic Locking
+- [ ] JPA Second-Level Cache
+- [ ] JPA Cascading
+- [ ] JPA Dirty Checking
+- [ ] JPA Flush Modes
+- [ ] JPA Entity Lifecycle Callbacks
+- [ ] JPA Auditing
+- [ ] JPA Soft Deletes
+- [ ] JPA Composite Primary Keys
+- [ ] JPA Criteria API
+- [ ] JPA Named Queries
+- [ ] JPA Native Queries
+- [ ] JPA Pagination
+- [ ] JPA Batch Processing
+- [ ] JPA Lock Modes
 - [ ] JPA Transactional Write-Behind
 - [ ] JPA Cache
 - [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
+- [ ] JPA `@ElementCollection`, `@CollectionTable`
+- [ ] Auto-commits
+- [ ] Unique constraints
+
+### APM Tools
+
+- [ ] Pinpoint
 
 ### Spring Framework
 
 #### Spring Core
 
 - [ ] Spring Circular Dependencies
+
+#### Spring Data JPA
+
+- [ ] Locking
+- [ ] Stored Procedures
+- [ ] Domain Events
 
 #### Spring Security
