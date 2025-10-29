@@ -6,13 +6,6 @@ title = "updates"
 
 ## Dynamic Updates
 
-If we prefer to update columns that actually have been changed, we can add the `@DynamicUpdate`
+If we prefer to update columns that actually have been changed, we can add Hibernate's `@DynamicUpdate`
 annotation to the entity so that Hibernate will only call updates for the fields that actually
 have been changed.
-
-## Saving Entities
-
-When persisting an entity, Hibernate checks if the entity is new or not, and calls persist if
-it is and calls merge if it isn't. This overhead can be reduced if we use the `@Version` annotation
-to prevent this (if version is null, then the entity is new) or to explicitly state if the entity
-is new by implementing the `Persistable` interface.

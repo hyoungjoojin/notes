@@ -125,6 +125,24 @@
 - [ ] JPA Inheritance Mapping
 - [ ] JPA Fetch Strategies
 - [ ] JPA Proxy Objects
+- [ ] JPA Entity Graph
+- [ ] JPA Transactions
+- [ ] JPA Bulk Updates & Deletes
+- [ ] JPA Optimistic/Pessimistic Locking
+- [ ] JPA Second-Level Cache
+- [ ] JPA Cascading
+- [ ] JPA Dirty Checking
+- [ ] JPA Flush Modes
+- [ ] JPA Entity Lifecycle Callbacks
+- [ ] JPA Auditing
+- [ ] JPA Soft Deletes
+- [ ] JPA Composite Primary Keys
+- [ ] JPA Criteria API
+- [ ] JPA Named Queries
+- [ ] JPA Native Queries
+- [ ] JPA Pagination
+- [ ] JPA Batch Processing
+- [ ] JPA Lock Modes
 - [ ] JPA Transactional Write-Behind
 - [ ] JPA Cache
 - [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context

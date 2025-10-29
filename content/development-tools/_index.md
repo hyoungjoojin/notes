@@ -4,6 +4,8 @@ title = "development-tools"
 
 # Development Tools
 
+## API Tools
+
 - [GraphQL](./graphql)
 
 ## Application Frameworks
@@ -14,8 +16,6 @@ title = "development-tools"
 
 - [JPA](./jpa)
 
-## Language Specific Tools
+## Testing Tools
 
-### Java Tools
-
-- QuickPerf: Open-source testing library for evaluating performance-related properties
+- QuickPerf: Open-source testing library for evaluating performance-related properties in Java applications.
