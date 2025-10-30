@@ -4,9 +4,19 @@
 
 ### Data Structures
 
+- [ ] Priority Queue
 - [ ] B-Tree
 - [ ] Trie
 - [ ] Skip Lists
+
+### Sorting Algorithms
+
+- [ ] VergeSort
+- [ ] QuickSort
+- [ ] TimSort
+- [ ] RadixSort
+- [ ] HeapSort
+- [ ] PowerSort
 
 ## Computer Hardware
 
@@ -100,6 +110,10 @@
 - [ ] Functional Programming
 
 ## Programming Languages
+
+### C++
+
+- [ ] Class Template Specialization
 
 ### Java
 
