@@ -17,6 +17,10 @@ title = "database-systems"
 - [Buffer Manager](./buffer-manager)
 - [Database Storage](./database-storage)
 
+### Query Processor
+
+- [Operator Execution](./operator-execution)
+
 ## Database Tools
 
 ### Databases
