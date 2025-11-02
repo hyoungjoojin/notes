@@ -35,16 +35,19 @@ them out to disk as 10 sorted runs of 100 pages each. Then, we can merge these 1
 we have a single sorted run of 1000 pages.
 
 In a general external merge sort that uses $B$ buffer pages to sort $N$ pages, there would be
-$1 + \lceil \log_{B-1} \lceil N/B \rceil \rceil$ passes (1 initial pass producing $\lceil N/B \rceil$ sorted runs, and
-the rest using $B-1$ pages to merge the runs to a buffer page in each pass).
+$1 + \lceil \log_{B-1} \lceil \frac{N}{B} \rceil \rceil$ passes (1 initial pass producing $\lceil \frac{N}{B} \rceil$
+sorted runs, and the rest using $B-1$ pages to merge the runs to a buffer page in each pass).
 
 #### Optimizations
 
-- Double Buffering: Prefetch the next run in the background while processing the current run to hide I/O latency.
-- Comparison Optimizations
-  - Code Specialization: Create a hard-coded comparison function for the specific data types being sorted.
-  - Suffix Truncation: For a long key, only compare the binary prefix first. Fallback to full comparison if equal.
-  - Key Normalization: Transform the key into a format that is faster to compare (e.g., fixed-length).
+Double buffering is an optimization technique that uses two or more output buffers to hide I/O latency.
+While a buffer is being written to disk, the other buffer can be filled with data.
+
+Since sorting involves a lot of record comparisons, we can optimize the comparison operations to improve performance.
+Code specialization involves generating a hard-coded comparison function that can be used with specific data types.
+Suffix truncation compares only the binary prefix of long keys first, and falls back to full comparison if the prefixes
+are equal.
+Key normalization transforms the key into a format that is faster to compare.
 
 ### B+Trees
 
@@ -54,20 +57,27 @@ of random I/O (if the query is a top-N query, it might not matter).
 
 ## Aggregation
 
-Aggregation operations groups values by a set of keys, and can be implemented by either sorting the tuples or by
-using a hash table.
+Aggregation operations are used in group-by-aggregate (GBA) queries.
+Aggregation operations are implemented by either sort-based or hash-based algorithms.
+Sort-based algorithms work by sorting the input tuples based on the grouping keys and then grouping the sorted tuples.
+Sort-based algorithms are efficient in large datasets but are comutationally expensive due to record comparison.
+Hash-based algorithms work by building a hash table based on the grouping keys and then updating the aggregate values.
+Hash-based algorithms are more faster but require more memory and can have hash collision problems.
 
 ### Sort-Based Aggregation
 
-The database system will sort the tuple based on the grouping keys, and then perform a sequential scan over the
+The database system will sort the tuples based on the grouping keys, and then perform a sequential scan over the
 sorted tuples to compute the aggregate values for each group.
 
 ### Hash-Based Aggregation
 
-Hash-based aggregation is better than sort-based aggregation if the result doesn't have to be ordered.
-For the case when the data does not fit in memory, we can use an external hash aggregation algorithm.
-This works in two phases: the partitioning phase and the rehashing phase. In the partitioning phase, we split the
-input tuples into partitions by keeping 1 buffer for input and the rest for the partitions, where each buffer is
-spilled to disk when full. In the rehasing stage, each partition in disk is read into memory and rehashed into an
-in-memory hash table. Here, if a partition is finished processing, we can flush out the in-memory hash table since
-the values won't appear again.
+An external hash aggregation algorithm is used when the data does not fit in memory.
+External hash aggregation works in two phases: the partitioning phase and the rehashing phase.
+
+In the partitioning phase, the hash value of each input record is computed.
+If an aggregate already exists in memory, the record is added to the aggregate.
+If the aggregate does not exist and there is enough memory, a new aggregate is created.
+If a aggregate exceeds the memory capacity, some partitions are spilled to disk.
+
+In the rehashing phase, each partition in memory and in disk is read and rehashed into an in-memory hash table.
+The aggregate value can be updated as the records are read (like a running sum).

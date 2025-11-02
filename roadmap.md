@@ -11,7 +11,7 @@
 
 ### Sorting Algorithms
 
-- [ ] VergeSort
+- [ ] Vergesort
 - [ ] QuickSort
 - [ ] TimSort
 - [ ] RadixSort
