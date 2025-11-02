@@ -6,6 +6,12 @@ title = "baekjoon"
 
 ## Problems
 
+### Gold 1
+
+|   Problem ID    |     Title      |
+| :-------------: | :------------: |
+| [2042](./20/42) | 구간 합 구하기 |
+
 ### Gold 2
 
 |   Problem ID    |    Title    |
