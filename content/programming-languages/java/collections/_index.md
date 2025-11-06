@@ -15,6 +15,18 @@ which do not end in `List` or `Map` like the modern counterparts.
 
 ## Collections
 
+|      Name       |   Type    |   Extends    | Thread Safe |
+| :-------------: | :-------: | :----------: | :---------: |
+|  `Collection`   | Interface |      -       |
+|     `List`      | Interface | `Collection` |      -      |
+|   `ArrayList`   |   Class   |    `List`    |      X      |
+|  `LinkedList`   |   Class   |    `List`    |      X      |
+|      `Set`      | Interface | `Collection` |      -      |
+|     `Queue`     | Interface | `Collection` |      -      |
+|      `Map`      | Interface |      -       |      -      |
+|    `HashMap`    |   Class   |    `Map`     |      X      |
+| `LinkedHashMap` |   Class   |  `HashMap`   |      X      |
+
 Collections implement the `Collection` interface, and the `Collection` interface extends the `Iterable` interface.
 
 The `Iterable` interface is used to implement objects that can be iterated over, like supporting for-each statements or
@@ -32,7 +44,7 @@ The `Collection` interface provides the following functionalities.
 - Iterating over the elements of a collection.
   - The `Iterable` interface provides multiple methods to iterate over a collection.
     - For-each syntax (`for(String s : collection)`).
-    - Iterator (`for(Iterator<String> it  = collection.iterator(); iterator.hasNext();) element = iterator.next()`)
+    - Iterator (`for(Iterator<String> it  = collection.iterator(); it.hasNext();) element = it.next()`)
 - Creating streams or parallel streams from a collection.
 - Creating an array from the collection (`toArray`). This method creates an array of plain objects.
   - In order to create a type-safe array from a collection, we can either provide an array or a generator to the `toArray` method.
@@ -61,7 +73,7 @@ Lists provide the following additional features on top of collections.
 
 A simple dynamic array implementation like C++'s vectors. Some major things to note with `ArrayList`s are as follows.
 
-- `ArrayList`'s size grow by 50% when its full.
+- `ArrayList`'s size grow by 50% when it's full.
 - `ArrayList`s are not synchronized and are not thread-safe.
 - `ArrayList`s allow null-insertions.
 
@@ -94,7 +106,7 @@ A standard thread-safe stack that extends `Vector`. If thread-safety is unnecess
 ### Set
 
 Sets are an unordered collection that do not allow duplicates. Depending on the implementation, the result of iteration on a
-set could be in order, however this behavior should not be relyed upon.
+set could be in order, however this behavior should not be relied upon.
 
 #### HashSet
 
@@ -113,7 +125,7 @@ The following methods are added in the `SortedSet` on top of `Set`.
 
 #### NavigableSet
 
-`NaviagbleSet` extends from `SortedSet` to provide searching elements that are close to a search target.
+`NavigableSet` extends from `SortedSet` to provide searching elements that are close to a search target.
 
 #### TreeSet
 
@@ -123,12 +135,17 @@ The following methods are added in the `SortedSet` on top of `Set`.
 
 ### HashMap
 
+A `HashMap` is non-synchronized hash table implementation of the `Map` interface.
+
 ### HashTable
 
 A thread-safe implementation of a hash table. `HashTable` should not be used and should be replaced by either
 `HashMap` (for non-concurrent environments) or `ConcurrentHashMap` (for concurrent environments).
 
 ### LinkedHashMap
+
+A `LinkedHashMap` is a subclass of `HashMap` that maintains a doubly-linked list for the entries to keep track of the
+insertion order of elements.
 
 ### IdentityHashMap
 
@@ -138,6 +155,8 @@ A thread-safe implementation of a hash table. `HashTable` should not be used and
 
 ### TreeMap
 
+A `TreeMap` is a implemenation of the `NavigableMap` interface that uses a red-black tree for the entries.
+
 ## Factory Classes
 
 ### Arrays
@@ -146,5 +165,11 @@ A thread-safe implementation of a hash table. `HashTable` should not be used and
 
 #### Synchronized Collections
 
-Methods with `synchronized` followed by the collection name (`synchronizedList`, `synchronizedMap`, etc.) return a thread-safe
-version of the given collection. However, using the Java Concurrency Utilities may be a better option in most cases.
+The `Collections` class provides several factory methods to create synchronized collections.
+These collections are plain collections wrapped with synchronization mechanisms to make them thread-safe.
+The factory methods all follow the naming pattern of `synchronized` followed by the collection name.
+
+Although these factory methods exist, using the Java Concurrency Utilities is a better approach to achieve thread-safety.
+This is because the synchronized collections lock on the entire collection using a wrapper class, while the Java Concurrency
+Utilities provide more fine-grained locking mechanisms that allow better concurrency.
+Also, the synchronized collections do not support concurrent iteration and atomic compound operations.

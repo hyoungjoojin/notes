@@ -7,6 +7,7 @@
 - [ ] B-Tree
 - [ ] Trie
 - [ ] Skip Lists
+- [ ] Red-Black Tree
 
 ## Computer Hardware
 
