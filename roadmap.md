@@ -68,6 +68,7 @@
 
 - [ ] Database Partitioning
 - [ ] Database Sharding
+- [ ] GPU-accelerated Databases
 
 #### PostgreSQL
 
