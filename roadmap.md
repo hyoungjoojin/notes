@@ -8,6 +8,7 @@
 - [ ] B-Tree
 - [ ] Trie
 - [ ] Skip Lists
+- [ ] Red-Black Tree
 
 ### Sorting Algorithms
 
