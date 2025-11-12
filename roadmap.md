@@ -8,6 +8,16 @@
 - [ ] B-Tree
 - [ ] Trie
 - [ ] Skip Lists
+- [ ] Red-Black Tree
+
+### Sorting Algorithms
+
+- [ ] Vergesort
+- [ ] QuickSort
+- [ ] TimSort
+- [ ] RadixSort
+- [ ] HeapSort
+- [ ] PowerSort
 
 ### Sorting Algorithms
 

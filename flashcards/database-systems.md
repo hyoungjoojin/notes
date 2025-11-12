@@ -58,3 +58,50 @@ since writes can be done directly to the MemTable. This structure however causes
 amplification and slow reads.
 
 --
+
+> 9
+
+What are some algorithms for implementing sorting in database systems?
+
+--
+
+- In-memory Sorting: If the data fits in memory, we can use any in-memory sorting algorithm.
+- Top-N Heap Sort: If the result set is small (typically for limit clauses), we can use a priority queue to store only the top N
+  elements.
+- External Merge Sort: If the data does not fit in memory, external merge sort can be used. External merge sort works in two
+  phases. The sorting phase, which sorts the data in page-sized chunks and then writing them to disk and the merging phase, which
+  merges the pages by using $B-1$ input buffers and 1 output buffer to merge the sorted runs.
+- B+Tree Index Scan: If a clustered index exists on the sorting key, we can perform an index scan to retrieve the tuples in
+  sorted order.
+
+--
+
+> 9
+
+How can we optimize external merge sort?
+
+--
+
+External merge sort can be optimized in the following ways.
+
+- Double Buffering
+- Comparison Operation Optimization
+  - Code Specialization
+  - Suffix Truncation
+  - Key Normalization
+
+--
+
+> 9
+
+What are the algorithms for implementing aggregation in database systems?
+
+--
+
+- Sort-based aggregation: The database system sorts the input tuples by the grouping keys, then scans the sorted tuples to
+  compute aggregates for each group. This is efficient for large datasets but computationally expensive due to record
+  comparisons.
+- Hash-based aggregation: The database system builds a hash table on the grouping keys and updates aggregate values as tuples
+  are processed. Faster but requires more memory and can have hash collision problems.
+
+--
