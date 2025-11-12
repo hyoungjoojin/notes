@@ -53,6 +53,12 @@
 
 - [ ] Database Replication Lag
 
+## Query Execution
+
+### Join Algorithms
+
+- [ ] Multi-way Join Algorithms
+
 ### Database Storage
 
 - [ ] Index-organized Storage
