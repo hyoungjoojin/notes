@@ -15,6 +15,7 @@ title = "notes"
 - [Database Systems](./database-systems)
 - [Machine Learning](./machine-learning)
 - [Operating Systems](./operating-systems)
+- [Parallel Computing](./parallel-computing)
 - [Security](./security)
 - [Software Engineering](./software-engineering)
 
