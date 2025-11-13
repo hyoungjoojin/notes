@@ -4,9 +4,14 @@ title = "cuda"
 
 # CUDA
 
-## CUDA Programming Abstraction
+- [CUDA API](./api)
+
+## CUDA Programming Model
+
+The host is the CPU, and the device is the GPU.
 
 A CUDA kernel is a function that is executed on the GPU in parallel by multiple threads in a SPMD-style method.
+Methods that call the device uses the CUDA API to launch the kernel and send it to the CUDA runtime for execution on the GPU.
 
 A CUDA thread is a logical thread of control that runs a kernel, but the implementation of a CUDA thread is defined by Nvidia.
 
@@ -22,8 +27,8 @@ The CUDA program has a clear separation of host and device code, where the host 
 the device code does SPMD execution on the GPU.
 The host and device have separate memory spaces, therefore dereferencing a host code pointer in device code is illegal
 and we need special API calls to copy data between host and device memory.
-Here, the memory copy operations is essentially a message passing operation between the CPU and GPU and since its a slow
-operations, we want to use optimizations with asynchronous memory copies.
+Here, the memory copy operations are essentially message passing operations between the CPU and GPU and since they are slow,
+we want to use optimizations with asynchronous memory copies.
 
 ```c++
 const int x = 12;
@@ -37,7 +42,7 @@ dim3 numBlocks((x + threadsPerBlock.x - 1) / threadsPerBlock.x,
 matrixAdd<<<numBlocks, threadsPerBlock>>>(A, B, C);
 ```
 
-```c
+```cuda
 __device__ float doubleValue(float val) { return 2 * val; }
 
 __global__ void matrixAdd(float A[x][y], float B[x][y], float C[x][y]) {
@@ -68,7 +73,7 @@ cudaMalloc(&deviceA, bytes);
 cudaMemcpy(deviceA, A, bytes, cudaMemcpyHostToDevice);
 ```
 
-```c
+```cuda
 __global__ void convolve(int N, float *input, float *output) {
   int index = blockIdx.x * blockDim.x + threadIdx.x;
   float result = 0.0f;
@@ -78,11 +83,11 @@ __global__ void convolve(int N, float *input, float *output) {
   output[index] = result / 3.0f;
 }
 
-__global__void convolveWithSharedMemory(int N, float *input, float *output) {
+__global__ void convolveWithSharedMemory(int N, float *input, float *output) {
   __shared__ float sharedInput[BLOCK_SIZE + 2];
   int index = blockIdx.x * blockDim.x + threadIdx.x;
 
-  sharedInput[threadIdx.x] = input[index];
+  sharedInput[threadId.x] = input[index];
   if (threadId.x < 2) {
     sharedInput[BLOCK_SIZE + threadIdx.x] = input[index + BLOCK_SIZE];
   }
@@ -94,12 +99,6 @@ __global__void convolveWithSharedMemory(int N, float *input, float *output) {
   }
   output[index] = result / 3.0f;
 ```
-
-### Synchronization Constructs
-
-- `__syncthreads()`: Synchronize all threads in a block
-- Atomic Operations: `atomicAdd`, `atomicSub`
-- Host/Device Synchronization: `cudaDeviceSynchronize()`
 
 ## CUDA Implementation Details
 
