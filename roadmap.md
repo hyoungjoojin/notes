@@ -58,6 +58,7 @@
 ### Join Algorithms
 
 - [ ] Multi-way Join Algorithms
+- [ ] Symmetric Hash Join
 
 ### Database Storage
 
@@ -131,6 +132,13 @@
 ### C++
 
 - [ ] Class Template Specialization
+- [ ] Virtual Functions
+
+### Python
+
+- [ ] Python Generators
+- [ ] Python Decorators
+- [ ] Python GIL
 
 ### Java
 
@@ -141,7 +149,17 @@
 - [ ] JVM Class Loader
   - [ ] Why do class not found exceptions occur at runtime?
 
+## SQL
+
+- [ ] SQL Upsert, Merge, Truncate
+- [ ] SQL Prepare
+
 ## Development Tools
+
+- [ ] Apache Arrow
+- [ ] Apache Parquet
+- [ ] Apache Avro
+- [ ] Airflow
 
 ### Java Tools
 
@@ -180,6 +198,7 @@
 - [ ] JPA `@ElementCollection`, `@CollectionTable`
 - [ ] Auto-commits
 - [ ] Unique constraints
+- [ ] How does the output of a SQL query move to the entity objects in JPA/Hibernate?
 
 ### APM Tools
 
