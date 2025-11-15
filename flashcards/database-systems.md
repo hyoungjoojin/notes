@@ -105,3 +105,34 @@ What are the algorithms for implementing aggregation in database systems?
   are processed. Faster but requires more memory and can have hash collision problems.
 
 --
+
+> 11
+
+What are some algorithms for implementing joins in database systems?
+
+--
+
+- Nested Loop Join: For each tuple in the outer relation, scan the entire inner relation to find matching tuples.
+  - Block Nested Loop Join: Process blocks of tuples from the outer relation instead of single tuples.
+  - Index Nested Loop Join: Use an index on the inner relation to find matching tuples.
+- Sort-Merge Join: Sort both relations on the join keys and then merge them to find matching tuples.
+- Hash Join: Build a hash table on the smaller relation and probe it with tuples from the larger relation.
+
+--
+
+> 11
+
+What does the partitioned hash join algorithm do and how does it work?
+
+What would happen if the partitions still do not fit in memory?
+
+--
+
+Partitioned hash join is an optimization of the hash join algorithm for cases where the hash table does not fit in memory.
+Partitioned hash join works in two phases: the partitioning phase and the probing phase.
+In the partitioning phase, both relations are partitioned into smaller sub-relations using a hash function
+such that corresponding partitions from both relations can fit in memory. In the probing phase, each pair of
+corresponding partitions are joined using the standard hash join algorithm.
+
+If the partitions still do not fit in memory, we can recursively apply the partitioned hash join algorithm to the overflowing
+partitions until they fit in memory. This is called the recursive partitioned hash join algorithm.

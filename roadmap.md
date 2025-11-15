@@ -19,6 +19,15 @@
 - [ ] HeapSort
 - [ ] PowerSort
 
+### Sorting Algorithms
+
+- [ ] Vergesort
+- [ ] QuickSort
+- [ ] TimSort
+- [ ] RadixSort
+- [ ] HeapSort
+- [ ] PowerSort
+
 ## Computer Hardware
 
 ### Solid-State Drives
@@ -43,6 +52,12 @@
 ### Database Replication
 
 - [ ] Database Replication Lag
+
+## Query Execution
+
+### Join Algorithms
+
+- [ ] Multi-way Join Algorithms
 
 ### Database Storage
 
@@ -69,6 +84,7 @@
 
 - [ ] Database Partitioning
 - [ ] Database Sharding
+- [ ] GPU-accelerated Databases
 
 #### PostgreSQL
 
