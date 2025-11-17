@@ -9,6 +9,7 @@
 - [ ] Trie
 - [ ] Skip Lists
 - [ ] Red-Black Tree
+- [ ] Segment Tree
 
 ### Sorting Algorithms
 
@@ -198,3 +199,7 @@
 - [ ] Domain Events
 
 #### Spring Security
+
+#### Spring AOP
+
+- [ ] spring.aop.proxy-target-class=true option?
