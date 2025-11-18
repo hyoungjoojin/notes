@@ -4,9 +4,30 @@
 
 ### Data Structures
 
+- [ ] Priority Queue
 - [ ] B-Tree
 - [ ] Trie
 - [ ] Skip Lists
+- [ ] Red-Black Tree
+- [ ] Segment Tree
+
+### Sorting Algorithms
+
+- [ ] Vergesort
+- [ ] QuickSort
+- [ ] TimSort
+- [ ] RadixSort
+- [ ] HeapSort
+- [ ] PowerSort
+
+### Sorting Algorithms
+
+- [ ] Vergesort
+- [ ] QuickSort
+- [ ] TimSort
+- [ ] RadixSort
+- [ ] HeapSort
+- [ ] PowerSort
 
 ## Computer Hardware
 
@@ -48,6 +69,12 @@
 
 - [ ] Database Replication Lag
 
+## Query Execution
+
+### Join Algorithms
+
+- [ ] Multi-way Join Algorithms
+
 ### Database Storage
 
 - [ ] Index-organized Storage
@@ -73,6 +100,7 @@
 
 - [ ] Database Partitioning
 - [ ] Database Sharding
+- [ ] GPU-accelerated Databases
 
 #### PostgreSQL
 
@@ -119,6 +147,10 @@
 ### GPU Computing
 
 ## Programming Languages
+
+### C++
+
+- [ ] Class Template Specialization
 
 ### Java
 
@@ -186,3 +218,7 @@
 - [ ] Domain Events
 
 #### Spring Security
+
+#### Spring AOP
+
+- [ ] spring.aop.proxy-target-class=true option?
