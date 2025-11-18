@@ -35,6 +35,21 @@
 
 - [ ] Write Amplification
 
+### Graphics Processing Units
+
+- [ ] GPU Memory Hierarchy
+
+### Memory
+
+- [ ] Direct Memory Access (DMA)
+
+#### Cache Memory
+
+- [ ] Cache Coherence Protocols
+  - [ ] MESI Protocol
+  - [ ] MOESI Protocol
+  - [ ] MSI Protocol
+
 ## Database Systems
 
 ### Buffer Manager
@@ -126,6 +141,10 @@
 - [ ] Event-driven Architecture
 - [ ] Reactive Programming
 - [ ] Functional Programming
+
+## Parallel Computing
+
+### GPU Computing
 
 ## Programming Languages
 
