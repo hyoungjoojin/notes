@@ -179,6 +179,7 @@
 - [ ] JPA Cache
 - [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
 - [ ] JPA `@ElementCollection`, `@CollectionTable`
+- [ ] JPA @Formula
 - [ ] Auto-commits
 - [ ] Unique constraints
 

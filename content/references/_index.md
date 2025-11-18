@@ -16,3 +16,4 @@ title = "references"
 ## Talks
 
 - Performance Oriented Spring Data JPA & Hibernate, Maciej Walkowiak (2024)
+- Spring Boot Testing: Zero to Hero, Daniel Garnier-Moiroux (2024)
