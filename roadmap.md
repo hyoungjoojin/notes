@@ -2,16 +2,11 @@
 
 ## Algorithms
 
-### Data Structures
-
 - [ ] Priority Queue
 - [ ] B-Tree
 - [ ] Trie
 - [ ] Skip Lists
 - [ ] Red-Black Tree
-
-### Sorting Algorithms
-
 - [ ] Vergesort
 - [ ] QuickSort
 - [ ] TimSort
@@ -21,31 +16,18 @@
 
 ## Computer Hardware
 
-### Solid-State Drives
-
-- [ ] Write Amplification
+- [ ] SSD Write Amplification
 
 ## Database Systems
-
-### Buffer Manager
 
 - [x] Buffer Pools (#1)
   - [ ] How do distributed database systems work with buffer pools, especially dirty pages?
   - [ ] Buffer pool page tables can be made durable, but is it worth the implementation cost?
 - [ ] Database Scan Sharing
-
-#### Buffer Replacement Policy
-
 - [ ] LRU-K Buffer Replacement Policy
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
-
-### Database Replication
-
 - [ ] Database Replication Lag
-
-### Database Storage
-
 - [ ] Index-organized Storage
 - [ ] Log-structured Storage
 - [ ] Column Stores
@@ -53,9 +35,6 @@
 - [ ] Decomposition Storage Model
 - [ ] Hybrid Storage Model
 - [ ] Heap Files
-
-### Databases
-
 - [ ] SingleStore
 - [ ] YugabyteDB
 - [ ] Microsoft SQL Server
@@ -64,29 +43,16 @@
   - [ ] Consistent Nonlocking Reads
   - [ ] Locking Reads
   - [ ] Transaction Isolation Levels
-
-### Other Concepts
-
 - [ ] Database Partitioning
 - [ ] Database Sharding
-
-#### PostgreSQL
-
 - [ ] PostgreSQL Dynamic Shared Memory
 
 ## Operating Systems
 
-### Process Management
-
 - [ ] IPC and Building Multi-process Applications
-
-### Memory Management
-
 - [ ] TCMalloc
 
 ## Security
-
-### Cryptography
 
 - [ ] Post-quantum Cryptography
 
@@ -94,18 +60,10 @@
 
 ## Software Engineering
 
-### Software Development Process
-
-#### Software Development Approaches
-
 - [ ] Waterfall Model
 - [ ] Agile Software Development
 
 ### Software Design
-
-#### Software Design Patterns
-
-#### Software Design Approaches
 
 - [x] Domain-driven Design (#4)
 - [ ] CQRS
@@ -118,26 +76,30 @@
 
 ### C++
 
-- [ ] Class Template Specialization
+- [ ] C++ Class Template Specialization
+- [ ] C++ Volatile
+- [ ] C++ Roadmap
 
 ### Java
 
 - [ ] Java Reflection API
-
-#### JVM
-
 - [ ] JVM Class Loader
   - [ ] Why do class not found exceptions occur at runtime?
+- [ ] JVM JIT Compilation
+- [ ] Java Structured Concurrency
+- [ ] Java Reactive Programming
+- [ ] Java Virtual Thread
+- [ ] Java ForkJoinPool
+
+### Kotlin
+
+- [ ] Kotlin Coroutines
 
 ## Development Tools
 
-### Java Tools
-
 - [ ] Vavr
 
-### ORM Tools
-
-#### JPA & Hibernate
+### JPA & Hibernate
 
 - [ ] JPA GeneratedValue
   - [ ] `@GeneratedValue` can't be used with non-primary keys
@@ -175,14 +137,7 @@
 
 ### Spring Framework
 
-#### Spring Core
-
 - [ ] Spring Circular Dependencies
-
-#### Spring Data JPA
-
-- [ ] Locking
-- [ ] Stored Procedures
-- [ ] Domain Events
-
-#### Spring Security
+- [ ] Spring Locking
+- [ ] Spring Stored Procedures
+- [ ] Spring Domain Events

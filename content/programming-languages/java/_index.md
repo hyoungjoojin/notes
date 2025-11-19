@@ -8,3 +8,4 @@ title = "java"
 
 - [Java Collection Framework](./collections)
 - [Java Concurrency](./concurrency)
+- [Java Lambda Expressions](./lambda)
