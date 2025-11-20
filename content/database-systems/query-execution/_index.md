@@ -43,8 +43,13 @@ The system can send down hints like limit clauses to avoid scanning too many tup
 Operator fusion can also be applied to reduce the number of intermediate results created.
 
 This model is very inefficient, but could work for OLTP workloads where the amount of data processed is small.
-Since this model doesn't work well with large dataset OLTP and OLAP workloads, this model is rarely used, however systems
-like MonetDB uses this model.
+Since this model doesn't work well with OLTP workloads with large datasets or OLAP workloads, this model is rarely used.
+
+Systems like MonetDB use this model.
+MonetDB uses this model since MonetDB's operators are hard-coded instructions, making them iterate through large amounts
+of data faster than calling the next method repeatedly.
+The problem with this is that the intermediate results can be very large and therefore a method for storing and caching
+these intermediate results is required.
 
 ### Vectorized Model
 
@@ -63,15 +68,15 @@ vectorized instructions and the number of function calls can be reduced.
 
 In a query plan, data can either be pulled from the child operators or pushed from the child operators.
 
-### Top-to-Bottom Approach
+### Pull-based Approach
 
-The top-to-bottom approach is the pull-based approach, where the parent operator requests data from the child operators.
+The pull-based approach, or top-to-bottom approach, is where the parent operator requests data from the child operators.
 Here, the parent blocks until the child operator returns.
 This comes at the cost of increased function calls and branching.
 
-### Bottom-to-Top Approach
+### Push-based Approach
 
-The bottom-to-top approach is the push-based approach, where the child operator pushes data to the parent operator.
+The push-based approach, or bottom-to-top approach, is where the child operator pushes data to the parent operator.
 Here, a global scheduler watches over the entire tree of operators and executes them.
 This allows for a more tighter control over caches and registers in the pipeline.
 
@@ -136,13 +141,18 @@ DB2's Multi-Index Scan, PostgreSQL's Bitmap Scan, and MySQL's Index Merge are ex
 
 ## Modification Queries
 
+Modification queries, such as inserts, updates, and deletes, are implemented as separate operators in the query plan.
+These operators can write values to storage when needed.
+
 Updates and deletes can use the same access methods as selection queries to find the records to be modified.
 However, the Halloween problem can occur when processing updates.
 This is when an update changes the physical location of the tuple, making the scan operator visit the tuple
 multiple times, which can happen for clustered tables or index scans.
 To prevent this, the database system can track the modified record IDs per query, and skip them if they are encountered again.
 
-Inserts are done by either materializing tuples inside the opeartor or inserting tuples from child operators.
+Inserts can be done by either materializing the tuples inside the operator (finish building the output tuples before writing
+to storage) or inserting tuples to storage from child operators as they come along.
+Since disk access is slow, materializing the tuples can be faster for bulk inserts, but they consume more memory.
 
 ## Expression Evaluation
 
