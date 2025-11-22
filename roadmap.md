@@ -1,7 +1,5 @@
 # Roadmap
 
-## Algorithms
-
 - [ ] Priority Queue
 - [ ] B-Tree
 - [ ] Trie
@@ -13,21 +11,21 @@
 - [ ] RadixSort
 - [ ] HeapSort
 - [ ] PowerSort
-
-## Computer Hardware
-
 - [ ] SSD Write Amplification
-
-## Database Systems
-
-- [x] Buffer Pools (#1)
-  - [ ] How do distributed database systems work with buffer pools, especially dirty pages?
-  - [ ] Buffer pool page tables can be made durable, but is it worth the implementation cost?
+- [ ] GPU Memory Hierarchy
+- [ ] Direct Memory Access (DMA)
+- [ ] Cache Coherence Protocols
+  - [ ] MESI Protocol
+  - [ ] MOESI Protocol
+  - [ ] MSI Protocol
+- [ ] How do distributed database systems work with buffer pools, especially dirty pages?
+- [ ] Buffer pool page tables can be made durable, but is it worth the implementation cost?
 - [ ] Database Scan Sharing
 - [ ] LRU-K Buffer Replacement Policy
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
 - [ ] Database Replication Lag
+- [ ] Multi-way Join Algorithms
 - [ ] Index-organized Storage
 - [ ] Log-structured Storage
 - [ ] Column Stores
@@ -45,43 +43,21 @@
   - [ ] Transaction Isolation Levels
 - [ ] Database Partitioning
 - [ ] Database Sharding
+- [ ] GPU-accelerated Databases
 - [ ] PostgreSQL Dynamic Shared Memory
-
-## Operating Systems
-
 - [ ] IPC and Building Multi-process Applications
 - [ ] TCMalloc
-
-## Security
-
 - [ ] Post-quantum Cryptography
-
-## Distributed Systems
-
-## Software Engineering
-
 - [ ] Waterfall Model
 - [ ] Agile Software Development
-
-### Software Design
-
-- [x] Domain-driven Design (#4)
 - [ ] CQRS
 - [ ] Hexagonal Architecture
 - [ ] Event-driven Architecture
 - [ ] Reactive Programming
 - [ ] Functional Programming
-
-## Programming Languages
-
-### C++
-
 - [ ] C++ Class Template Specialization
 - [ ] C++ Volatile
 - [ ] C++ Roadmap
-
-### Java
-
 - [ ] Java Reflection API
 - [ ] JVM Class Loader
   - [ ] Why do class not found exceptions occur at runtime?
@@ -90,17 +66,7 @@
 - [ ] Java Reactive Programming
 - [ ] Java Virtual Thread
 - [ ] Java ForkJoinPool
-
-### Kotlin
-
-- [ ] Kotlin Coroutines
-
-## Development Tools
-
 - [ ] Vavr
-
-### JPA & Hibernate
-
 - [ ] JPA GeneratedValue
   - [ ] `@GeneratedValue` can't be used with non-primary keys
 - [ ] JPA Inheritance Mapping
@@ -130,14 +96,12 @@
 - [ ] JPA `@ElementCollection`, `@CollectionTable`
 - [ ] Auto-commits
 - [ ] Unique constraints
-
-### APM Tools
-
 - [ ] Pinpoint
-
-### Spring Framework
-
 - [ ] Spring Circular Dependencies
 - [ ] Spring Locking
 - [ ] Spring Stored Procedures
 - [ ] Spring Domain Events
+- [ ] Locking
+- [ ] Stored Procedures
+- [ ] Domain Events
+- [ ] spring.aop.proxy-target-class=true option?
