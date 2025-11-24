@@ -144,6 +144,9 @@
 
 ## Development Tools
 
+- [ ] Selenium
+- [ ] Playwright
+
 ### Java Tools
 
 - [ ] Vavr

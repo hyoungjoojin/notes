@@ -4,26 +4,41 @@ title = "testing"
 
 # Testing Spring Applications
 
-## Spring TestContext Framework
+## Spring Testing Concepts
+
+### Spring TestContext Framework
 
 The Spring TestContext Framework caches application contexts between tests to improve test performance.
-This is based on the context configuration, so if two tests use the same configuration, they will share the same context.
-Adding mock beans, changing properties, or modifying the context configuration will create a new context and therefore
-a new application context will be created for the test.
-Due to this, it is best to avoid annotations like `@ActiveProfiles`, `@MockitoBean`, or `@DirtiesContext`.
+The framework caches application contexts by a unique identifier derived from the test configuration.
+If two tests share the same identifier, they will share the same test context.
+
+The identifier is derived from active profiles, test properties, resource paths, and things like mock bean configurations.
+If the identifier changes, the entire application context will be reloaded and therefore configurations have to be set up
+properly to maximize cache hits.
+Using `@DirtiesContext`, multiple profiles, and multiple different mock bean configurations will lead to cache misses.
+Therefore, `@ActiveProfile`, `@DirtiesContext` should be avoided and mock beans should be the same across tests or should
+depend on test slices.
+
+Looking at the logs for `org.springframework.test.context.cache` can help debug cache hits and misses.
 
 Shared contexts can make the tests faster, but the tests will share the state and therefore each test must clean up context
 state to avoid interference between tests.
 `@DirtiesContext` can fix this, but it is better to manually clean up the state to avoid creating new contexts using
 `@BeforeEach` or `@AfterEach` methods.
 
-The context cache is a LRU cache with a default size of 32.
+### `SpringExtension`
 
-## Spring Boot Testing
+The JUnit framework provides extensions, which are classes that run on certain events during the test's lifecycle.
+For example, an extension can run code before or after each test method.
+Extensions can be registered for a class using the `@ExtendWith` annotation.
 
-Spring Boot provides the `@SpringBootTest` annotation.
-`@SpringBootTest` is annotated with `@ExtendWith(SpringExtension.class)`, which integrates the Spring TestContext Framework
-into JUnit 5 (`@ExtendWith` is a JUnit annotation).
+Annotations like `@SpringBootTest` and `@WebMvcTest` are annotated with `@ExtendWith(SpringExtension.class)`,
+The `SpringExtension` extension integrates the TestContext framework into JUnit.
+
+### `@DirtiesContext`
+
+`@DirtiesContext` is used to mark an application context as dirty, which results in the context being removed
+from the test context cache.
 
 ### Web Environment
 
@@ -32,7 +47,7 @@ This is defaulted to `WebEnvironment.MOCK`, which provides a mock server that do
 This can be changed to `RANDOM_PORT` or `DEFINED_PORT` to start up a real server on a random or defined port respectively.
 It is not advised to use `DEFINED_PORT` since it can lead to port conflicts when running tests.
 If we use a random port, the port can be injected using the `@LocalServerPort` annotation.
-Openning up a real server is useful for integration tests that test the entire application stack.
+Opening up a real server is useful for integration tests that test the entire application stack.
 
 ### Test Slices
 
@@ -41,7 +56,7 @@ For example, `@DataJpaTest` only contains the JPA layer of the context and `@Web
 context.
 
 These annotations are faster since they only load a part of the context, but since not all beans are loaded, the required
-beans must be either mocked of stubbed.
+beans must be either mocked or stubbed.
 If the required beans are not mocked or stubbed, the tests will fail.
 
 ## Web Layer Testing
@@ -82,32 +97,41 @@ When using MockMVC, the `SecurityMockMvcRequestPostProcessors` class can be used
 @SpringBootTest
 public class SecurityTest {
 
-  @Autowired MockMvcTester mockMvc;
+  @Autowired MockMvcTester mockMvcTester;
 
   @Test
   public void secureEndpoint_unauthorized() throws Exception {
-    mockMvc.get("/").andExpect(status().isUnauthorized());
+    mockMvcTester.get().uri("/").exchange().expectStatus().isUnauthorized();
   }
 
   @Test
   @WithMockUser
   public void secureEndpoint_authorized() throws Exception {
-    mockMvc.get("/").andExpect(status().isOk());
+    mockMvcTester.get().uri("/").exchange().expectStatus().isOk();
   }
 
   @Test
   public void oidc() throws Exception {
-    mockMvc
-        .get("/")
+    mockMvcTester
+        .get()
+        .uri("/")
+        .exchange()
         .with(
             SecurityMockMvcRequestPostProcessors.oidcLogin()
                 .idToken(token -> token.claim("email", "")))
-        .andExpect(status().isOk());
+        .expectStatus()
+        .isOk();
   }
 
   @Test
   public void csrf() throws Exception {
-    mockMvc.post("/").with(SecurityMockMvcRequestPostProcessors.csrf()).andExpect(status().isOk());
+    mockMvcTester
+        .post()
+        .uri("/")
+        .exchange()
+        .with(SecurityMockMvcRequestPostProcessors.csrf())
+        .expectStatus()
+        .isOk();
   }
 }
 ```
@@ -239,7 +263,7 @@ The following configuration is required to override this behavior and use the co
 
 ```java
 @DataJpaTest
-@AutoconfigureTestDatabase(replace = AutoconfigureTestDatabase.Replace.NONE)
+@AutoConfigureTestDatabase(replace = Replace.NONE)
 @Import(TestcontainersConfig.class)
 class MyRepositoryTest {}
 ```
@@ -267,7 +291,7 @@ class MockMvcTests {
 ```
 
 This can work for simple applications, but complex web applications will be harder to test.
-In these cases it is better to use a real browser testing tool like Selinium, or a dedicated Javascript testing framework
+In these cases it is better to use a real browser testing tool like Selenium, or a dedicated Javascript testing framework
 like Playwright or Cypress.
 
 ### Awaitility
