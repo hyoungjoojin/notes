@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] OWASP Top 10
+- [ ] XSS
 - [ ] Priority Queue
 - [ ] B-Tree
 - [ ] Trie
