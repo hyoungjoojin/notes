@@ -20,6 +20,7 @@ title = "database-systems"
 ### Query Processor
 
 - [Operator Execution](./operator-execution)
+- [Query Execution](./query-execution)
 
 ## Database Tools
 

@@ -1,66 +1,27 @@
 # Roadmap
 
-## Algorithms
-
-### Data Structures
-
 - [ ] Priority Queue
 - [ ] B-Tree
 - [ ] Trie
 - [ ] Skip Lists
 - [ ] Red-Black Tree
-
-### Sorting Algorithms
-
 - [ ] Vergesort
 - [ ] QuickSort
 - [ ] TimSort
 - [ ] RadixSort
 - [ ] HeapSort
 - [ ] PowerSort
-
-### Sorting Algorithms
-
-- [ ] Vergesort
-- [ ] QuickSort
-- [ ] TimSort
-- [ ] RadixSort
-- [ ] HeapSort
-- [ ] PowerSort
-
-## Computer Hardware
-
-### Solid-State Drives
-
-- [ ] Write Amplification
-
-## Database Systems
-
-### Buffer Manager
-
+- [ ] SSD Write Amplification
 - [x] Buffer Pools (#1)
   - [ ] How do distributed database systems work with buffer pools, especially dirty pages?
   - [ ] Buffer pool page tables can be made durable, but is it worth the implementation cost?
 - [ ] Database Scan Sharing
-
-#### Buffer Replacement Policy
-
 - [ ] LRU-K Buffer Replacement Policy
 - [ ] MySQL's Buffer Replacement Policy
 - [ ] ARC (Adaptive Replacement Cache) Buffer Replacement Policy
-
-### Database Replication
-
 - [ ] Database Replication Lag
-
-## Query Execution
-
-### Join Algorithms
-
 - [ ] Multi-way Join Algorithms
-
-### Database Storage
-
+- [ ] Symmetric Hash Join
 - [ ] Index-organized Storage
 - [ ] Log-structured Storage
 - [ ] Column Stores
@@ -68,9 +29,6 @@
 - [ ] Decomposition Storage Model
 - [ ] Hybrid Storage Model
 - [ ] Heap Files
-
-### Databases
-
 - [ ] SingleStore
 - [ ] YugabyteDB
 - [ ] Microsoft SQL Server
@@ -79,78 +37,38 @@
   - [ ] Consistent Nonlocking Reads
   - [ ] Locking Reads
   - [ ] Transaction Isolation Levels
-
-### Other Concepts
-
 - [ ] Database Partitioning
 - [ ] Database Sharding
 - [ ] GPU-accelerated Databases
-
-#### PostgreSQL
-
 - [ ] PostgreSQL Dynamic Shared Memory
-
-## Operating Systems
-
-### Memory Management
-
+- [ ] PostgreSQL Bitmap Index Scan
+- [ ] DB2 Multi-Index Scan
+- [ ] MySQL Index Merge
 - [ ] TCMalloc
-
-## Security
-
-### Cryptography
-
 - [ ] Post-quantum Cryptography
-
-## Distributed Systems
-
-## Software Engineering
-
-### Software Development Process
-
-#### Software Development Approaches
-
 - [ ] Waterfall Model
 - [ ] Agile Software Development
-
-### Software Design
-
-#### Software Design Patterns
-
-#### Software Design Approaches
-
 - [x] Domain-driven Design (#4)
 - [ ] CQRS
 - [ ] Hexagonal Architecture
 - [ ] Event-driven Architecture
 - [ ] Reactive Programming
 - [ ] Functional Programming
-
-## Programming Languages
-
-### C++
-
-- [ ] Class Template Specialization
-
-### Java
-
+- [ ] C++ Class Template Specialization
+- [ ] C++ Virtual Functions
+- [ ] Python Generators
+- [ ] Python Decorators
+- [ ] Python GIL
 - [ ] Java Reflection API
-
-#### JVM
-
 - [ ] JVM Class Loader
   - [ ] Why do class not found exceptions occur at runtime?
-
-## Development Tools
-
-### Java Tools
-
+- [ ] SQL Upsert, Merge, Truncate
+- [ ] SQL Prepare
+- [ ] Apache Arrow
+- [ ] Apache Parquet
+- [ ] Apache Avro
+- [ ] Airflow
 - [ ] Vavr
-
-### ORM Tools
-
-#### JPA & Hibernate
-
 - [ ] JPA GeneratedValue
   - [ ] `@GeneratedValue` can't be used with non-primary keys
 - [ ] JPA Inheritance Mapping
@@ -180,21 +98,10 @@
 - [ ] JPA `@ElementCollection`, `@CollectionTable`
 - [ ] Auto-commits
 - [ ] Unique constraints
-
-### APM Tools
-
-- [ ] Pinpoint
-
-### Spring Framework
-
-#### Spring Core
-
+- [ ] How does the output of a SQL query move to the entity objects in JPA/Hibernate?
+- [ ] Pinpoint Tool
 - [ ] Spring Circular Dependencies
-
-#### Spring Data JPA
-
 - [ ] Locking
 - [ ] Stored Procedures
-- [ ] Domain Events
-
-#### Spring Security
+- [ ] Spring Domain Events
+- [ ] Read _MonetDB: Two Decades of Research in Column-oriented Database Architectures_
