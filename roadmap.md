@@ -61,6 +61,8 @@
 - [ ] Java Reflection API
 - [ ] JVM Class Loader
   - [ ] Why do class not found exceptions occur at runtime?
+- [ ] Selenium
+- [ ] Playwright
 - [ ] JVM JIT Compilation
 - [ ] Java Structured Concurrency
 - [ ] Java Reactive Programming
@@ -94,6 +96,7 @@
 - [ ] JPA Cache
 - [ ] Transaction-scoped Persistence Context & Extended-scoped Persistence Context
 - [ ] JPA `@ElementCollection`, `@CollectionTable`
+- [ ] JPA @Formula
 - [ ] Auto-commits
 - [ ] Unique constraints
 - [ ] Pinpoint
