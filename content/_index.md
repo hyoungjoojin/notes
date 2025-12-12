@@ -24,6 +24,10 @@ title = "notes"
 - [Development Tools](./development-tools)
 - [Programming Languages](./programming-languages)
 
+### Software Engineering
+
+- [Web Development](./web-development)
+
 ### Mathematics
 
 - [Linear Algebra](./linear-algebra)
