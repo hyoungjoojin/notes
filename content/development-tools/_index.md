@@ -4,8 +4,6 @@ title = "development-tools"
 
 # Development Tools
 
-- [ElasticSearch](./elasticsearch)
-
 ## API Tools
 
 - [GraphQL](./graphql)
