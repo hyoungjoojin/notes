@@ -1,5 +1,6 @@
 # Roadmap
 
+- [ ] Server-Sent Events EventSource API
 - [ ] OWASP Top 10
 - [ ] XSS
 - [ ] Priority Queue

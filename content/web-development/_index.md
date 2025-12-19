@@ -6,4 +6,5 @@ title = "web-development"
 
 ## Web Communication Protocols
 
+- [WebSockets](./ws)
 - [Server-Sent Events](./sse)
