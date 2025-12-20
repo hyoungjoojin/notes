@@ -1,6 +1,6 @@
 +++
 title = "algorithms"
-math = "true"
+math = true
 +++
 
 # Algorithms
@@ -191,39 +191,51 @@ not that big.
 
 - Leetcode 875
 
-</details>
+# Graph
 
-## Dynamic Programming
+## Depth-First Search (DFS)
 
-### Problems
+Depth-first search (DFS) is a graph traversal algorithm that visits vertices by exploring as far as possible along each branch
+before backtracking.
 
-<details>
-<summary>
-Count the number of ways to make $n$ by iteratively adding 1 or 2.
-</summary>
+**Problems**
 
-```c++
-int fib(int n) {
-  if (n < 3) {
-    return n;
-  }
+- Given a graph, find the order of nodes visited in a DFS traversal starting from a given node.
+  - [ ] Baekjoon 24479 (Silver 2): Nodes are visited in ascending order.
 
-  int a = 1, b = 2, result;
-  for (int i = 3; i <= n; i++) {
-    result = a + b;
-    a = b;
-    b = result;
-  }
+## Breadth-First Search (BFS)
 
-  return result;
-}
-```
+### BFS on Grids
 
-Let the number of ways to make $n$ be $f(n)$. Then, since $n$ can be made by $(n - 1) + 1$ or
-$(n-2) + 2$, $f(n) = f(n-1) + f(n-2)$.
+While not strictly a graph, since grids can be represented as graphs where each cell is a node and edges exist between adjacent
+cells, BFS can be applied to grids in the same way as graphs.
+This can be useful for solving problems such as finding the shortest path in a maze or counting the number of connected
+components in a grid.
 
-#### Related Problems
+**Problems**
 
-- Leetcode 70
+- Given a grid of 0s and 1s, find the number of connected components of 1s.
+  - [ ] Baekjoon 1012 (Silver 2): Cells are connected if they are adjacent horizontally or vertically.
 
-</details>
+
+# Tree
+
+Trees are connected acyclic graphs.
+
+## Tree Traversal
+
+Tree traversal refers to the process of visiting all the nodes in a tree data structure in a specific order.
+The following are examples of common tree traversal methods.
+
+- Depth-First Search (DFS)
+- Breadth-First Search (BFS)
+- In-order Traversal
+- Pre-order Traversal
+- Post-order Traversal
+- Level-order Traversal
+
+**Problems**
+
+- Given a preorder traversal and an inorder traversal of a binary tree, output the postorder traversal of the tree.
+  - [ ] Baekjoon 4256 (Gold 2)
+
