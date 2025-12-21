@@ -146,42 +146,35 @@ on each iteration making an $O(n)$ time complexity.
 
 - Leetcode 11
 
-</details>
+# Dynamic Programming
 
 ## Binary Search
 
-Binary search is a search algorithm that reduces the search space logarithmically by
-skipping through half of the search space in each iteration.
+## Longest Common Subsequence (LCS)
 
-<details>
-<summary>
-Given an array $A$ and an integer $h$, find the minimum value of $k$ where
-$\sum_{i}{\lceil \frac{A[i]}{k} \rceil}\leq h$ holds.
-</summary>
+## Longest Increasing Subsequence (LIS)
 
-```c++
-int minValueOfK(vector<int> &a, int h) {
-  int result = numeric_limits<int>::max();
+The longest increasing subsequence problem is a problem of finding the longest subsequence within a sequence such that all
+elements of the subsequence are sorted in increasing order.
 
-  for (int low = 0, high = *max_element(a.begin(), a.end()); low <= high;) {
-    int mid = (low + high) / 2;
+### Patience Sorting
 
-    int count = 0;
-    for (int x : a) {
-      count += ((x / mid) + (x % mid == 0 ? 0 : 1));
-    }
+The LIS problem can be solved in $O(N\log N)$ using dynamic programming and binary search. This technique is also called
+patience sorting.
 
-    if (count > h) {
-      low = mid + 1;
-    } else {
-      result = min(result, mid);
-      high = mid - 1;
-    }
-  }
+**Problems**
 
-  return result;
-}
-```
+- Find the length of the LIS.
+  - [C++](./dp/src/lis-nlogn-find-length.cpp)
+  - [ ] Baekjoon 11053 (Silver 2): $|A|\leq 10^3$.
+- Find any one of the subsequences that form the LIS.
+  - [C++](./dp/src/lis-nlogn-find-sequence.cpp)
+  - [ ] Baekjoon 14002 (Gold 4): $|A|\leq 10^3$.
+- Given an integer array $A$, each index $i$ represents a line between point $(0, i)$ and $(1, A[i])$. Find the minimum number
+  of lines to remove such that no two remaining lines cross each other.
+  - [ ] Baekjoon 2565 (Gold 5)
+  - [ ] Baekjoon 1365 (Gold 2)
+  - [ ] Baekjoon 2352 (Gold 2)
 
 We apply binary search on the value $k$ since the search space of $k$ will be bounded by the
 maximum value of $A$ and the cost of computing $\sum_{i}{\lceil \frac{A[i]}{k} \rceil}$ is

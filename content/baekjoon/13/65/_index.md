@@ -9,7 +9,7 @@ math = true
 
 ## Problem
 
-Given an integer array $A$, each index $i$ represents a line between point $(0, i)$ and $(1, A[i]$.
+Given an integer array $A$, each index $i$ represents a line between point $(0, i)$ and $(1, A[i])$.
 Find the minimum number of lines to remove so that no two lines cross each other.
 
 ## Solution
