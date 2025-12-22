@@ -30,4 +30,4 @@ title = "notes"
 
 ### Other
 
-- [References](./references)
+- [Lecture Notes](./lectures)
