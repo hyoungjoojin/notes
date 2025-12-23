@@ -35,3 +35,4 @@ title = "notes"
 ### Other
 
 - [References](./references)
+- [Competitive Programming](./competitive-prgramming/)

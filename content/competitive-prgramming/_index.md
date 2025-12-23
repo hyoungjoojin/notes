@@ -1,8 +1,8 @@
 +++
-title = "ps"
+title = "competitive-programming"
 +++
 
-# PS
+# Competitive Programming
 
 - [Algorithms](./algorithms)
 
