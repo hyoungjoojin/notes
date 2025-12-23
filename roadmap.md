@@ -1,5 +1,6 @@
 # Roadmap
 
+- [ ] Server-Sent Events EventSource API
 - [ ] Information Retrieval
 - [ ] Distributed Locks & Redis RedLocks
 - [ ] Apache Lucene
