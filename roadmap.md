@@ -1,6 +1,9 @@
 # Roadmap
 
 - [ ] Server-Sent Events EventSource API
+- [ ] Information Retrieval
+- [ ] Distributed Locks & Redis RedLocks
+- [ ] Apache Lucene
 - [ ] OWASP Top 10
 - [ ] XSS
 - [ ] Priority Queue
