@@ -48,4 +48,3 @@ since it may contain inaccurate/outdated information with a lot of missing piece
 ### Other
 
 - [References](./references)
-- [Competitive Programming](./competitive-prgramming/)

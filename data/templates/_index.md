@@ -1,6 +1,5 @@
 +++
 title = ""
-math = true
 +++
 
 #
