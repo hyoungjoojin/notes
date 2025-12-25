@@ -57,6 +57,8 @@ An $n$-ary relation is a table with $n$ columns.
 
 ### Relational Model Properties
 
+**Structure**
+
 The relational model's structure shows data independence, the application is isolated from the low-level data representation.
 The database system can optimize the layout according to the operating environment, database contents and workloads.
 The data is structured in the following levels.
@@ -68,7 +70,11 @@ The data is structured in the following levels.
 - External Schema (Views): The separation between the logical schema and the external schema is called logical data independence.
 - Application: The application can see the external schema or the logical schema only.
 
+**Integrity**
+
 The relational model can enforce integrity constraints to ensure the database's contents satisfy user-defined conditions.
+
+**Manipulation**
 
 The relational model can provide a declarative API for accessing and modifying a database's contents via relations.
 The relational model is independent from any query language implementation, and SQL is the standard for relational databases.
@@ -156,3 +162,13 @@ There are other relational algebra operators as well.
 - Duplicate Elimination ($\delta$)
 - Aggregation ($\tau$)
 - Division ($R\div S$)
+
+## Other Data Models
+
+### Document Data Model
+
+Collection of record documents organized in a hierarchy of field/value pairs.
+
+### Vector Data Model
+
+Uses vectors to represent data and can use nearest neighbor search for querying.
