@@ -1,0 +1,38 @@
++++
+title = "leetcode"
++++
+
+# Leetcode
+
+## Problems
+
+### Hard
+
+| Problem ID |        Title        |
+| :--------: | :-----------------: |
+| [42](./42) | Trapping Rain Water |
+
+### Medium
+
+|  Problem ID   |                Title                 |
+| :-----------: | :----------------------------------: |
+| [153](./15/3) | Find Minimum in Rotated Sorted Array |
+|  [33](./33)   |    Search in Rotated Sorted Array    |
+| [875](./87/5) |         Koko Eating Bananas          |
+|  [49](./49)   |            Group Anagrams            |
+| [167](./16/7) |  Two Sum II - Input Array Is Sorted  |
+|  [15](./15)   |                 3Sum                 |
+|  [11](./11)   |      Container With Most Water       |
+|  [74](./74)   |          Search a 2D Matrix          |
+
+### Easy
+
+|  Problem ID   |       Title        |
+| :-----------: | :----------------: |
+| [226](./22/6) | Invert Binary Tree |
+| [704](./70/4) |   Binary Search    |
+| [217](./21/7) | Contains Duplicate |
+| [242](./24/2) |   Valid Anagram    |
+|   [1](./1)    |      Two Sum       |
+| [125](./12/5) |  Valid Palindrome  |
+|  [70](./70)   |  Climbing Stairs   |

@@ -4,9 +4,11 @@ theme = 'typo'
 
 [params]
 home = "/notes"
+title = "Hyoungjoo Jin's Notes"
 colorPalette = 'base16-default'
 hideHeader = true
-showFooter = false
+showFooter = true
+footerContent = "<p>Written by Hyoungjoo Jin."
 math = true
 
 [params.breadcrumbs]
@@ -15,8 +17,16 @@ showCurrentPage = true
 home = "home"
 
 [[params.social]]
+name = "home"
+url = "https://www.github.com/hyoungjoojin"
+
+[[params.social]]
 name = "github"
 url = "https://www.github.com/hyoungjoojin"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/hyoungjoojin"
 
 [markup]
 [markup.highlight]
@@ -29,3 +39,4 @@ unsafe = true
 [caches]
 [caches.images]
 dir = ':cacheDir/images'
+
