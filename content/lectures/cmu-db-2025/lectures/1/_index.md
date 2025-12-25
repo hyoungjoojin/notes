@@ -53,7 +53,7 @@ The relational model is a data model based on relations.
 A relation is an unordered set of tuples that represent some relationship between attributes.
 A tuple is a set of attribute values, which are called the domain of the relation, and can be viewed as rows in a table.
 Attribute values are normally atomic and scalar, with null values allowed if there are no constraints.
-Ans $n$-ary relation is a table with $n$ columns.
+An $n$-ary relation is a table with $n$ columns.
 
 ### Relational Model Properties
 
@@ -116,7 +116,7 @@ Relational calculus is rarely used in practice and is mostly used in query optim
 
 ### Relational Algebra
 
-Relational algebra define the fundamental set algebra operations for manipulating relations.
+Relational algebra defines the fundamental set algebra operations for manipulating relations.
 Since they are set operations, duplicate tuples are eliminated by default.
 
 - Select
