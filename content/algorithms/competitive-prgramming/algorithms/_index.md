@@ -12,6 +12,10 @@ title = "cp-algorithms"
 
 - Given a sequence of integers, return one of its longest increasing subsequences.
   - [ ] Baekjoon 14003 (Platinum 5): The maximum possible length of the sequence is $10^6$.
+- Given an array of integer pairs, each pair represents a line between point $(0, p_1)$ and $(1, p_2)$. Find the maximum number
+  of lines that do not cross each other.
+  - [ ] Baekjoon 2568 (Platinum 5): Return the list of lines to remove such that the remaining lines do not cross each other
+        and the number of removed lines is minimized.
 
 ## Graph Algorithms
 
@@ -23,6 +27,23 @@ title = "cp-algorithms"
   - [ ] Baekjoon 24480 (Silver 2): Visit the nodes in descending order.
 
 ### Breadth-First Search (BFS)
+
+#### Shortest Path
+
+If the graph is unweighted, BFS can be used to find the shortest path from a starting node to all other nodes in the graph.
+
+**Problems**
+
+- Find the distance from vertex $a$ to $b$ in an unweighted graph.
+  - [ ] Baekjoon 2644 (Silver 2)
+
+#### BFS on Grid
+
+**Problems**
+
+- Given a grid that has walls and open spaces, find the area of each connected component of open spaces.
+  - [ ] Baekjoon 3184 (Silver 1): There are elements $a$ and $b$ in the open spaces, and for each connected component the
+        minority element gets removed. Count the number of remaining elements.
 
 #### BFS on Number Line
 
