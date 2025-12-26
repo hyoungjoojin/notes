@@ -28,6 +28,11 @@ title = "cp-algorithms"
 
 ### Breadth-First Search (BFS)
 
+**Problems**
+
+- Given an undirected graph, find the number of connected components.
+  - [ ] Baekjoon 2606 (Silver 3): Find the number of nodes connected to node 1.
+
 #### Shortest Path
 
 If the graph is unweighted, BFS can be used to find the shortest path from a starting node to all other nodes in the graph.
@@ -52,6 +57,13 @@ If the graph is unweighted, BFS can be used to find the shortest path from a sta
 - Given two integers $a$, $b$ and a set of transformations $S$, find the minimum number of operations required to transform
   $a$ into $b$.
   - [ ] Baekjoon 16953 (Silver 2): $S=\lbrace x\rarr 2x, x\rarr 10x + 1 \rbrace$
+
+### Minimum Spanning Tree (MST)
+
+**Problems**
+
+- Given a weighted undirected graph, find the weight of its minimum spanning tree.
+  - [ ] Baekjoon 16398 (Gold 4): The graph is given as an adjacency matrix.
 
 ## Sliding Window
 
