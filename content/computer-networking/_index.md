@@ -6,7 +6,12 @@ title = "computer-networking"
 
 ## Transport Layer Protocols
 
+- [UDP](./udp)
 - [TCP](./tcp)
+
+## Network Layer Protocols
+
+- [IP](./ip)
 
 ## Network Performance
 

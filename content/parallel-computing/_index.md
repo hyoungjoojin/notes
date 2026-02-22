@@ -71,6 +71,11 @@ Explicit SIMD is where the SIMD instructions are generated at compile time,
 while implicit SIMD is where the hardware executes the same scalar instruction
 from multiple program instances on multiple SIMD execution units.
 
+Processors can have heterogeneous execution units, where some execution units
+are for SIMD processing and some are for scalar processing. In this case, the
+processor can run scalar instructions and vectorized instructions at the same
+time in a superscalar fashion.
+
 ## Hardware-level Multi-threading
 
 Although parallel processing can speed up execution, memory latency can become
@@ -82,3 +87,19 @@ execution, therefore when a thread stalls due to memory latency, the core can
 switch to another thread that is ready to execute. Here, each thread may take
 longer to execute, but the overall throughput of the core increases since the
 core's utilization gets higher.
+
+More hardware-level threads on a core does not directly translate to better
+performance, since adding more threads wouldn't help if the CPU utilization is
+already fully utilized.
+
+## Memory
+
+If the program is CPU-intensive, then the performance bottleneck in memory is
+more in memory bandwidth rather than memory latency. This means that processors
+request data at a much higher rate than the memory can provide. This problem
+cannot be solved by techniques like caching or memory prefetching since it is
+the problem of supplying memory to the processor.
+
+For solving memory bandwidth problems, computations should be programmed so that
+memory is accessed less often with techiniques like reusing data or sharing data
+across threads.
