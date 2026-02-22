@@ -24,13 +24,18 @@ personal biases.
 
 ## Table of Contents
 
-### Computer Science & Software Engineering
+### Computer Science
 
 - [Algorithms](./algorithms)
 - [Computer Architecture](./computer-architecture)
 - [Computer Networking](./computer-networking)
 - [Computer Security](./computer-security)
 - [Distributed Systems](./distributed-systems)
+- [Machine Learning](./machine-learning)
 - [Parallel Computing](./parallel-computing)
 - [Software Engineering](./software-engineering)
 - [Programming Languages](./programming-languages)
+
+### Software Development
+
+- [Cloud Infrastructure](./cloud)
