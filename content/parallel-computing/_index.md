@@ -22,7 +22,7 @@ parallel.
 Superscalar execution is where the processor automatically finds instructions
 that are independent from each other and executes them in parallel on multiple
 execution units. A superscalar processor has one execution context (the
-registers) but multiple eecution units (fetch/decode units and ALU units).
+registers) but multiple execution units (fetch/decode units and ALU units).
 
 ### Out-of-order Execution
 
@@ -45,7 +45,7 @@ own execution context.
 
 It is the job of the software to find parallelism at a higher level and dispatch
 the tasks to different cores in multi-core processing. This can be done in
-multiple ways, including manually spawning thread or using parallel constructs
+multiple ways, including manually spawning threads or using parallel constructs
 that automatically distribute tasks to multiple cores.
 
 ## SIMD Processing

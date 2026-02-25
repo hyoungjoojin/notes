@@ -18,7 +18,7 @@ voice calls, video streaming are examples of systems that use weak consistency.
 #### Eventual Consistency
 
 Eventual consistency is where read operations will eventually see the updated
-value after a write operation. DNS, SMTP, S3 are examples of systems that use
+value after a write operation. DNS, SMTP are examples of systems that use
 eventual consistency.
 
 #### Strong Consistency
@@ -28,14 +28,6 @@ after a write operation. File systems, databases are examples of systems that
 use strong consistency.
 
 ### Distributed Transactions
-
-#### Backups
-
-Backups are the most primitive type of distributed transactions, where a
-snapshot of the data is taken at a point in time. The operation does not affect
-latency or throughput, but it cannot support proper transactions and has weak
-consistency. It introduces a lot of data loss and downtime in the case of a
-failover.
 
 #### Master-Slave Replication
 
@@ -66,7 +58,7 @@ nodes. If any node votes to abort, the coordinator sends an abort message to all
 nodes. 2PC is not fully distributed in that it relies on the coordinator. There
 is a fault-tolerant 2PC variant for handling coordinator failures.
 
-2PC can achieve strong consistency will full transactional support and no data
+2PC can achieve strong consistency with full transactional support and no data
 loss. However, 2PC is heavy and synchronous, meaning it has high latency and low
 throughput. 3PC can be used for asynchronous replication, but it still adds an
 extra round trip.
