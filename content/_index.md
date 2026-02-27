@@ -23,3 +23,14 @@ contain inaccurate/outdated information with a lot of missing pieces and my
 personal biases.
 
 ## Table of Contents
+
+### Computer Science & Software Engineering
+
+- [Algorithms](./algorithms)
+- [Computer Architecture](./computer-architecture)
+- [Computer Networking](./computer-networking)
+- [Computer Security](./computer-security)
+- [Distributed Systems](./distributed-systems)
+- [Parallel Computing](./parallel-computing)
+- [Software Engineering](./software-engineering)
+- [Programming Languages](./programming-languages)
