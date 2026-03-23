@@ -9,9 +9,10 @@ host-to-host communication channel over an unreliable underlying network.
 
 ## TCP Packet Structure
 
-The MSS (Maximum Segment Size) indicates the maximum amount of data that can be
-sent through a TCP connection. This value is typically 1460 bytes, which is the
-maximum transmission unit (MTU) without the TCP/IP headers of 40 bytes.
+The size of a TCP packet is limited by the Maximum Segment Size (MSS). The MSS
+is the maximum TCP payload size per segment negotiated during the three-way
+handshake process. This value is typically 1460 bytes, which is the maximum
+transmission unit (MTU) without the TCP/IP headers of 40 bytes.
 
 ## TCP Three-Way Handshake
 
@@ -20,17 +21,20 @@ and synchronize the initial variables for the connection. The handshake process
 is as below.
 
 1. SYN
-   - The client picks a random sequence number and sends a SYN packet that
-     includes additional TCP flags and options.
+   - The client initializes a sequence number to a random value $x$.
+   - The client includes additional TCP flags and options in the SYN packet, and
+     sends it to the server.
 
 2. SYN ACK
-   - The server increments the client's sequence number by 1, picks its own
-     random sequence number, and sends the packet with the sequence numbers,
-     flags, and options.
+   - The server receives the SYN packet.
+   - The server increments the client's sequence number to $x + 1$ and sends it
+     back to the client in the ACK field of the packet.
+   - The server initializes its own sequence number to a random value $y$.
 
 3. ACK
-   - The client increments both sequence numbers and sends the final ACK packet
-     to finish the handshake process.
+   - The client receives the SYN ACK packet.
+   - The client increments the server's sequence number to $y + 1$ and sends it
+     back to the server in the ACK field of the packet.
 
 Each new TCP connection takes at least one full network round-trip due to the
 three-way handshake. Although there are attempts to optimize the handshake
@@ -113,9 +117,12 @@ can be disabled and is recommended to do so.
 
 ### Congestion Avoidance
 
-Congestion avoidance starts either when a packet gets lost, if the data in
-flight exceeds the receiver's receive window size, or if the data in flisht
-exceeds a system-defined threshold (`ssthresh`).
+Congestion avoidance is triggered in one of the following conditions.
+
+- The congestion window size (`cwnd`) grows larger than the slow-start threshold
+  (`ssthresh`).
+- Duplicated ACKs
+- Retransmission timeout
 
 TCP originally used AIMD (Additive Increase Multiplicative Decrease) for
 congestion avoidance, where the congestion window size decreases by half when
