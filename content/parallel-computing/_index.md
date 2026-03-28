@@ -103,3 +103,17 @@ the problem of supplying memory to the processor.
 For solving memory bandwidth problems, computations should be programmed so that
 memory is accessed less often with techiniques like reusing data or sharing data
 across threads.
+
+## Parallel Programming
+
+### Programming Primitives
+
+#### Locks
+
+A lock is a synchronization primitive that allows only one thread to access a
+shared resource at a time.
+
+#### Barriers
+
+A barrier is a synchronization primitive that makes multiple threads of
+execution wait until all threads have reached a certain point in the program.
