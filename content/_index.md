@@ -38,4 +38,7 @@ personal biases.
 
 ### Software Development
 
+- [AI Engineering](./ai-engineering)
+- [Application Frameworks](./application-frameworks)
+- [Development Environments](./development-environments)
 - [Cloud Infrastructure](./cloud)
