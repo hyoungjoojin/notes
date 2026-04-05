@@ -4,12 +4,27 @@ title = "computer-networking"
 
 # Computer Networking
 
+## Application Layer
+
+In the application layer, processes running on different hosts can communicate
+with each other using a software interface called a socket. The processes are
+identified by their IP address and port number.
+
+### Application Layer Protocols
+
+- [HTTP](./http)
+- [DASH](./dash): Protocol for streaming media content over the internet.
+- [Email Protocols (SMTP, IMAP, POP3)](./email)
+- [DNS](./dns)
+
 ## Transport Layer Protocols
 
 - [UDP](./udp)
 - [TCP](./tcp)
 
-## Network Layer Protocols
+## Network Layer
+
+### Network Layer Protocols
 
 - [IP](./ip)
 
