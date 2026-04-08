@@ -34,3 +34,21 @@ certain conditions. This can be configured using annotations on beans.
   @ConditionalOnBean(MyService.class)
   public class MyOtherService {}
   ```
+
+## Spring Data JPA
+
+### Transaction Management
+
+Spring's transaction annotation manages database rollbacks for exceptions. The
+default setting rolls back for runtime exceptions but not for checked
+exceptions. This can be configured using the `rollbackFor` attribute.
+
+In Hibernate, read-only entities are not dirty-checked and therefore changes are
+not flushed to the database.
+
+## Jackson
+
+### Spring Jackson Properties
+
+- `spring.jackson.mapper.accept-case-insensitive-enums=true`: Allows Jackson to
+  accept case-insensitive enum values when deserializing JSON.
