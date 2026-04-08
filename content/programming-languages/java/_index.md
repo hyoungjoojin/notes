@@ -12,8 +12,8 @@ create an instance of each enum constant, therefore it is guaranteed that there
 is only one instance of each enum constant throughout the application.
 
 For enums, because there is only one instance of each enum constant, the `==`
-operator can be used to compare enum constants. This is actully the recommended
-way to compare, since its more efficient and null-safe. The `==` is more
+operator can be used to compare enum constants. This is actually the recommended
+way to compare, since it's more efficient and null-safe. The `==` is more
 efficient because it compares the references of the enum constants, which is
 faster than comparing their values. `==` also provides type compatibility checks
 at compile time, meaning that comparing two enum constants of different types

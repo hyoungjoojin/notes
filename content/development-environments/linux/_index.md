@@ -30,7 +30,7 @@ title = "linux"
 - How to mount an external drive on a fixed mount point.
   1. Identify the drive using `lsblk -f`.
   2. Create a mount point (ex. `/mnt/ssd`).
-  3. Open an edit the file `/etc/fstab` and add the entry for the drive.
+  3. Open and edit the file `/etc/fstab` and add the entry for the drive.
      - The UUID is the value in the UUID column from the `lsblk -f` output.
      - The filesystem type is the value in the FSTYPE column from the `lsblk -f`
        output.

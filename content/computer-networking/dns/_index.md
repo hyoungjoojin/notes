@@ -6,7 +6,7 @@ title = "dns"
 
 The Domain Name System (DNS) is an application layer protocol for translating
 human-readable domain names into IP addresses and also a distributed database
-that stores these mappings in a heirarchical structure.
+that stores these mappings in a hierarchical structure.
 
 ## DNS Features
 
