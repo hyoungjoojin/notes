@@ -33,12 +33,10 @@ personal biases.
 - [Distributed Systems](./distributed-systems)
 - [Machine Learning](./machine-learning)
 - [Parallel Computing](./parallel-computing)
-- [Software Engineering](./software-engineering)
 - [Programming Languages](./programming-languages)
 
 ### Software Development
 
+- [Software Engineering](./software-engineering)
 - [AI Engineering](./ai-engineering)
-- [Application Frameworks](./application-frameworks)
-- [Development Environments](./development-environments)
-- [Cloud Infrastructure](./cloud)
+- [Development Tools](./development-tools)

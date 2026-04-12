@@ -10,11 +10,12 @@ title = "linux"
 
 - `lsblk`: List block devices and their mount points.
 - `mount`: Display currently mounted filesystems.
+
   ```bash
   mount -a # Mount all filesystems mentioned in /etc/fstab
   ```
 
-### Guides
+## Troubleshooting
 
 - How to change the file system of an external drive.
   1. Unmount the drive using `umount /dev/sda1`.
@@ -36,7 +37,7 @@ title = "linux"
        output.
 
      ```bash
-     UUID=1234-5678 /mnt/ssd ext4 defaults 0 2
+     UUID=1234-5678 /mnt/ssd ext4 rw,relatime,nofail,noauto 0 2
      ```
 
   4. Save the file and run `mount -a` to mount the drive.

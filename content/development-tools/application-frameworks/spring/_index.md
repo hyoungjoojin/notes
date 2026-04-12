@@ -8,8 +8,8 @@ title = "spring"
 
 ### Conditional Beans
 
-Conditional beans are for declaring beans that should only be created under
-certain conditions. This can be configured using annotations on beans.
+Conditional beans are a Spring Boot feature for configuring beans to load only
+under certain conditions. This can be configured using annotations on beans.
 
 - `@Conditional`
 

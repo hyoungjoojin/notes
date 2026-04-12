@@ -27,16 +27,28 @@ query into a vector and finding the most similar vectors in the database.
 ### Graph RAG
 
 Graph RAG represents the knowledge base as a graph, and the retrieval process
-navigates through the graph's connections to find relevant information.
+navigates through the graph's connections to find relevant information. Since it
+uses explicit relationships between entities, it is more interpretable and can
+provide more accurate results than vector RAG which uses simple similarity
+measures.
 
 ## Model Context Protocol (MCP)
 
 The Model Context Protocol (MCP) is a proposed standard for communication
 between AI models and external systems. The protocol defines a common interface
-between the MCP host and the MCP server. The MCP host can communicate with an
-MCP server to get its available tools and use them to perform various tasks. The
-tools can be database queries, API calls, or any other operation. In a full
-operation, the MCP host will provide the available tools to the AI model, which
-will then decide on which tools to use and how to use them to achieve its goals.
-This information is passed back to the MCP host, which will then call the tools
-to the MCP server and then return the results to the client.
+between the MCP host and the MCP server. The MCP host is the system that runs
+the AI model.
+
+The following is the general workflow of the MCP protocol.
+
+1. The MCP host requests the available tools from the MCP server.
+2. The MCP server responds with a list of available tools and their
+   descriptions.
+3. The MCP host provides the available tools to the AI model.
+4. The AI model decides which tools to use and how to use them to achieve its
+   goals.
+5. The AI model provides the tool usage information back to the MCP host.
+6. The MCP host calls the tools by requesting the MCP server.
+7. The MCP server executes the tools, which can be a database query, an API
+   call, or any other operation, and returns the results to the MCP host.
+8. The MCP host returns the results to the client.

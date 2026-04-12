@@ -13,7 +13,8 @@ identified by their IP address and port number.
 ### Application Layer Protocols
 
 - [HTTP](./http)
-- [DASH](./dash): Protocol for streaming media content over the internet.
+- Multimedia Streaming Protocols (RTSP)
+- [Video Streaming Protocols (DASH)](./video-streaming)
 - [Email Protocols (SMTP, IMAP, POP3)](./email)
 - [DNS](./dns)
 

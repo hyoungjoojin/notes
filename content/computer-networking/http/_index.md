@@ -44,15 +44,18 @@ Cookies can be sent by the server using the `Set-Cookie` header in the HTTP
 response, and the client can send the cookies back to the server using the
 `Cookie` header in the HTTP request.
 
-### Persistent Connections
+### Persistent Connections (HTTP/1.1 -)
 
 HTTP/1.1 introduced persistent connections, where multiple HTTP requests and
 responses can be sent over a single TCP connection. The default mode of HTTP
 uses persistent connections.
 
-### Pipelining
+### Pipelining (HTTP/1.1 -)
 
-### Conditional GET Requests
+Pipelining allows multiple HTTP requests to be sent over a single TCP
+connection.
+
+### Conditional GET Requests (HTTP/1.1 -)
 
 To improve performance, HTTP responses can be cached by the client or proxy
 servers like CDNs. This means that there is a possibility that the client is
@@ -63,19 +66,19 @@ in the HTTP request. If the data has not been modified since the last time it
 was fetched, the server can respond with a `304 Not Modified` status code,
 indicating that the client can use the cached version of the data.
 
-### Multiplexing
+### Multiplexing (HTTP/2 -)
 
 Multiplexing in HTTP splits each HTTP message into smaller frames, which can
 then be interleaved and sent over the same TCP connection. This allows multiple
 HTTP requests and responses to be sent simultaneously without blocking each
 other.
 
-### Message Prioritization
+### Message Prioritization (HTTP/2 -)
 
 Message prioritization allows servers to mark HTTP messages with different
 priority levels.
 
-### Server Push
+### Server Push (HTTP/2 -)
 
 Server push allows servers to send multiple HTTP responses for a single HTTP
 request.
@@ -87,6 +90,14 @@ request.
 Head-of-Line (HoL) blocking is a problem where a large HTTP request or response
 can block subsequent messages from being processed until the current message is
 fully processed. This issue is fixed in HTTP/2 by using multiplexing.
+
+HTTP/2's multiplexing allows multiple HTTP messages to be send over the same TCP
+connection without blocking each other by splitting the messages into smaller
+frames and interleaving them. HTTP/2 still uses a single TCP connection,
+therefore it is still vulnerable to TCP-level HoL blocking.
+
+HTTP/3 manages multiple streams simultaneously using the QUIC protocol,
+therefore it can solve TCP-level HoL blocking as well.
 
 ## Appendix
 
