@@ -37,3 +37,22 @@ on the set of requirements.
 - Page-based Pagination
 - Time-based Pagination
 - Keyset Pagination
+
+### Object-Oriented Programming
+
+#### Dynamic Dispatch
+
+Dynamic dispatch is selecting which implementation of a polymorphic operation to
+call at runtime.
+
+### Design Patterns
+
+#### State
+
+The State pattern is about dealing with a finite state machine, where an object
+can be in one of multiple states at a time and there are a finite set of rules
+for transitioning between states. The State pattern suggests that we should
+encapsulate the state-specific behavior into separate classes, and the main
+object can delegate the behavior to the current state object. This allows for
+better organization of code and makes it easier to add new states or modify
+existing ones without affecting the main object.

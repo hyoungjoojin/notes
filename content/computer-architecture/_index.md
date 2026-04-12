@@ -34,3 +34,21 @@ There are four types of cache misses, and they are called the 4Cs.
 - Coherence Misses
   - Misses that occur because the data has been modified by another processor or
     an external device.
+
+## Storage
+
+### Hard Disk Drives
+
+### Solid State Drives
+
+Solid state drives (SSDs) store data in memory cells. The smallest unit of
+storage in an SSD is a page. Changes to data in an SSD can only be made at the
+page level, but they can only be written if the page is empty (erased before
+write). Erasing in an SSD can only be done at the block level.
+
+The Flash Translation Layer (FTL) is a memory controller responsible for mapping
+page IDs to physical memory locations.
+
+SSDs do not have a huge gap between random I/O and sequential I/O like HDDs, but
+sequential I/O is still faster than random I/O due to data prefetching or
+internal parallelism.

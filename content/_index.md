@@ -30,6 +30,7 @@ personal biases.
 - [Computer Architecture](./computer-architecture)
 - [Computer Networking](./computer-networking)
 - [Computer Security](./computer-security)
+- [Database Systems](./database-systems)
 - [Distributed Systems](./distributed-systems)
 - [Machine Learning](./machine-learning)
 - [Parallel Computing](./parallel-computing)

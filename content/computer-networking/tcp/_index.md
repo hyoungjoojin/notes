@@ -5,7 +5,8 @@ title = "tcp"
 # TCP (Transmission Control Protocol)
 
 TCP is a connection-oriented transport layer protocol that provides a reliable
-host-to-host communication channel over an unreliable underlying network.
+communication channel between two processes over an unreliable underlying
+network.
 
 ## TCP Packet Structure
 
