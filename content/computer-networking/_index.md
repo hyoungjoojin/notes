@@ -49,7 +49,7 @@ indicate that a packet was not received successfully.
 
 Network protocols should also consider the fact that networks can drop packets
 as well. In this case, the sender can set a timer after sending a packet, where
-the sender will send the packet again if the timer timeouts before the ACK is
+the sender will send the packet again if the timer times out before the ACK is
 received.
 
 #### Automatic Repeat Request (ARQ) Protocols
@@ -107,8 +107,8 @@ processes running on different hosts. The transport layer breaks down messages
 from the application layer into transport layer segments and adds a transport
 layer header to each segment. These segments are then passed down to the network
 layer. The transport layer is not concerned with how the data will be
-transmitted to the destination host, it exists in the end-system to only care
-about communication between processes
+transmitted to the destination host, it exists in end-systems to only care about
+communication between processes.
 
 Transport layer multiplexing and demultiplexing is the concept of extending the
 network layer's host-to-host communication to process-to-process communication.

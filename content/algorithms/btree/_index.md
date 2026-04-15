@@ -4,7 +4,7 @@ title = "b-tree"
 
 # B-Tree
 
-A B-tree is a balanced tree data structure that is mainly used in database
+A B-tree is a self-balancing tree data structure that is mainly used in database
 systems. While other balanced binary search trees can work well on in-memory
 systems, they are not suitable for disk-based systems due to the low fanout.
 B-trees have a high fanout and low height, making data retrieval possible with
@@ -12,15 +12,14 @@ fewer disk accesses.
 
 ## B-Tree Properties
 
-A B-tree node can have $N$ keys and $N + 1$ pointers to child nodes. The keys
-are stored in sorted order. Although it isn't mandatory, a single B-tree node is
-usually designed to fit within a single disk page.
+A B-tree of order $m$ must satisfy the following properties.
 
-A B-tree must remain balanced, meaning that all leaf nodes must be at the same
-depth within the tree.
+- Every node has at most $m$ children.
+- Every non-root node as at least $\lceil \frac{m}{2} \rceil$ children.
+- Every leaf node must be at the same depth.
 
-A non-root B-tree node must have at least $\lfloor N/2 \rfloor$ keys if the
-degree of the B-tree is $N$.
+A node having $k$ children will have $k-1$ keys, where the keys are sorted and
+act as separators for the child nodes.
 
 ## B-Tree Operations
 

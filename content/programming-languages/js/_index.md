@@ -2,7 +2,7 @@
 title = "js"
 +++
 
-# Javascript/Typescript
+# JavaScript/TypeScript
 
 ## Classes
 

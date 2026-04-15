@@ -33,6 +33,7 @@ personal biases.
 - [Database Systems](./database-systems)
 - [Distributed Systems](./distributed-systems)
 - [Machine Learning](./machine-learning)
+- [Operating Systems](./operating-systems)
 - [Parallel Computing](./parallel-computing)
 - [Software Engineering](./software-engineering)
 - [Programming Languages](./programming-languages)

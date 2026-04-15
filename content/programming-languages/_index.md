@@ -6,4 +6,4 @@ title = "programming-languages"
 
 - [C++](./c++)
 - [Java](./java)
-- [Javascript/Typescript](./js)
+- [JavaScript/TypeScript](./js)
