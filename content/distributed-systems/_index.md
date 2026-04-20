@@ -4,6 +4,8 @@ title = "distributed-systems"
 
 # Distributed Systems
 
+## Distributed Hash Table (DHT)
+
 ## Consistency
 
 ### Consistency Guarantees
