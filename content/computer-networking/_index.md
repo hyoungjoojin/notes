@@ -4,6 +4,24 @@ title = "computer-networking"
 
 # Computer Networking
 
+## Link Layer
+
+The link layer in a network is responsible for direct communication between
+adjacent nodes. A node is any device that runs a link layer protocol, and
+devices can be connected by communication channels called links. Link layer
+components are commonly implemented in hardware, which can be integrated within
+the main chipset or as a separate chip called a network adapter (also called a
+network interface card, NIC).
+
+Link layer protocols can provide services of framing, reliable delivery, error
+detection and correction, and access management. Framing is the process of
+encapsulating network layer datagrams into link layer frames. Reliable delivery
+isn't implemented in most link layer protocols due to its overhead, but
+hardware-level error detection and correction mechanisms are usually
+implemented. Access management is the process of determining which node can
+transmit data at a given time, and this can get complicated when multiple nodes
+share the same link.
+
 ## Application Layer
 
 In the application layer, processes running on different hosts can communicate
