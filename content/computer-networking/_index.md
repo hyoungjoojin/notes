@@ -4,6 +4,72 @@ title = "computer-networking"
 
 # Computer Networking
 
+## Error Detection and Correction
+
+Error detection and correction (EDC) is essential in computer networking where
+data can easily be lost or corrupted during transmission. EDC can be done in any
+network layer. EDC does not guarantee that all errors will be detected or
+corrected, therefore it is important to choose the right EDC method to decrease
+the probability of undetected errors.
+
+Bit errors commonly occur in bursts, where the probability of a bit error is not
+independent of the previous bit.
+
+The ability to detect and correct errors is essential for efficient
+communication, since it removes the need for retransmission. This is called
+forward error correction (FEC).
+
+### Parity Check
+
+Parity checks use additional parity bits that are derived from the data bits to
+detect errors.
+
+A one-bit parity check counts the number of 1s in the data bits and set the
+parity bit to 1 or 0 based on the parity scheme to make the total number of 1s
+in the data bits and parity bit even or odd. This scheme is simple but has a low
+error detection capability, especially when bit errors occur in bursts.
+
+Two-dimensional parity checks use multiple parity bits by arranging the data
+bits into a two-dimensional matrix and calculating parity bits for each row and
+column. Using these parity bits, it is possible to not only detect but also
+correct single-bit errors.
+
+### Checksum
+
+Checksums view data bits as a sequence of $k$-bit integers. Checksum algorithms
+are simple and fast, but they provide weaker capabilities. Checksum algorithms
+are typically used in the transport layer and network layer because they have to
+run on software and therefore need to be efficient. Link layer protocols
+typically run on hardware and therefore can implement more complex EDC
+algorithms.
+
+The Internet checksum used in IP, TCP, and UDP works with 16-bit integers and
+adds all the integers in the data bits to get the checksum value. The checksum
+value is the one's complement of the sum, therefore the receiver can check for
+errors by adding 16-bit integers in the data bits and the checksum value to see
+if the result is all 1s.
+
+### Cyclic Redundancy Check (CRC)
+
+Cyclic redundancy check (CRC) is a error detection mechanism that treats the
+data bits as a large binary number and divides it by a chosen binary number to
+get the remainder as the CRC value.
+
+CRC can't correct errors, but it is robust for burst errors. This is because the
+generator value is chosen so that consecutive bit errors will produce different
+CRC values.
+
+CRC can also be efficiently implemented in hardware for error detection. CRC is
+commonly used in the link layer.
+
+In CRC, the sender and receiver agrees on some bit pattern called the generator
+$G$. $G$ has $r+1$ bits for a $r$-bit CRC value. For example, the IEEE standard
+for link layer CRC-32 uses the generator of
+$G=100000100110000010001110110110111$ which has 33 bits. The CRC value is then
+calculated by dividing the data bits (appended with $r$ 0 bits) by $G$ and
+taking the remainder. Division works by performing bitwise XOR operations for
+each step.
+
 ## Link Layer
 
 The link layer in a network is responsible for direct communication between
