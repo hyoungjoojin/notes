@@ -16,6 +16,20 @@ the problem ID to the corresponding directory within the repository. Problem IDs
 are composed of the platform ID and the problem number, and the platform IDs are
 as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 
+## Implementation
+
+- Related Problems
+  - CF 61A: Given two binary strings, find the bitwise XOR of the two strings.
+  - CF 451B: Given an array, determine if it can be sorted in non-decreasing
+    order by reversing exactly one segment of the array.
+
+## Brute Force
+
+## Greedy Approach
+
+- Related Problems
+  - CF 265B
+
 ## Array
 
 - Related Problems
@@ -46,6 +60,12 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 368B: Given an array and an index $i$, find the number of distinct
     integers in the suffix of the array starting at index $i$.
 
+## Hash Table
+
+- Related Problems
+  - LC 1: Given an array of integers and a target integer, find the indices of
+    the two numbers in the array that add up to the target.
+
 ## 2D Prefix Sum
 
 - Related Problems
@@ -60,6 +80,11 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     that $1 \leq a \leq b \leq c \leq n$ and $a^2 + b^2 = c^2$.
 
 ## Dynamic Programming
+
+### Kadane's Algorithm
+
+- Related Problems
+  - LC 53: Given an integer array, find the subarray with the largest sum.
 
 ### Longest Increasing Subsequence
 
@@ -80,3 +105,11 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - Related Problems
   - LC 204: Given an integer $n$, count the number of prime numbers less than
     $n$.
+  - CF 230B: Determine if a given integer has exactly three distinct positive
+    divisors.
+
+## Bit Manipulation
+
+- Related Problems
+  - CF 467B: Given an array of integers and a target value, count the number of
+    integers that have at most $k$ different bits from the target value.
