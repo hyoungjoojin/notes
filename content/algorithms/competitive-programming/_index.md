@@ -60,6 +60,15 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 368B: Given an array and an index $i$, find the number of distinct
     integers in the suffix of the array starting at index $i$.
 
+## Priority Queue
+
+- **Top K Elements**: Given an array of integers, return the $k$ largest
+  elements in the array.
+  - Related Problems
+    - LC 703: Given a stream of integers, find the $k$-th largest element at any
+      point in the stream.
+    - LC 347: Given an array of integers, return the $k$ most frequent elements.
+
 ## Hash Table
 
 - Related Problems
@@ -76,8 +85,15 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 ## Binary Search
 
 - Related Problems
+  - LC 704: Given a sorted array of integers, find the index of a target integer
+    in the array.
   - CF 304A: Given an integer $n$, find the number of triplets $(a, b, c)$ such
     that $1 \leq a \leq b \leq c \leq n$ and $a^2 + b^2 = c^2$.
+
+## Two Pointers
+
+- Related Problems
+  - LC 344: Given a string, reverse the string in place.
 
 ## Dynamic Programming
 
@@ -91,6 +107,16 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - Related Problems
   - LC 300: Given an integer array, find the length of the longest strictly
     increasing subsequence.
+
+## Graph Algorithms
+
+### Graph Traversal
+
+#### Grid BFS
+
+- Related Problems
+  - LC 463: Given a 2D grid of 0s and 1s, find the perimeter of the island
+    represented by 1s.
 
 ## Number Theory
 
