@@ -1,0 +1,9 @@
+--
+[Q] Explain what Kubernetes is and its architecture.
+[A] Kubernetes (k8s) is an open-source container orchestration platform. k8s is consisted of the
+control plane and worker nodes. The control plane is responsible for managing the cluster, and
+contains the API server, scheduler, controller manager, and etcd. Worker nodes have the kubelet,
+kube-proxy, and container runtime for managing the containers. Each worker node runs one or
+more pods, which are the smallest deployable units in Kubernetes. Pods can contain one or more
+containers.
+--

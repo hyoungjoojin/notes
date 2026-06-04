@@ -68,6 +68,8 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     - LC 703: Given a stream of integers, find the $k$-th largest element at any
       point in the stream.
     - LC 347: Given an array of integers, return the $k$ most frequent elements.
+    - LC 215: Given an array of integers and an integer $k$, return the $k$-th
+      largest element in the array.
 
 ## Hash Table
 
@@ -81,6 +83,7 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - LC 1314: Given a 2D matrix and an integer $k$, find the sum of all elements
     in the block of size $(2k + 1) \times (2k + 1)$ centered at that element for
     each element in the matrix.
+  - LC 304: Given a 2D matrix, find the sum of the elements within a submatrix.
 
 ## Binary Search
 
@@ -117,6 +120,17 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - Related Problems
   - LC 463: Given a 2D grid of 0s and 1s, find the perimeter of the island
     represented by 1s.
+  - LC 695: Given a 2D grid of 0s and 1s, find the maximum area of an island
+    represented by 1s.
+
+### Minimum Spanning Tree
+
+#### Minimum Spanning Tree for Dense Graphs
+
+- Related Problems
+  - LC 1584: Given $n$ points on a 2D plane, find the minimum cost to connect
+    all points, where the cost to connect two points is the Manhattan distance
+    between them.
 
 ## Number Theory
 
