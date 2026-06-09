@@ -25,6 +25,10 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 
 ## Brute Force
 
+- Related Problems
+  - CF 466A: Given the cost of a single ride and the cost of an $m$-day pass,
+    find the minimum cost of traveling for $n$ days.
+
 ## Greedy Approach
 
 - Related Problems
@@ -147,6 +151,12 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     $n$.
   - CF 230B: Determine if a given integer has exactly three distinct positive
     divisors.
+
+### Greatest Common Divisor (GCD)
+
+- Related Problems
+  - CF 483A: Find any three numbers $(a, b, c)$ in the range $[l, r]$ such that
+    $(a, b)$ and $(b, c)$ are coprime but $(a, c)$ are not coprime.
 
 ## Bit Manipulation
 
