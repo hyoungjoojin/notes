@@ -6,3 +6,5 @@ title = "programming-languages"
 
 - [C++](./c++)
 - [Java](./java)
+- [Go](./go)
+- [SQL](./sql)
