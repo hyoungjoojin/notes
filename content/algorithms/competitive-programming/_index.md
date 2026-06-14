@@ -104,16 +104,61 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 
 ## Dynamic Programming
 
+- Related Problems
+  - AC DP-A: Given an array of integers, the cost of moving from position $i$ to
+    $j$ is $|h_i - h_j|$. If we can only move from position $i$ to $i + 1$ or
+    $i + 2$, find the minimum cost to move from the start to the end.
+  - AC DP-B: Given an array of integers and $k$, the cost of moving from
+    position $i$ to $j$ is $|h_i - h_j|$. If we can only move from position $i$
+    to any position within the range between $i + 1$ and $i + k$, find the
+    minimum cost to move from the start to the end.
+  - AC DP-C: Given three arrays of same length $a$, $b$, and $c$, find the
+    maximum sum of elements by choosing only one element from each array at any
+    index and such that no consecutive elements are chosen from the same array.
+
+### 0-1 Knapsack
+
+- Related Problems
+  - AC DP-D: Solve the 0-1 knapsack problem where the maximum weight of the
+    knapsack is $10^5$.
+
+### Unbounded Knapsack
+
 ### Kadane's Algorithm
 
 - Related Problems
   - LC 53: Given an integer array, find the subarray with the largest sum.
+
+### Longest Common Subsequence
+
+- Related Problems
+  - AC DP-F: Given two strings, find any longest common subsequence of the two
+    strings.
 
 ### Longest Increasing Subsequence
 
 - Related Problems
   - LC 300: Given an integer array, find the length of the longest strictly
     increasing subsequence.
+
+### Matrix Chain Multiplication
+
+### Bitmask DP
+
+### Digit DP
+
+### Dynamic Programming on Graphs
+
+- Related Problems
+  - AC DP-G: Given a directed acyclic graph, find the length of the longest path
+    in the graph.
+
+### Dynamic Programming on Grids
+
+- Related Problems
+  - AC DP-H: Given a grid of 0s and 1s, find the number of ways to move from the
+    top-left corner to the bottom-right corner while moving only right or down,
+    and only through cells containing 0.
 
 ## Graph Algorithms
 
