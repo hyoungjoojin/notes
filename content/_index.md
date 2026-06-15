@@ -40,3 +40,7 @@ personal biases.
 - [Software Engineering](./software-engineering)
 - [AI Engineering](./ai-engineering)
 - [Development Tools](./development-tools)
+
+### Mathematics
+
+- [Linear Algebra](./linear-algebra)

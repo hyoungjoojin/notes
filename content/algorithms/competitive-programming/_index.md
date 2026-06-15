@@ -115,12 +115,19 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - AC DP-C: Given three arrays of same length $a$, $b$, and $c$, find the
     maximum sum of elements by choosing only one element from each array at any
     index and such that no consecutive elements are chosen from the same array.
+  - AC DP-I: Given an array of $N$ coins, each with a probability of $p_i$ of
+    being heads, find the probability of getting more heads than tails when
+    tossing all the coins.
+  - CSES 1745: Given $n$ coins each with different values, find the number of
+    distinct sums of money you can create using these coins by using each coin
+    at most once.
 
 ### 0-1 Knapsack
 
 - Related Problems
   - AC DP-D: Solve the 0-1 knapsack problem where the maximum weight of the
     knapsack is $10^5$.
+  - CSES 1158: Duplicate of AC DP-D.
 
 ### Unbounded Knapsack
 
@@ -159,10 +166,17 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - AC DP-H: Given a grid of 0s and 1s, find the number of ways to move from the
     top-left corner to the bottom-right corner while moving only right or down,
     and only through cells containing 0.
+  - CSES 1638: Duplicate of AC DP-H.
 
 ## Graph Algorithms
 
 ### Graph Traversal
+
+#### Graph Bipartition
+
+- Related Problems
+  - CF 687A: Given an undirected graph, partition the vertices into two groups
+    where the groups are disjoint and each group is a vertex cover of the graph.
 
 #### Grid BFS
 
@@ -171,6 +185,8 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     represented by 1s.
   - LC 695: Given a 2D grid of 0s and 1s, find the maximum area of an island
     represented by 1s.
+  - CSES 1192: Given a grid of 0s and 1s, find the number of connected
+    components of 1s in the grid.
 
 ### Minimum Spanning Tree
 
