@@ -23,6 +23,12 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 451B: Given an array, determine if it can be sorted in non-decreasing
     order by reversing exactly one segment of the array.
 
+### Simulation
+
+- Related Problems
+  - PG 67256: Given a number pad and a sequence of numbers to press, determine
+    which hand should be used to press each number based on the given rules.
+
 ## Brute Force
 
 - Related Problems
@@ -58,6 +64,13 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - Related Problems
   - LC 20: Given a string of parentheses, determine if the string is valid.
 
+### Expression Evaluation
+
+- Related Problems
+  - PG 67257: Given a infix expression consisting of numbers and the operators
+    `+`, `-`, and `*`, find the maximum absolute value of the result by changing
+    the order of operations.
+
 ## Set
 
 - Related Problems
@@ -77,9 +90,17 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 
 ## Hash Table
 
+### Two Sum
+
 - Related Problems
   - LC 1: Given an array of integers and a target integer, find the indices of
     the two numbers in the array that add up to the target.
+  - CF 1931D: Given an array of integers and two values $x$ and $y$, find the
+    number of pairs of indices $(i, j)$ such that $i < j$ and
+    $(a_i + a_j) \mod x = 0$ and $(a_i - a_j) \mod y = 0$.
+  - CF 1915E: Given an array of integers, determine if there exists two distinct
+    indices $i$ and $j$ such that the sum of the elements at odd indices and
+    even indices are equal in the subarray between $i$ and $j$.
 
 ## 2D Prefix Sum
 
@@ -97,10 +118,22 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 304A: Given an integer $n$, find the number of triplets $(a, b, c)$ such
     that $1 \leq a \leq b \leq c \leq n$ and $a^2 + b^2 = c^2$.
 
+### Parametric Search
+
+- Related Problems
+  - PG 43238: Given an array of integers and a target value $k$, find the
+    minimum value $x$ such that
+    $\sum_{i=1}^{n} \lfloor \frac{x}{t_i} \rfloor \geq k$.
+
 ## Two Pointers
 
 - Related Problems
   - LC 344: Given a string, reverse the string in place.
+
+- **Minimum Window Substring**: Given an array, find the smallest contiguous
+  subarray that contains all the distinct elements in the array.
+  - Related Problems
+    - PG 67258: Duplicate of the above problem.
 
 ## Dynamic Programming
 
@@ -135,6 +168,9 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 
 - Related Problems
   - LC 53: Given an integer array, find the subarray with the largest sum.
+  - CF 1927D: Given an array of integers, for a given query of $(l, r)$, find
+    any pair of indices $i, j$ such that $l \leq i < j \leq r$ and
+    $a_i \neq a_j$.
 
 ### Longest Common Subsequence
 
@@ -171,6 +207,18 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 ## Graph Algorithms
 
 ### Graph Traversal
+
+- **Number of Connected Components**: Given an undirected graph, find the number
+  of connected components in the graph.
+  - Related Problems
+    - PG 43162: Duplicate of the above problem, the graph is given as an
+      adjacency matrix.
+
+#### Distance in Unweighted Graphs
+
+- Related Problems
+  - PG 49189: Given an undirected graph, find the number of nodes that are the
+    farthest from a node.
 
 #### Graph Bipartition
 
