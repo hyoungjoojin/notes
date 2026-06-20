@@ -43,4 +43,5 @@ personal biases.
 
 ### Mathematics
 
+- [Abstract Algebra](./abstract-algebra)
 - [Linear Algebra](./linear-algebra)

@@ -4,6 +4,59 @@ title = "linear-algebra"
 
 # Linear Algebra
 
+## Vector Space
+
+A vector space $V$ is a set of elements with two operations,
+$+: V \times V \rarr V$ (vector addition) and $\cdot: F \times V\rarr V$ (scalar
+multiplication), where $F$ is a field with identity elements $0$ and $1$. A
+vector space must satisfy the following properties.
+
+- $(V, +)$ is an Abelian group.
+- Multiplicative Identity: $\forall v \in V, 1\cdot v = v$.
+- Distributive Properties
+  - $\forall a \in F, \forall u, v\in V, a \cdot (u + v) = a \cdot u + a \cdot v$
+  - $\forall a, b \in F, \forall v\in V, (a + b) \cdot v = a \cdot v + b \cdot v$
+
+Here, elements of vector spaces are called vectors and elements of the field are
+called scalars.
+
+### Vector Subspace
+
+For a vector space $V$, a non-empty subset $U\subset V$ is a subspace of $V$ if
+it is closed under linear combinations. This means that the following properties
+must hold.
+
+- Zero Vector: $0 \in U$
+- Additive Closure: $\forall u, v \in U, u + v \in U$
+- Scalar Multiplicative Closure:
+  $\forall a \in F, \forall u \in U, a \cdot u \in U$
+
+### Linear Independence
+
+A set of vectors $\lbrace v_1, v_2, \dots, v_n \rbrace$ in a vector space $V$ is
+called linearly independent if the following property holds.
+
+- $\sum_{i=1}^n a_i v_i = 0 \implies a_1 = a_2 = \cdots = a_n = 0$
+
+### Span
+
+Given a vector space $V$, we can define a linear combination of vectors for
+$a_1,a_2\cdots a_n \in F, v_1, v_2, \dots v_n \in V$ as $\sum_{i=1}^n a_i v_i$.
+
+The span of a vector space $V$, $\text{span}(V)$, is the set of all linear
+combinations of vectors in $V$.
+
+### Basis
+
+A subset $B$ of a vector space $V$ is called a basis of $V$ if the following
+properties hold.
+
+- $\text{span}(B) = V$
+- $B$ is linearly independent.
+
+The dimension of a vector space $V$, $\text{dim}(V)$, is the number of vectors
+in a basis of $V$.
+
 ## Vector Norms
 
 The norm of a vector measures the length of a vector.

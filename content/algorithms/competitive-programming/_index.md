@@ -40,6 +40,13 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - Related Problems
   - CF 265B
 
+- Given a list of tasks with their start and end times, find the maximum number
+  of tasks that can be completed without overlapping.
+  - Related Problems
+    - AC 131D: Given $N$ tasks with a deadline and the time it takes to complete
+      each task, determine whether it is possible to complete all tasks before
+      their respective deadlines.
+
 ## Array
 
 - Related Problems
@@ -124,6 +131,10 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - PG 43238: Given an array of integers and a target value $k$, find the
     minimum value $x$ such that
     $\sum_{i=1}^{n} \lfloor \frac{x}{t_i} \rfloor \geq k$.
+  - CF 371C: Given 4 arrays of length 3, representing $r$ for the required
+    resources to make one entity, $c$ for the cost of each resource, $n$ for the
+    number of resources you have, and $p$ for the price of each resource, find
+    the maximum number of entities you can make.
 
 ## Two Pointers
 
@@ -154,6 +165,9 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CSES 1745: Given $n$ coins each with different values, find the number of
     distinct sums of money you can create using these coins by using each coin
     at most once.
+  - CF 455A: Given an array of integers, find the maximum sum of elements that
+    can be chosen such that when selecting an element $x$, you cannot select any
+    element equal to $x-1$ or $x+1$ in subsequent selections.
 
 ### 0-1 Knapsack
 
@@ -236,6 +250,24 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CSES 1192: Given a grid of 0s and 1s, find the number of connected
     components of 1s in the grid.
 
+### Shortest Path Algorithms
+
+- Related Problems
+  - CF 20C: Given an undirected weighted graph with non-negative edge weights,
+    find any one of the shortest paths from a source vertex to a target vertex.
+
+- **Multi-Source Shortest Path**: Given an undirected weighted graph with
+  non-negative edge weights and a set of source vertices, find the shortest path
+  from any source vertex to a target vertex.
+  - Related Problems
+    - CF 707B: Duplicate of the above problem.
+
+- **Shortest Path in Directed Acyclic Graph**: Given a directed acyclic graph
+  with weighted edges, find the shortest path from a source vertex to a target
+  vertex.
+
+### Topological Sort
+
 ### Minimum Spanning Tree
 
 #### Minimum Spanning Tree for Dense Graphs
@@ -244,6 +276,14 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - LC 1584: Given $n$ points on a 2D plane, find the minimum cost to connect
     all points, where the cost to connect two points is the Manhattan distance
     between them.
+
+## Range Queries
+
+- **Point Update Range Query**: Given an array of integers, perform point
+  updates and range queries on the array.
+  - Related Problems
+    - CSES 1648: Duplicate of the above problem, answer range sum queries.
+    - CSES 1649: Duplicate of the above problem, answer range minimum queries.
 
 ## Number Theory
 
