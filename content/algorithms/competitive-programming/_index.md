@@ -141,9 +141,23 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - Related Problems
   - LC 344: Given a string, reverse the string in place.
 
+- **Contiguous Subarray Sum**: Given an array of integers and a target integer,
+  find the number of contiguous subarrays whose sum equals the target.
+  - Related Problems
+    - CF 279B: Given an array of positive integers, find the maximum length of a
+      contiguous subarray such that the sum of its elements is less than or
+      equal to a given integer $T$.
+    - AC 130D: Given an array of positive integers, find the number of
+      contiguous subarrays such that the sum of its elements is greater than or
+      equal to a given integer $T$.
+
 - **Minimum Window Substring**: Given an array, find the smallest contiguous
   subarray that contains all the distinct elements in the array.
   - Related Problems
+    - CSES 1141: Given an array of integers, find the longest subarray where
+      every element of the subarray is unique.
+    - CSES 2428: Given an array of integers, count the number of subarrays that
+      have at most $k$ distinct values.
     - PG 67258: Duplicate of the above problem.
 
 ## Dynamic Programming
@@ -168,6 +182,9 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 455A: Given an array of integers, find the maximum sum of elements that
     can be chosen such that when selecting an element $x$, you cannot select any
     element equal to $x-1$ or $x+1$ in subsequent selections.
+  - PG 42897: Given an array of integers, find the maximum sum of selected
+    elements in the array such that no two selected elements are adjacent and
+    the first and last elements are not selected together.
 
 ### 0-1 Knapsack
 
