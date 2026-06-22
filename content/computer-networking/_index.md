@@ -4,6 +4,31 @@ title = "computer-networking"
 
 # Computer Networking
 
+## Network Devices
+
+### Network Switch
+
+A network switch is a device that provices connectivity to hosts within the same
+local network. A network switch has many ports or interfaces that end hosts can
+connect to. Network switches do not provice connectivity over the Internet or
+between different local networks.
+
+### Network Router
+
+Network routers are used to provide connectivity between different local
+networks and over the Internet. A network router has fewer ports than a network
+switch, and each port is connected to a different local network.
+
+### Network Firewall
+
+A network firewall is a hardware device that monitors and controls incoming and
+outgoing network traffic based on predetermined security rules. A firewall can
+be placed within the network or outside the network, by placing it before or
+after the router.
+
+Network firewalls that provide advanced security features are called
+next-generation firewalls (NGFWs).
+
 ## Error Detection and Correction
 
 Error detection and correction (EDC) is essential in computer networking where
