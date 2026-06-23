@@ -23,6 +23,12 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 451B: Given an array, determine if it can be sorted in non-decreasing
     order by reversing exactly one segment of the array.
 
+### String Parsing
+
+- Related Problems
+  - PG 64065: Parse a string that represents a list of integers and return the
+    integer array.
+
 ### Simulation
 
 - Related Problems
@@ -97,6 +103,13 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 
 ## Hash Table
 
+- Related Problems
+  - PG 42576: Given two string arrays $s$ and $t$, where $t$ is missing one
+    element from $s$, return the missing element.
+  - PG 1845: Given an array of integers, find the maximum number of different
+    integers you can choose from the array, given that you can only choose half
+    of the total number of integers in the array.
+
 ### Two Sum
 
 - Related Problems
@@ -108,6 +121,12 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 1915E: Given an array of integers, determine if there exists two distinct
     indices $i$ and $j$ such that the sum of the elements at odd indices and
     even indices are equal in the subarray between $i$ and $j$.
+
+## Binary Tree
+
+- Related Problems
+  - PG 150367: Given a method to encode a binary tree to a binary string,
+    determine if a given number can be represented as a binary tree.
 
 ## 2D Prefix Sum
 
@@ -301,6 +320,13 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - Related Problems
     - CSES 1648: Duplicate of the above problem, answer range sum queries.
     - CSES 1649: Duplicate of the above problem, answer range minimum queries.
+
+## String Algorithms
+
+- Given a list of strings, find if there exists a pair of strings such that one
+  string is a prefix of the other.
+  - Related Problems
+    - PG 42577: Duplicate of the above problem.
 
 ## Number Theory
 
