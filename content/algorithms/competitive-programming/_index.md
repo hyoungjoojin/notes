@@ -35,16 +35,38 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - PG 67256: Given a number pad and a sequence of numbers to press, determine
     which hand should be used to press each number based on the given rules.
 
+## Constructive Algorithms
+
+- Related Problems
+  - CSES 1070: Given an integer $n$, find any permutation of numbers 1 to $n$
+    such that no two adjacent numbers have a difference of 1.
+    - Solutions
+      - This can be solved by placing all even numbers first, then all odd
+        numbers.
+  - CSES 1071: Given a grid of numbers that forms a spiral, determine the number
+    at a given coordinate $(r, c)$.
+
 ## Brute Force
 
 - Related Problems
   - CF 466A: Given the cost of a single ride and the cost of an $m$-day pass,
     find the minimum cost of traveling for $n$ days.
+  - CSES 1069: Given a string, find the longest substring that contains only one
+    unique character.
+
+- **Collatz Sequence**: Simulate the Collatz sequence. The sequence is generated
+  by the following rules. Given an integer $n$, divide it by 2 if $n$ is even
+  and make it $3n+1$ if $n$ is odd. Terminate the sequence when $n$ becomes 1.
+  - Related Problems
+    - CSES 1068: The initial value is at most $10^6$.
 
 ## Greedy Approach
 
 - Related Problems
   - CF 265B
+  - CSES 1094: Given an array of integers, find the minimum number of moves
+    required to make the array increasing, where one move consists of increasing
+    the value of any element by one.
 
 - Given a list of tasks with their start and end times, find the maximum number
   of tasks that can be completed without overlapping.
@@ -62,13 +84,17 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 ## Sorting
 
 - Related Problems
+  - CSES 1621: Given an array of integers, find the number of distinct values in
+    the array.
   - CF 456A: Given two arrays of integers, determine if there exists a pair of
     indices $(i, j)$ such that $a[i] < a[j]$ and $b[i] > b[j]$.
 
-- **First Missing Positive**: Given an array of integers, find the smallest
-  positive integer that is not present in the array.
+- **Missing Number**: Given an array, find the missing number in the array.
   - Related Problems
-    - CF 27A
+    - CSES 1083: Given an array of $n-1$ distinct integers in the range
+      $[1, n]$, find the missing number.
+    - CF 27A: Given an array of integers, find the smallest positive integer
+      that is not present in the array.
 
 ## Stack
 
@@ -155,6 +181,12 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     number of resources you have, and $p$ for the price of each resource, find
     the maximum number of entities you can make.
 
+## Sliding Window
+
+- Related Problems
+  - CSES 3220: Given an array of integers, calculate the sum of each window of
+    size $k$ and return the XOR of all sums.
+
 ## Two Pointers
 
 - Related Problems
@@ -217,6 +249,7 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 ### Kadane's Algorithm
 
 - Related Problems
+  - CSES 1643: Find the maximum sum of a contiguous subarray.
   - LC 53: Given an integer array, find the subarray with the largest sum.
   - CF 1927D: Given an array of integers, for a given query of $(l, r)$, find
     any pair of indices $i, j$ such that $l \leq i < j \leq r$ and
