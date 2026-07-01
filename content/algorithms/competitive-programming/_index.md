@@ -60,6 +60,15 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - Related Problems
     - CSES 1068: The initial value is at most $10^6$.
 
+### Backtracking
+
+- **String Permutations**: Given a string, generate all possible permutations of
+  the characters in the string.
+  - Related Problems
+    - CSES 1622: Given a string, print the number of distinct permutations of
+      the characters in the string and print all distinct permutations in
+      lexicographical order.
+
 ## Greedy Approach
 
 - Related Problems
@@ -68,12 +77,29 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     required to make the array increasing, where one move consists of increasing
     the value of any element by one.
 
-- Given a list of tasks with their start and end times, find the maximum number
-  of tasks that can be completed without overlapping.
+- **Activity Selection**: Given $N$ intervals, find the maximum number of
+  non-overlapping intervals that can be selected.
   - Related Problems
+    - CSES 1629: Duplicate of the above problem.
     - AC 131D: Given $N$ tasks with a deadline and the time it takes to complete
       each task, determine whether it is possible to complete all tasks before
       their respective deadlines.
+
+- **Tower Building**: Given a sequence of integers, find the minimum number of
+  increasing subsequences that can be formed from the sequence where each
+  element of the sequence belongs to exactly one subsequence.
+  - Algorithms
+    - This problem can be solved using a greedy approach with the patience
+      sorting algorithm.
+  - Related Problems
+    - CSES 1073: Duplicate of the above problem.
+
+## Recursion
+
+- **Tower of Hanoi**
+  - Related Problems
+    - CSES 2165: Find the minimum number of moves required to solve the Tower of
+      Hanoi problem for $N$ disks and print the sequence of moves.
 
 ## Array
 
@@ -170,6 +196,17 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 304A: Given an integer $n$, find the number of triplets $(a, b, c)$ such
     that $1 \leq a \leq b \leq c \leq n$ and $a^2 + b^2 = c^2$.
 
+- **3 Sum**: Given an array of integers and a target integer, find all unique
+  triplets in the array that sum up to the target.
+  - Algorithms
+    - This problem can be solved using binary search to be solved in
+      $O(n^2 \log n)$.
+    - This problem can also be solved using the two pointers technique to be
+      solved in $O(n^2)$.
+  - Related Problems
+    - CSES 1641: Find any three distinct positions in the array such that the
+      sum of the elements at those positions is equal to the target.
+
 ### Parametric Search
 
 - Related Problems
@@ -264,6 +301,7 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 ### Longest Increasing Subsequence
 
 - Related Problems
+  - CSES 1145: Find the length of the longest increasing subsequence.
   - LC 300: Given an integer array, find the length of the longest strictly
     increasing subsequence.
 
@@ -337,6 +375,9 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 
 ### Topological Sort
 
+- Related Problems
+  - CSES 1679: Find any valid topological ordering of the graph.
+
 ### Minimum Spanning Tree
 
 #### Minimum Spanning Tree for Dense Graphs
@@ -347,6 +388,22 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     between them.
 
 ## Range Queries
+
+- **Range Sum Query**: Given an array of integers, perform range sum queries on
+  the array.
+  - Algorithms
+    - This problem can be solved using prefix sum arrays.
+  - Related Problems
+    - CSES 1646: Duplicate of the above problem.
+    - CSES 1650: Perform range XOR queries on the array.
+
+- **Range Minimum Query**: Given an array of integers, perform range minimum
+  queries on the array.
+  - Algorithms
+    - This problem can be solved using segment trees.
+    - This problem can also be solved using sparse tables.
+  - Related Problems
+    - CSES 1647: Duplicate of the above problem.
 
 - **Point Update Range Query**: Given an array of integers, perform point
   updates and range queries on the array.
@@ -363,9 +420,15 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 
 ## Number Theory
 
+- **Trailing Zeros**: Given an integer $N$, find the number of trailing zeros in
+  $N!$.
+  - Related Problems
+    - CSES 1618: Duplicate of the above problem.
+
 ### Binary Exponentiation
 
 - Related Problems
+  - CSES 1095: Given $a$ and $b$, calculate $a^b$.
   - LC 1922: Find the number of strings of length $n$ where the even-indexed
     characters are even digits and the odd-indexed characters are prime digits.
 

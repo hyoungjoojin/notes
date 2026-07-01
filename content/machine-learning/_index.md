@@ -17,6 +17,140 @@ the dataset $L(\theta) = \sum_{i=1}^N l(g_{\theta}(x_i), y_i)$ is minimized.
 
 ## Linear Regression
 
+Linear regression predicts the output variable as a linear combination of the
+input features.
+
+$$
+\hat{y} = w^\intercal x + b = w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b
+$$
+
+When using the mean squared error (MSE) loss function, the optimal weights can
+be solved analytically. The computational cost of solving the optimal weight is
+$O(nd^2 + d^3)$, where $n$ is the number of samples and $d$ is the number of
+features. If this is not tractable, we can use gradient descent to find the
+optimal weights.
+
+$$
+\hat{w} = (X^\intercal X)^{-1} X^\intercal y
+$$
+
+This corresponds to the maximum likelihood estimate of the weights under the
+assumption that the output variable is normally distributed with a mean equal to
+the linear combination of the input features and a constant variance.
+
+$$
+p(y | x, w) = \mathcal{N}(y; w^\intercal x + b, \sigma^2)
+$$
+
+## Logistic Regression
+
+Logistic regression predicts the probability of a binary output variable as a
+logistic function of a linear combination of the input features.
+
+$$
+P(y=1 | x) = \sigma(w^\intercal x + b)
+$$
+
+The logistic function $\sigma(z)}$ maps the output variable to a probability
+between 0 and 1. Any type of logistic function can be used, but the most common
+is the sigmoid function. The sigmoid function is defined as
+$\sigma(z) = \frac{1}{1 + e^{-z}}$. For multi-class classification, the softmax
+function is used instead of the sigmoid function. The softmax function is
+defined as $\sigma(z_i) = \frac{e^{z_i}}{\sum_{j=1}^K e^{z_j}}$
+
+In logistic regression, cross-entropy loss is commonly used as the loss
+function. The cross-entropy loss is defined as follows. No closed-form solution
+exists, therefore gradient descent is used to find the optimal weights.
+
+$$
+L(w, b) = - \frac{1}{N} \sum_{i=1}^N [y_i \log P(y=1 | x_i) + (1 - y_i) \log (1 - P(y=0 | x_i))]
+$$
+
+## Regularization
+
+Regularization is a technique used to prevent overfitting in machine learning.
+This works by adding a penalty term to the loss function that discourages the
+model from learning overly complex patterns in the data.
+
+The ridge regression (L2 regularization) adds the penalty term $||w||_2^2$ to
+the loss function, while the lasso regression (L1 regularization) adds the
+penalty term $||w||_1$ to the loss function. The ridge regression shrinks
+weights smoothly towards zero, while the lasso regression can shrink weights to
+exactly zero, effectively performing feature selection.
+
+## k-Nearest Neighbors (kNN)
+
+k-Nearest Neighbors (kNN) uses the $k$ closest training samples to make
+predictions for a new input sample. This can be used in both classification (by
+taking the majority class of the $k$ neighbors) and regression (by taking the
+mean of the $k$ neighbors). kNN doesn't require a separate training phase, the
+training samples themselves are the model.
+
+kNN requires a distance metric to measure the similarity between samples.
+Euclidean distance, Manhattan distance, and cosine similarity are common
+distance metrics used in kNN.
+
+Features must be scaled to the same range before using kNN, and the choice of
+feature representation is also important for the performance of kNN.
+
+The value of $k$ is an important hyperparameter that can affect the performance
+of kNN. A small value of $k$ can lead to overfitting, while a large value of $k$
+can lead to underfitting. Cross-validation can be used to select the optimal
+value of $k$. When $k$ is large, we can use weighted kNN to give more importance
+to closer neighbors when making predictions.
+
+$$
+\hat{y} = \frac{\sum_{i=1}^k w_i y_i}{\sum_{i=1}^k w_i}, w_i = \frac{1}{d(x, x_i)}
+$$
+
+## Decision Trees
+
+Decision trees recusively partition the input space into regions based on the
+values of the input features, and a local model is fit to each region.
+
+The depth of the decision tree is an important hyperparameter that can affect
+the performance of the model. A shallow tree can lead to underfitting, and a
+deep tree can lead to overfitting. Pruning techniques can be used to reduce the
+depth of the tree and prevent overfitting. Pre-pruning stops the tree from
+growing before it gets too complex and post-pruning removes branches from a
+fully grown tree to reduce complexity.
+
+### Isolation Forests
+
+Decision trees can be used for anomaly detection by using isolation forests. An
+isolation forest works with the idea that anomalies can be separated from the
+rest of the data easily. This works by building a decision tree that partitions
+the data until each sample is isolated, and using the depth of each node to
+determine the anomaly score of each sample.
+
+## Ensemble Learning
+
+Ensemble learning uses multiple models to make predictions by combining each
+model's predictions to improve the overall performance of the model through
+generalization.
+
+### Bagging
+
+Bagging, also called bootstrap aggregating, splits the training data into
+multiple subsets, and trains a separate model on each subset.
+
+If the splitted data is correlated, then the ensemble model cannot have the
+effect of reduced variance. Therefore, it is important to have the datasets be
+independent as possible between each models. Additional variability can be
+introduced to individual models by removing features or by using different model
+architectures.
+
+Random forests are a type of bagging ensemble that uses decision trees as the
+base model.
+
+### Boosting
+
+Boostin trains a sequence of models, where each model is trained to correct the
+mistakes of the previous model.
+
+AdaBoost or Gradient Boosting are common boosting algorithms. Gradient boosting
+is used in frameworks like XGBoost, LightGBM, and CatBoost.
+
 ## Tabular Machine Learning
 
 Tabular machine learning is the task of building a model that can use tabular
@@ -64,7 +198,15 @@ relationships from the data. Models should avoid making decisions purely based
 on false correlations in the data by learning the underlying causal
 relationships.
 
-### Tabular Data Clustering
+### Classical Machine Learning Models for Tabular Data
+
+Classical machine learning models like simple linear models, tree-based
+ensembles, or gradient boosting models are commonly used for tabular data. These
+models provide strong baselines for tabular data because of their simplicity,
+interpretability, and strong performance. Especially, tree-based approaches can
+handle heterogeneous feature types, missing values, and imbalanced data well.
+
+### Tabular Data Clustering Algorithms
 
 Common algorithms for aata clustering on tabular data include k-means, GMMs,
 DBSCAN, and hierarchical clustering.
