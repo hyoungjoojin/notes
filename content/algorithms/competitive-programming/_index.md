@@ -1,8 +1,7 @@
 +++
 title = "competitive-programming"
+heading = "Competitive Programming Algorithms"
 +++
-
-# Competitive Programming Algorithms
 
 Competitive programming is the practice of using well-known data structures and
 algorithms to solve artificial problems efficiently within a time limit. This
@@ -386,6 +385,16 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - LC 1584: Given $n$ points on a 2D plane, find the minimum cost to connect
     all points, where the cost to connect two points is the Manhattan distance
     between them.
+
+## Tree Algorithms
+
+- **Count Children**: Given a tree, count the number of children for a node.
+  - Related Problems
+    - CSES 1674: Count the number of children for every node in the tree.
+
+- **Tree Diameter**: Given a tree, find the diameter of the tree.
+  - Related Problems
+    - CSES 1131: Find the length of the diameter of the tree.
 
 ## Range Queries
 

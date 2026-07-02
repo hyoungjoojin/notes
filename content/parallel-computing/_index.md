@@ -1,8 +1,7 @@
 +++
 title = "parallel-computing"
+heading = "Parallel Computing"
 +++
-
-# Parallel Computing
 
 ## Instruction-level Parallelism (ILP)
 

@@ -1,8 +1,7 @@
 +++
 title = "web-development"
+heading = "Web Development"
 +++
-
-# Web Development
 
 ## Email Verification
 

@@ -1,8 +1,8 @@
 +++
 title = "software-engineering"
+heading = "Software Engineering"
 +++
 
-# Software Engineering
 
 ## System Design
 

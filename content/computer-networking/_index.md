@@ -1,8 +1,83 @@
 +++
 title = "computer-networking"
+heading = "Computer Networking"
 +++
 
-# Computer Networking
+## Layered Network Architecture
+
+Computer networks are complex systems that can be split across multiple tasks
+and responsibilities. In order to manage this complexity, we can model the
+entire network infrastructure as a layered architecture of protocols. This model
+is not a strict implementation, but rather a conceptual description of how the
+network works. Different models have different layers, like the OSI model's 7
+layer architecture or the TCP/IP model's 4 layer architecture.
+
+It is imporant that each layer is independent from the other layers, and each
+layer should only be concerned with its own job. Changes made in another layer
+should not affect the other layers, and each layer should only communicate with
+its adjacent layers. This allows each layer to be developed independently, and
+also allows for different implementations of the same layer to be used in the
+same network.
+
+### Application Layer
+
+The application layer is the topmost layer in the network architecture, and it
+serves as the interface between the end-user application and the underlying
+network.
+
+HTTP, FTP, SMTP, and DNS are examples of application layer protocols.
+
+The OSI model views the application layer as three separate layers: the
+application layer, presentation layer, and session layer.
+
+### Transport Layer
+
+The transport layer is responsible for providing communication between processes
+running on different hosts.
+
+TCP and UDP are examples of transport layer protocols.
+
+### Network Layer
+
+The network layer is responsible for providing communication between hosts on
+different networks.
+
+IP is an example of a network layer protocol.
+
+### Data Link Layer
+
+The link layer is responsible for providing communication between adjacent nodes
+on the same network.
+
+Ethernet and Wi-Fi are examples of link layer protocols.
+
+### Physical Layer
+
+The physical layer is responsible for the physical transmission of data over a
+communication channel between two nodes.
+
+Physical layer components are mostly implemented in hardware to ensure high
+performance and low latency.
+
+### Data Encapsulation and Protocol Data Units
+
+Layered network architectures use data encapsulation and decapsulation to
+transmit data between layers. Each layer can add its own header or trailer to
+the data, which contains information specific to that layer. The decapsulation
+process will remove this appended information, so upper layers would not be
+aware of the lower layer's information.
+
+The protocol data unit (PDU) defines the unit of data that is transmitted
+between two nodes in the network layer. Each layer has a different name for its
+PDU. The following table shows the PDU names for each layer in the TCP/IP model.
+The PDU includes the payload data (the PDU from the upper layer) and optional
+headers or trailers added by the layer.
+
+|  Network Layer  |           PDU Name            | Alternative Names |
+| :-------------: | :---------------------------: | :---------------: |
+| Transport Layer | Segment (TCP), Datagram (UDP) |       L4PDU       |
+|  Network Layer  |            Packet             |       L3PDU       |
+| Data Link Layer |             Frame             |       L2PDU       |
 
 ## Network Devices
 

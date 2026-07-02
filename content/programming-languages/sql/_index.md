@@ -1,6 +1,6 @@
 +++
 title = "sql"
+heading = "SQL"
 +++
 
-# SQL
 

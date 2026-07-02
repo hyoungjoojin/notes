@@ -1,8 +1,7 @@
 +++
 title = "docker"
+heading = "Docker"
 +++
-
-# Docker
 
 ## Troubleshooting
 

@@ -1,8 +1,7 @@
 +++
 title = "http"
+heading = "HyperText Transfer Protocol (HTTP)"
 +++
-
-# HyperText Transfer Protocol (HTTP)
 
 The HyperText Transfer Protocol (HTTP) is a stateless application layer protocol
 that specifies how a client and a server can communicate with each other.

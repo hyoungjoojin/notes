@@ -1,8 +1,7 @@
 +++
 title = "linear-algebra"
+heading = "Linear Algebra"
 +++
-
-# Linear Algebra
 
 ## Vector Space
 

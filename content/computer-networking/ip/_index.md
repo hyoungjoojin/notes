@@ -1,8 +1,7 @@
 +++
 title = "ip"
+heading = "IP (Internet Protocol)"
 +++
-
-# IP (Internet Protocol)
 
 ## IP Versions
 

@@ -1,8 +1,7 @@
 +++
 title = "development-tools"
+heading = "Development Tools"
 +++
-
-# Development Tools
 
 - [Linux](./linux)
 

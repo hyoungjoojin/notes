@@ -1,8 +1,7 @@
 +++
 title = "abstract-algebra"
+heading = "Abstract Algebra"
 +++
-
-# Abstract Algebra
 
 ## Groups
 

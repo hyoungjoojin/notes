@@ -1,8 +1,7 @@
 +++
 title = "computer-architecture"
+heading = "Computer Architecture"
 +++
-
-# Computer Architecture
 
 ## Instruction Pipelining
 

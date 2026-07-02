@@ -2,6 +2,9 @@ baseURL = 'https://hyoungjoojin.github.io/notes'
 languageCode = 'en-us'
 theme = 'typo'
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 [params]
 home = "/notes"
 title = "Hyoungjoo Jin's Notes"

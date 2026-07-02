@@ -1,8 +1,7 @@
 +++
 title = "spring"
+heading = "Spring"
 +++
-
-# Spring
 
 ## Spring Beans
 

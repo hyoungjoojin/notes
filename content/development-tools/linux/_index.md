@@ -1,8 +1,7 @@
 +++
 title = "linux"
+heading = "Linux"
 +++
-
-# Linux
 
 ## External Drives
 

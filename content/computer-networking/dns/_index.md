@@ -1,8 +1,7 @@
 +++
 title = "dns"
+heading = "Domain Name System (DNS)"
 +++
-
-# Domain Name System (DNS)
 
 The Domain Name System (DNS) is an application layer protocol for translating
 human-readable domain names into IP addresses and also a distributed database

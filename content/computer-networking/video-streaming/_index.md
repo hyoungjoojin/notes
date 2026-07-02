@@ -1,8 +1,7 @@
 +++
 title = "video-streaming-protocols"
+heading = "Video Streaming Protocols"
 +++
-
-# Video Streaming Protocols
 
 ## HTTP Live Streaming (HLS)
 
