@@ -1,8 +1,7 @@
 +++
 title = "competitive-programming"
+heading = "Competitive Programming Algorithms"
 +++
-
-# Competitive Programming Algorithms
 
 Competitive programming is the practice of using well-known data structures and
 algorithms to solve artificial problems efficiently within a time limit. This

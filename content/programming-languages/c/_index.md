@@ -1,8 +1,7 @@
 +++
 title = "c"
+heading = "C"
 +++
-
-# C
 
 ## Network Programming in C
 

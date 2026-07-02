@@ -1,8 +1,7 @@
 +++
 title = "k8s"
+heading = "Kubernetes"
 +++
-
-# Kubernetes
 
 Kubernetes (k8s) is an open-source container orchestration platform. It is a
 tool that can help manage and deploy containerized applications quickly and

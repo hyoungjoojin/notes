@@ -1,7 +1,6 @@
 +++
 title = "algorithms"
+heading = "Algorithms"
 +++
-
-# Algorithms
 
 - [Competitive Programming Algorithms](./competitive-programming)

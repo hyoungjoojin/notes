@@ -1,8 +1,7 @@
 +++
 title = "programming-languages"
+heading = "Programming Languages"
 +++
-
-# Programming Languages
 
 - [C](./c)
 - [C++](./c++)

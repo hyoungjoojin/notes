@@ -1,8 +1,7 @@
 +++
 title = "machine-learning"
+heading = "Machine Learning"
 +++
-
-# Machine Learning
 
 ## Supervised Learning
 
@@ -24,15 +23,18 @@ $$
 \hat{y} = w^\intercal x + b = w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b
 $$
 
-When using the mean squared error (MSE) loss function, the optimal weights can
-be solved analytically. The computational cost of solving the optimal weight is
-$O(nd^2 + d^3)$, where $n$ is the number of samples and $d$ is the number of
-features. If this is not tractable, we can use gradient descent to find the
-optimal weights.
+### Linear Regression Normal Equation
+
+When using the mean squared error (MSE) loss function in linear regression, the
+optimal weights can be solved analytically. This is called the normal equation.
 
 $$
 \hat{w} = (X^\intercal X)^{-1} X^\intercal y
 $$
+
+The computational cost of solving the optimal weight is $O(nd^2 + d^3)$, where
+$n$ is the number of samples and $d$ is the number of features. If this is not
+tractable, we can use gradient descent to find the optimal weights.
 
 This corresponds to the maximum likelihood estimate of the weights under the
 assumption that the output variable is normally distributed with a mean equal to

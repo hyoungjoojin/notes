@@ -1,8 +1,7 @@
 +++
 title = "distributed-systems"
+heading = "Distributed Systems"
 +++
-
-# Distributed Systems
 
 ## Distributed Hash Table (DHT)
 

@@ -1,8 +1,7 @@
 +++
 title = "computer-security"
+heading = "Computer Security"
 +++
-
-# Computer Security
 
 ## Web Security
 

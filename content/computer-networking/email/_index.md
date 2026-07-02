@@ -1,8 +1,7 @@
 +++
 title = "email-protocols"
+heading = "Email Protocols"
 +++
-
-# Email Protocols
 
 Email protocols can be categorized into two major types: protocols for sending
 messages and protocols for accessing messages. SMTP is the protocol for sending

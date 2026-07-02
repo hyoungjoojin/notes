@@ -1,8 +1,7 @@
 +++
 title = "make"
+heading = "Make"
 +++
-
-# Make
 
 ## Makefile Keywords
 
