@@ -34,6 +34,14 @@ under certain conditions. This can be configured using annotations on beans.
   public class MyOtherService {}
   ```
 
+## Spring Security
+
+### Session Fixation Attack Protection
+
+Session fixation attacks are where an attacker tricks a user into using a
+session ID known to the attacker. This can be protected by regenerating the
+session ID when a user logs in.
+
 ## Spring Actuator
 
 It is possible to change the port of the Spring Actuator endpoints by setting
