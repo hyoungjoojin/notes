@@ -40,9 +40,50 @@ TCP and UDP are examples of transport layer protocols.
 ### Network Layer
 
 The network layer is responsible for providing communication between hosts on
-different networks.
+different networks. The network layer provides logical addressing and path
+selection to route data between hosts on different networks.
 
 IP is an example of a network layer protocol.
+
+#### IP (Internet Protocol)
+
+##### IP Addressing
+
+IPv4 addresses are 32-bit numbers that are usually represented in dotted decimal
+format using four octets.
+
+IP addresses are divided into two parts: the network part and the host part. The
+network part identifies the network that the host belongs to, while the host
+part identifies the specific host within that network. The separation is notated
+by the subnet mask behind the IP address, like `192.168.1.0/24`, where the `/24`
+indicates that the first 24 bits are the network part and the last 8 bits are
+the host part. Longer prefix lengths indicate more available networks but fewer
+hosts per network, while shorter prefix lengths indicate fewer available
+networks but more hosts per network.
+
+The subnet mask can also be represented in dotted decimal format, like
+`255.255.255.0`, where the network portion is represented by 1s and the host
+portion is represented by 0s. This is an older way of representing the subnet
+mask, and it is called a netmask.
+
+A network address with an all 0s host portion is reserved for the network
+address. If the host portion is all 1s, the address is reserved for the
+broadcast address. The remaining host addresses can be assigned to hosts within
+the network.
+
+IPv4 addresses are classified into five classes: A, B, C, D, and E. These
+classes are based on what the first octect of the address looks like. Class D is
+reserved for multicast addressing and class E is reserved for experimental
+purposes. The first octet of 127 is reserved for loopback addresses. Loopback
+addresses are used to test the network stack on a local device.
+
+| IPv4 Address Class | Prefix | First Octet Numeric Range | Prefix Length |
+| :----------------: | :----: | :-----------------------: | :-----------: |
+|         A          |   0    |           0-126           |      /8       |
+|         B          |   10   |          128-191          |      /16      |
+|         C          |  110   |          192-223          |      /24      |
+|         D          |  1110  |          224-239          |               |
+|         E          |  1111  |          240-255          |               |
 
 ### Data Link Layer
 

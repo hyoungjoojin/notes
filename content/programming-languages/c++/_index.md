@@ -11,6 +11,16 @@ heading = "C++"
 - `std::prev`
 - `std::next`
 
+### `std::set`
+
+`std::set` has its own `lower_bound` and `upper_bound` member functions. If we
+use `std::lower_bound` and `std::upper_bound` with a `std::set`, we will get a
+much more inefficient implementation than the member functions because the
+`std::lower_bound` and `std::upper_bound` functions will assume that the
+`std::set` is a random access container, making it $O(N)$ instead of
+$O(\log N)$. The member functions use the underlying tree structure of the
+`std::set` to perform a binary search and achieve logarithmic time complexity.
+
 ### C++ Numeric Library
 
 #### Rounding

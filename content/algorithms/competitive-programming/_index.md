@@ -76,8 +76,20 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     required to make the array increasing, where one move consists of increasing
     the value of any element by one.
 
+- **Maximum Overlapping Intervals**: Given $N$ intervals, find the maximum
+  number of overlapping intervals at any point in time.
+  - Algorithms
+    - Use a greedy approach by maintaining two arrays, one for the start times
+      and one for the end times of the intervals. Sort both arrays and use two
+      pointers to find the maximum number of overlapping intervals.
+  - Related Problems
+    - CSES 1619: Duplicate of the above problem.
+
 - **Activity Selection**: Given $N$ intervals, find the maximum number of
   non-overlapping intervals that can be selected.
+  - Algorithms
+    - Use a greedy approach by sorting the intervals by their end times and
+      selecting the intervals that end the earliest.
   - Related Problems
     - CSES 1629: Duplicate of the above problem.
     - AC 131D: Given $N$ tasks with a deadline and the time it takes to complete
@@ -92,6 +104,12 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
       sorting algorithm.
   - Related Problems
     - CSES 1073: Duplicate of the above problem.
+
+- **Missing Positive Integer Sum**: Given an array of integers, find the
+  smallest positive integer that cannot be represented as the sum of any subset
+  of the array.
+  - Related Problems
+    - CSES 2183: Duplicate of the above problem.
 
 ## Recursion
 
@@ -134,6 +152,14 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - PG 67257: Given a infix expression consisting of numbers and the operators
     `+`, `-`, and `*`, find the maximum absolute value of the result by changing
     the order of operations.
+
+### Monotonic Stack
+
+- **Nearest Smaller Element**: Given an array of integers, find the nearest
+  smaller element for each element in the array.
+  - Related Problems
+    - CSES 1645: Given a sequence of integers, find the nearest smaller value to
+      its left for each element.
 
 ## Set
 
@@ -190,21 +216,46 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 ## Binary Search
 
 - Related Problems
-  - LC 704: Given a sorted array of integers, find the index of a target integer
-    in the array.
   - CF 304A: Given an integer $n$, find the number of triplets $(a, b, c)$ such
     that $1 \leq a \leq b \leq c \leq n$ and $a^2 + b^2 = c^2$.
 
-- **3 Sum**: Given an array of integers and a target integer, find all unique
-  triplets in the array that sum up to the target.
-  - Algorithms
-    - This problem can be solved using binary search to be solved in
-      $O(n^2 \log n)$.
-    - This problem can also be solved using the two pointers technique to be
-      solved in $O(n^2)$.
+- **Search Target in Sorted Array**: Given a sorted array of integers and a
+  target integer, find the index of the target in the array.
   - Related Problems
-    - CSES 1641: Find any three distinct positions in the array such that the
-      sum of the elements at those positions is equal to the target.
+    - LC 704: Duplicate of the above problem.
+    - LC 374: Guess the number selected by the program, where the program will
+      return hints on whether the guessed number is higher, lower, or equal to
+      the selected number.
+    - LC 540: Given a sorted array consisting of integers where every element
+      appears exactly twice, except for one element which appears exactly once.
+      Find this single element that appears only once.
+
+- **Lower and Upper Bounds**: Given a sorted array of integers and a target
+  integer, find the lower and upper bounds of the target in the array.
+  - Related Problems
+    - LC 35: Given a sorted array and a target value, find the index to insert
+      the target.
+
+### Binary Search on Sets
+
+- **Dynamic Lower and Upper Bounds**: Given a sorted array of integers and a
+  target integer, find the lower and upper bounds of the target in the array,
+  where the array can be modified by adding or removing elements.
+  - Related Problems
+    - CSES 1091: Find the largest number in the array that is less than or equal
+      to a given integer and remove it from the array.
+
+- **Traffic Lights**: Given a street of length $x$ with traffic lights added one
+  at a time at distinct positions, after each addition report the length of the
+  longest gap between consecutive lights (including the ends 0 and x).
+  - Algorithms
+    - Use a set to store the positions of the traffic lights and a multiset to
+      store the lengths of the gaps between consecutive lights. After each
+      addition, update the sets and report the length of the longest gap. To
+      find the position of the traffic light to be added, use binary search on
+      the set of traffic lights.
+  - Related Problems
+    - CSES 1163: Duplicate of the above problem.
 
 ### Parametric Search
 
@@ -217,6 +268,11 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     number of resources you have, and $p$ for the price of each resource, find
     the maximum number of entities you can make.
 
+- **Square Root**: Given an integer $n$, find the largest integer $x$ such that
+  $x^2 \leq n$.
+  - Related Problems
+    - LC 367: Given an integer, determine if it is a perfect square.
+
 ## Sliding Window
 
 - Related Problems
@@ -228,9 +284,10 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - Related Problems
   - LC 344: Given a string, reverse the string in place.
 
-- **Contiguous Subarray Sum**: Given an array of integers and a target integer,
-  find the number of contiguous subarrays whose sum equals the target.
+- **Subarray Sum**: Given an array of positive integers, find the number of
+  subarrays whose sum is equal to a target value.
   - Related Problems
+    - CSES 1660: Duplicate of the above problem.
     - CF 279B: Given an array of positive integers, find the maximum length of a
       contiguous subarray such that the sum of its elements is less than or
       equal to a given integer $T$.
@@ -246,6 +303,30 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     - CSES 2428: Given an array of integers, count the number of subarrays that
       have at most $k$ distinct values.
     - PG 67258: Duplicate of the above problem.
+
+- **3 Sum**: Given an array of integers and a target integer, find all unique
+  triplets in the array that sum up to the target.
+  - Algorithms
+    - This problem can be solved using binary search to be solved in
+      $O(n^2 \log n)$.
+    - This problem can also be solved using the two pointers technique to be
+      solved in $O(n^2)$.
+  - Related Problems
+    - CSES 1641: Find any three distinct positions in the array such that the
+      sum of the elements at those positions is equal to the target.
+
+### Greedy Approach with Two Pointers
+
+- **Boats to Save People**: Given an array of integers, find the number of
+  packages required to select all the integers in the array, where each package
+  can hold at most 2 integers and the sum of the integers in each package is
+  less than or equal to a given integer $x$.
+  - Algorithms
+    - Sort the array and use two pointers to find the number of packages
+      required by matching the smallest and largest integers in the array.
+  - Related Problems
+    - LC 881: Duplicate of the above problem.
+    - CSES 1090: Duplicate of the above problem.
 
 ## Dynamic Programming
 
