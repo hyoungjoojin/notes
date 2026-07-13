@@ -230,6 +230,15 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
       appears exactly twice, except for one element which appears exactly once.
       Find this single element that appears only once.
 
+- **Search Target in Sorted 2D Matrix**: Given a 2D matrix where each row is
+  sorted in ascending order and the first integer of each row is greater than
+  the last integer of the previous row, find a target integer in the matrix.
+  - Algorithms
+    - This problem can be solved by using binary search on the first column,
+      then using binary search on the row that contains the target.
+  - Related Problems
+    - LC 74: Duplicate of the above problem.
+
 - **Lower and Upper Bounds**: Given a sorted array of integers and a target
   integer, find the lower and upper bounds of the target in the array.
   - Related Problems
@@ -257,6 +266,13 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - Related Problems
     - CSES 1163: Duplicate of the above problem.
 
+### Binary Search on Custom Data Structures
+
+- **Time-Based Key-Value Store**: Implement a time-based key-value store that
+  supports setting and getting values based on timestamps.
+  - Related Problems
+    - LC 981: Duplicate of the above problem.
+
 ### Parametric Search
 
 - Related Problems
@@ -272,6 +288,13 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   $x^2 \leq n$.
   - Related Problems
     - LC 367: Given an integer, determine if it is a perfect square.
+
+- **Koko Eating Bananas**: Given an array of integers representing the number of
+  bananas in each pile and an integer $h$ representing the number of hours, find
+  the minimum integer $k$ such that Koko can eat all the bananas in $h$ hours,
+  where Koko can eat at most $k$ bananas per hour.
+  - Related Problems
+    - LC 875: Duplicate of the above problem.
 
 ## Sliding Window
 
