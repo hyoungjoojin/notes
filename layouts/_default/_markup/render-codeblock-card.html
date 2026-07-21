@@ -1,0 +1,52 @@
+{{- /*
+  Render hook: turn a ```flashcard fenced code block into a reveal card.
+
+  Usage in markdown:
+
+    ```flashcard
+    Q: Question text.
+    A: Answer text (may span multiple lines / markdown).
+    ```
+
+  The block must contain a `Q:` line and an `A:` line. Everything from `Q:`
+  up to the `A:` line is the question; everything after is the answer. Both
+  are rendered as markdown, so lists, bold, code, and math all work — just
+  leave a blank line before block-level markdown (lists, etc.).
+*/ -}}
+
+{{- $raw := trim .Inner "\n" -}}
+{{- $q := "" -}}
+{{- $a := "" -}}
+{{- if hasPrefix $raw "Q:" -}}
+  {{- $raw = trim (strings.TrimPrefix "Q:" $raw) " " -}}
+{{- end -}}
+{{- $parts := split $raw "\nA:" -}}
+{{- if ge (len $parts) 2 -}}
+  {{- $q = trim (index $parts 0) " \n" -}}
+  {{- $a = trim (index $parts 1) " \n" -}}
+{{- else -}}
+  {{- errorf "flashcard: block must contain a `Q:` line and an `A:` line (%s)" .Position -}}
+{{- end -}}
+
+{{- /* Emit the shared CSS only once per rendered page. */ -}}
+{{- if not (.Page.Scratch.Get "flashcardAssetsLoaded") -}}
+  {{- .Page.Scratch.Set "flashcardAssetsLoaded" true -}}
+<style>
+.flashcard{border:1px solid currentColor;border-radius:8px;margin:1rem 0;overflow:hidden;opacity:.85}
+.flashcard summary{list-style:none;cursor:pointer;padding:.9rem 1.1rem;font-weight:600;display:flex;align-items:flex-start;gap:.6rem}
+.flashcard summary::-webkit-details-marker{display:none}
+.flashcard summary::before{content:"Q";flex:0 0 auto;font-family:monospace;opacity:.6}
+.flashcard summary::after{content:"reveal";margin-left:auto;font-weight:400;font-size:.8em;opacity:.55}
+.flashcard[open] summary::after{content:"hide"}
+.flashcard .flashcard-a{padding:0 1.1rem 1rem 1.1rem;border-top:1px dashed currentColor;display:flex;align-items:flex-start;gap:.6rem}
+.flashcard .flashcard-a::before{content:"A";flex:0 0 auto;font-family:monospace;opacity:.6;padding-top:1rem}
+.flashcard .flashcard-a-body{padding-top:.6rem}
+.flashcard .flashcard-a-body>:first-child{margin-top:.3rem}
+.flashcard .flashcard-a-body>:last-child{margin-bottom:0}
+</style>
+{{- end -}}
+
+<details class="flashcard">
+  <summary>{{ $q | markdownify }}</summary>
+  <div class="flashcard-a"><div class="flashcard-a-body">{{ $a | markdownify }}</div></div>
+</details>

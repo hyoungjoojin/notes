@@ -1,0 +1,48 @@
+{{- /*
+  flashcard shortcode — click a card to reveal its answer.
+
+  Usage in markdown:
+
+    {{< flashcard >}}
+    [Q] Question text here.
+    [A] Answer text here (may span multiple lines).
+    {{< /flashcard >}}
+
+  Everything after [Q] up to [A] is the question; everything after [A]
+  is the answer. Both are rendered as markdown.
+*/ -}}
+
+{{- $raw := trim .Inner "\n" -}}
+{{- $q := "" -}}
+{{- $a := "" -}}
+{{- if and (in $raw "[Q]") (in $raw "[A]") -}}
+  {{- $afterQ := index (split $raw "[Q]") 1 -}}
+  {{- $parts := split $afterQ "[A]" -}}
+  {{- $q = trim (index $parts 0) " \n" -}}
+  {{- $a = trim (index $parts 1) " \n" -}}
+{{- else -}}
+  {{- errorf "flashcard shortcode: content must contain both [Q] and [A] markers (%s)" .Position -}}
+{{- end -}}
+
+{{- /* Emit the shared CSS/JS only once per rendered page. */ -}}
+{{- if not (.Page.Scratch.Get "flashcardAssetsLoaded") -}}
+  {{- .Page.Scratch.Set "flashcardAssetsLoaded" true -}}
+<style>
+.flashcard{border:1px solid currentColor;border-radius:8px;margin:1rem 0;overflow:hidden;opacity:.85}
+.flashcard summary{list-style:none;cursor:pointer;padding:.9rem 1.1rem;font-weight:600;display:flex;align-items:flex-start;gap:.6rem}
+.flashcard summary::-webkit-details-marker{display:none}
+.flashcard summary::before{content:"Q";flex:0 0 auto;font-family:monospace;opacity:.6}
+.flashcard summary::after{content:"reveal";margin-left:auto;font-weight:400;font-size:.8em;opacity:.55}
+.flashcard[open] summary::after{content:"hide"}
+.flashcard .flashcard-a{padding:0 1.1rem 1rem 1.1rem;border-top:1px dashed currentColor;display:flex;align-items:flex-start;gap:.6rem}
+.flashcard .flashcard-a::before{content:"A";flex:0 0 auto;font-family:monospace;opacity:.6;padding-top:1rem}
+.flashcard .flashcard-a-body{padding-top:.6rem}
+.flashcard .flashcard-a-body>:first-child{margin-top:.3rem}
+.flashcard .flashcard-a-body>:last-child{margin-bottom:0}
+</style>
+{{- end -}}
+
+<details class="flashcard">
+  <summary>{{ $q | markdownify }}</summary>
+  <div class="flashcard-a"><div class="flashcard-a-body">{{ $a | markdownify }}</div></div>
+</details>

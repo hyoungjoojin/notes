@@ -76,6 +76,28 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     required to make the array increasing, where one move consists of increasing
     the value of any element by one.
 
+- **Interval Point Cover**: Find the minimum number of points required to cover
+  a set of intervals.
+  - Related Problems
+    - CSES 1084: Find the maximum number of points that can be selected from a
+      set of points such that each interval contains at most one selected point.
+
+- **Ferris Wheel**: Given an array of integers, find the minimum number of
+  groups required to group all the integers in the array, where each group can
+  hold at most 2 integers and the sum of the integers in each group is less than
+  or equal to a given integer $x$.
+  - Algorithms
+    - Sort the array and use two pointers to find the number of packages
+      required by matching the smallest and largest integers in the array.
+  - Related Problems
+    - LC 881: Duplicate of the above problem.
+    - CSES 1090: Duplicate of the above problem.
+
+- **Collecting Numbers**: Count the number of left to right passes to collect a
+  permutation's values in increasing order.
+- Related Problems
+  - CSES 2216: Duplicate of the above problem.
+
 - **Maximum Overlapping Intervals**: Given $N$ intervals, find the maximum
   number of overlapping intervals at any point in time.
   - Algorithms
@@ -108,6 +130,15 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - **Missing Positive Integer Sum**: Given an array of integers, find the
   smallest positive integer that cannot be represented as the sum of any subset
   of the array.
+  - Algorithms
+    - Sort the array and iterate through the elements. If the next integer is
+      greater than the next expected sum, then the next expected sum is the
+      smallest positive integer that cannot be represented as the sum of any
+      subset of the array. The next expected sum can be updated by adding the
+      current integer to it. This is because all integers less than or equal to
+      the next expected sum can be represented as the sum of a subset of the
+      array, and any integer greater than the next expected sum cannot be
+      represented as the sum of any subset of the array.
   - Related Problems
     - CSES 2183: Duplicate of the above problem.
 
@@ -127,10 +158,13 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 ## Sorting
 
 - Related Problems
-  - CSES 1621: Given an array of integers, find the number of distinct values in
-    the array.
   - CF 456A: Given two arrays of integers, determine if there exists a pair of
     indices $(i, j)$ such that $a[i] < a[j]$ and $b[i] > b[j]$.
+
+- **Distinct Numbers**: Given an array of integers, find the number of distinct
+  values in the array.
+  - Related Problems
+    - CSES 1621: Duplicate of the above problem.
 
 - **Missing Number**: Given an array, find the missing number in the array.
   - Related Problems
@@ -187,17 +221,17 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     integers you can choose from the array, given that you can only choose half
     of the total number of integers in the array.
 
-### Two Sum
-
-- Related Problems
-  - LC 1: Given an array of integers and a target integer, find the indices of
-    the two numbers in the array that add up to the target.
-  - CF 1931D: Given an array of integers and two values $x$ and $y$, find the
-    number of pairs of indices $(i, j)$ such that $i < j$ and
-    $(a_i + a_j) \mod x = 0$ and $(a_i - a_j) \mod y = 0$.
-  - CF 1915E: Given an array of integers, determine if there exists two distinct
-    indices $i$ and $j$ such that the sum of the elements at odd indices and
-    even indices are equal in the subarray between $i$ and $j$.
+- **Two Sum**: Given an array of integers and a target integer, find the indices
+  of the two numbers in the array that add up to the target.
+  - Related Problems
+    - LC 1: Duplicate of the above problem.
+    - CSES 1640: Duplicate of the above problem.
+    - CF 1931D: Given an array of integers and two values $x$ and $y$, find the
+      number of pairs of indices $(i, j)$ such that $i < j$ and
+      $(a_i + a_j) \mod x = 0$ and $(a_i - a_j) \mod y = 0$.
+    - CF 1915E: Given an array of integers, determine if there exists two
+      distinct indices $i$ and $j$ such that the sum of the elements at odd
+      indices and even indices are equal in the subarray between $i$ and $j$.
 
 ## Binary Tree
 
@@ -337,19 +371,6 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - Related Problems
     - CSES 1641: Find any three distinct positions in the array such that the
       sum of the elements at those positions is equal to the target.
-
-### Greedy Approach with Two Pointers
-
-- **Boats to Save People**: Given an array of integers, find the number of
-  packages required to select all the integers in the array, where each package
-  can hold at most 2 integers and the sum of the integers in each package is
-  less than or equal to a given integer $x$.
-  - Algorithms
-    - Sort the array and use two pointers to find the number of packages
-      required by matching the smallest and largest integers in the array.
-  - Related Problems
-    - LC 881: Duplicate of the above problem.
-    - CSES 1090: Duplicate of the above problem.
 
 ## Dynamic Programming
 
@@ -531,21 +552,33 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - Related Problems
     - PG 42577: Duplicate of the above problem.
 
-## Number Theory
+## Mathematics
+
+### Optimization
+
+- **$\sum{|a_i - x|}$**: Given an array of integers, find the integer $x$ that
+  minimizes the sum of the absolute differences between each element in the
+  array and $x$.
+  - Algorithms
+    - This problem can be solved by finding the median of the array.
+  - Related Problems
+    - CSES 1074: Duplicate of the above problem.
+
+### Number Theory
 
 - **Trailing Zeros**: Given an integer $N$, find the number of trailing zeros in
   $N!$.
   - Related Problems
     - CSES 1618: Duplicate of the above problem.
 
-### Binary Exponentiation
+#### Binary Exponentiation
 
 - Related Problems
   - CSES 1095: Given $a$ and $b$, calculate $a^b$.
   - LC 1922: Find the number of strings of length $n$ where the even-indexed
     characters are even digits and the odd-indexed characters are prime digits.
 
-### Sieve of Eratosthenes
+#### Sieve of Eratosthenes
 
 - Related Problems
   - LC 204: Given an integer $n$, count the number of prime numbers less than
@@ -553,7 +586,7 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
   - CF 230B: Determine if a given integer has exactly three distinct positive
     divisors.
 
-### Greatest Common Divisor (GCD)
+#### Greatest Common Divisor (GCD)
 
 - Related Problems
   - CF 483A: Find any three numbers $(a, b, c)$ in the range $[l, r]$ such that

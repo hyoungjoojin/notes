@@ -47,3 +47,7 @@ personal biases.
 
 - [Abstract Algebra](./abstract-algebra)
 - [Linear Algebra](./linear-algebra)
+
+### Other
+
+- [Flashcards](./flashcards)
