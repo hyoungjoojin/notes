@@ -459,6 +459,13 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
     - PG 43162: Duplicate of the above problem, the graph is given as an
       adjacency matrix.
 
+- **Minimum Required Edges to Connect Graph**: Given an undirected graph, find
+  the minimum number of edges required to connect all the connected components
+  in the graph.
+  - Related Problems
+    - CSES 1666: Duplicate of the above problem. Also, find any valid set of
+      edges that can be added to connect the graph.
+
 #### Distance in Unweighted Graphs
 
 - Related Problems
@@ -470,6 +477,12 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - Related Problems
   - CF 687A: Given an undirected graph, partition the vertices into two groups
     where the groups are disjoint and each group is a vertex cover of the graph.
+
+- **Bipartite Graph Check**: Given an undirected graph, determine if the graph
+  is bipartite.
+  - Related Problems
+    - CSES 1668: Duplicate of the above problem. Also, find any valid coloring
+      of the graph if it is bipartite.
 
 #### Grid BFS
 
@@ -496,6 +509,38 @@ as follows: LC (LeetCode), CF (Codeforces), and AC (AtCoder).
 - **Shortest Path in Directed Acyclic Graph**: Given a directed acyclic graph
   with weighted edges, find the shortest path from a source vertex to a target
   vertex.
+
+#### Shortest Path on Unweighted Graphs
+
+- **Shortest Path in Unweighted Graph**: Given an unweighted graph, find the
+  shortest path from a source vertex to a target vertex.
+  - Related Problems
+    - CSES 1667: Duplicate of the above problem.
+
+- **Shortest Path in Grid**: Given a 2D grid of 0s and 1s, find the shortest
+  path from a source cell to a target cell, where you can only move to adjacent
+  cells that contain 0s.
+  - Related Problems
+    - CSES 1193: Duplicate of the above problem.
+
+#### Shortest Path on Weighted Graphs
+
+- **Dijkstra's Algorithm**: Given a directed graph with non-negative edge
+  weights, find the shortest path from a source vertex to all other vertices.
+  - Related Problems
+    - CSES 1671: Duplicate of the above problem.
+
+- **Shortest Path with Discounts**: Given a directed graph with weighted edges,
+  find the shortest path from a source vertex to a target vertex where there can
+  be at maximum $k$ discounts applied to the edges.
+  - Related Problems
+    - CSES 1195: Duplicate of the above problem. There can be at most 1 discount
+      that halves the weight of an edge.
+
+- **Floyd-Warshall Algorithm**: Given a directed graph with weighted edges, find
+  the shortest path between all pairs of vertices.
+  - Related Problems
+    - CSES 1672: Answer $N$ queries of the shortest path between two vertices.
 
 ### Topological Sort
 
